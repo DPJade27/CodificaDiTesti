@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rassegna.xsl"?>
+<!--
+    Rassegna Settimanale
+    Filename:rassegna.xml
+    Author:Giada De Paolis
+    Date: 2025-04
+-->
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <!--titolo-->
+            <titleStmt>
+				<title type="main">La rassegna settimanale</title>
+				<title type="sub">di politica, scienze, lettere ed arti</title> 
+				<author>
+					<persName xml:id="P_LF" ref="https://it.wikipedia.org/wiki/Leopoldo_Franchetti">Leopoldo Franchetti</persName> e 
+					<persName xml:id="P_SS" ref="https://it.wikipedia.org/wiki/Sidney_Sonnino">Sidney Sonnino</persName>
+				</author>              
+			</titleStmt>
+
+            <!--Informazioni editoriali-->
+			<editionStmt>
+				<edition>Edizione Digitale - 
+					<date when="2025-04">Aprile 2025</date>
+				</edition>
+				<respStmt>
+					<resp>Coordinato da: </resp>
+					<persName xml:id="AMDG" ref="https://github.com/angelodel80">Angelo Mario Del Grosso</persName>
+				</respStmt>
+				<respStmt>
+					<resp>Codifica a cura di: </resp>
+					<persName xml:id="GDP" ref="https://github.com/DPJade27">Giada De Paolis</persName>
+				</respStmt>
+			</editionStmt>
+
+			<!-- grandezza approssimativa di un documento -->
+			<extent>
+				<measure unit="pages" quantity="11">Pagine 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 e 11 </measure>
+			</extent>
+
+            <!--Informazioni riguardo la pubblicazione-->
+			<publicationStmt>
+				<publisher>Università di Pisa</publisher>
+				<pubPlace>Pisa</pubPlace>
+				<date when="2025">2025</date>
+				<availability status="free">
+					<p>Opera ad accesso libero</p>
+				</availability>
+			</publicationStmt>
+
+			<!-- SERIE raggruppa le informazioni circa la serie alla quale la pubblicazione appartiene. -->
+			<seriesStmt>
+				<title>La rassegna settimanale di politica, scienze, lettere ed arti</title>
+				<respStmt>
+					<resp>Codifica a cura di:</resp>
+					<name ref="#GDP">Giada De Paolis</name>
+				</respStmt>     
+				<biblScope unit="volume">8</biblScope>
+				<biblScope unit="issue">183, 189</biblScope>
+			</seriesStmt>
+
+			<!--Descrizione del contenuto-->
+            <sourceDesc>
+                <biblStruct xml:lang="it">
+					<monogr>
+						<title level="j" type="main">La rassegna settimanale</title>
+						<title level="j" type="sub">di politica, scienze, lettere ed arti</title>
+						<imprint>
+							<pubPlace>Roma</pubPlace>
+							<publisher>Casa Editrice Barbèra</publisher>
+							<date when="1878">1878</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+
+				<msDesc>
+					<msIdentifier>
+						<msName>La Rassegna Settimanale, 1878</msName>
+					</msIdentifier>
+					<physDesc>
+						<objectDesc>
+							<supportDesc material="paper" source="https://rassegnasettimanale.animi.it/rassegna/fascicolo-183-volume-8-1881-semestre-2-trimestre-1/">
+								<support>Fogli di <material>carta</material></support>
+								<condition>
+									<p>Le pagine sono completamente integre, con qualche piccola macchia di inchiostro sul testo e sui bordi; il testo rimane facilmente leggibile.</p>
+								</condition>
+							</supportDesc>
+							<layoutDesc>
+								<layout>
+									Le pagine sono divise in due colonne, ciascuna con una media di 67 righe, per un totale di circa 135 righe per pagina. 
+									Nelle pagine pari (esclusa la copertina), la numerazione è posizionata sul lato sinistro, mentre le informazioni sul volume e sul fascicolo sono sulla destra. 
+									Nelle pagine dispari, invece, la data è a sinistra e il numero di pagina è a destra. 
+									Al centro di ogni pagina è presente la scritta <hi>LA RASSEGNA SETTIMANALE</hi>.
+								</layout>
+							</layoutDesc>
+						</objectDesc>
+					</physDesc>
+				</msDesc>
+			</sourceDesc>
+        </fileDesc>
+
+		<encodingDesc>
+			<projectDesc>
+				<p>Questo file codifica una trascrizione di "Rassegna Settimanale" utilizzando le linee guida del TEI P5. 
+					Collega la trascrizione alle immagini dei facsimili per analisi e preservazione digitale.</p>
+				<p>Gli articoli selezionati sono: 
+					<ref target="#TDM">Tornan di Maremma</ref>, 
+					<ref target="#bibliografiaTDM">Bibliografia Tornan di Maremma</ref>, 
+					<ref target="#MAL">Malaria</ref>, 
+					<ref target="#malariaBib">Bibliografia Malaria</ref>, 
+					<ref target="#NOT">Notizie</ref>.
+				</p>
+			</projectDesc>
+		</encodingDesc>
+
+		<!-- PROFILE fornisce una descrizione dettagliata degli aspetti non bibliografici di un testo, in modo particolare le lingue e i linguaggi secondari utilizzati, la situazione in cui è stato prodotto il testo, i partecipanti e la relativa ambientazione -->
+		<profileDesc>
+			<langUsage>
+				<language ident="it">Italiano</language>
+			</langUsage>
+
+			<textDesc>
+				<channel mode="w">rivista settimanale</channel>
+				<constitution type="composite"/> <!-- raccolta di testi -->
+				<derivation type="original"/> <!-- testo originale, non derivato -->
+				<domain type="news"/> <!-- giornale  -->
+				<factuality type="mixed"/> <!-- tratta di fatti e non solo -->
+				<interaction type="partial"/> <!-- il testo contiene sezioni con dialoghi -->
+				<preparedness type="prepared"/> <!-- testo scritto con preparazione (non improvvisato) -->
+				<purpose type="inform" degree="high"/> <!-- la rivista ha come scopo principale informare -->
+				<purpose type="entertain" degree="medium"/> <!-- può anche intrattenere, ma in modo secondario -->
+			</textDesc>
+
+			<particDesc>
+				<listPerson>
+					<!--persone di Tornan di Maremma-->
+					<person>
+						<persName xml:id="RF" ref="https://it.wikipedia.org/wiki/Renato_Fucini">Renato Fucini</persName>
+					</person>
+					<!--persone di Bibliografia Maremma-->
+					<person>
+						<persName xml:id="JGR" ref="https://en.wikipedia.org/wiki/Johann_Georg_Rist">Johan Georg Rist</persName>
+					</person>
+					<person>
+						<persName xml:id="RV" ref="https://it.wikipedia.org/wiki/Rahel_Varnhagen">Rahel Varnhagen</persName>
+					</person>
+					<person>
+						<persName xml:id="FAP" ref="https://de.wikipedia.org/wiki/Friedrich_Andreas_Perthes">Friedrich Andreas Perthes</persName>
+					</person>
+					<person>
+						<persName xml:id="HVM" ref="https://it.wikipedia.org/wiki/Helmuth_Karl_Bernhard_von_Moltke">Helmuth Karl Bernhard von Moltke</persName>
+					</person>
+					<person>
+						<persName xml:id="HVS" ref="https://en.wikipedia.org/wiki/Heinrich_Carl_von_Schimmelmann">Heinrich Carl von Schimmelmann</persName>
+					</person>
+					<person>
+						<persName xml:id="AVB" ref="https://it.wikipedia.org/wiki/Albrecht_von_Bernstorff">Albrecht von Bernstorff</persName>
+					</person>
+					<person>
+						<persName xml:id="ADR" ref="https://it.wikipedia.org/wiki/Alessandro_I_di_Russia">Alessandro I di Russia</persName>
+					</person>
+					<person>
+						<persName xml:id="GC" ref="https://it.wikipedia.org/wiki/George_Canning">George Canning</persName>
+					</person>
+					<person>
+						<persName xml:id="D">Davoust</persName>
+					</person>
+					<person>
+						<persName xml:id="EPN" ref="https://it.wikipedia.org/wiki/Edoardo_il_Principe_Nero">Edoardo il Principe Nero</persName>
+					</person>
+					<person>
+						<persName xml:id="ALB" ref="https://en.wikipedia.org/wiki/Ad%C3%A9la%C3%AFde-Louise_d%27Eckm%C3%BChl_de_Blocqueville">Adélaïde-Louise d'Eckmühl de Blocqueville</persName>
+					</person>
+					<person>
+						<persName xml:id="AT" ref="https://en.wikipedia.org/wiki/Andrew_Tettenborn">Andrew Tettenborn</persName>
+					</person>
+					<person>
+						<persName xml:id="LRF" ref="https://it.wikipedia.org/wiki/Luigi_XVIII_di_Francia">Luigi XVIII di Francia</persName>
+					</person>
+					<person>
+						<persName xml:id="CA" ref="https://it.wikipedia.org/wiki/Carlo_X_di_Francia">Carlo X di Francia</persName>
+					</person>
+					<person>
+						<persName xml:id="DB" ref="https://it.wikipedia.org/wiki/Duchi_di_Berry">Duchi di Berry</persName>
+					</person>
+					<person>
+						<persName xml:id="PLDB" ref="https://it.wikipedia.org/wiki/Pierre_Louis_Jean_Casimir_de_Blacas">Pierre Louis Jean Casimir de Blacas</persName>
+					</person>
+					<person>
+						<persName xml:id="NB" ref="https://it.wikipedia.org/wiki/Napoleone_Bonaparte">Napoleone Bonaparte</persName>
+					</person>
+					<!--persone di Malaria-->
+					<person>
+						<persName xml:id="GV" ref="https://it.wikipedia.org/wiki/Giovanni_Verga">Giovanni Verga</persName>
+					</person>
+					<!--persone di Bibliografia Malaria-->
+					<person>
+						<persName xml:id="AF" ref="https://it.wikipedia.org/wiki/Antonio_Fogazzaro">Antonio Fogazzaro</persName>
+					</person>
+					<person>
+						<persName xml:id="HDB" ref="https://it.wikipedia.org/wiki/Honor%C3%A9_de_Balzac">Honoré de Balzac</persName>
+					</person>
+					<person>
+						<persName xml:id="EMZ" ref="https://it.wikipedia.org/wiki/%C3%89mile_Zola">Émile Zola</persName>
+					</person>
+					<person>
+						<persName xml:id="CD" ref="https://it.wikipedia.org/wiki/Charles_Dickens">Charles Dickens</persName>
+					</person>
+					<person>
+						<persName xml:id="P">Pöe</persName>
+					</person>
+					<person>
+						<persName xml:id="ETH" ref="https://it.wikipedia.org/wiki/Ernst_Theodor_Amadeus_Hoffmann">Ernst Theodor Amadeus Hoffman</persName>
+					</person>
+					<person>
+						<persName xml:id="AR" ref="https://it.wikipedia.org/wiki/Ann_Radcliffe">Ann Radcliffe</persName>
+					</person>
+					<person>
+						<persName xml:id="PF" ref="https://it.wikipedia.org/wiki/Paul_F%C3%A9val_padre">Paul Féval</persName>
+					</person>
+					<person>
+						<persName xml:id="ADN" ref="https://it.wikipedia.org/wiki/Antonio_De_Nino">Antonio De Nino</persName>
+					</person>
+					<person>
+						<persName xml:id="GG" ref="https://it.wikipedia.org/wiki/Giuseppe_Garibaldi">Giuseppe Garibaldi</persName>
+					</person>
+					<person>
+						<persName xml:id="NC" ref="https://it.wikipedia.org/wiki/Niccol%C3%B2_Copernico">Niccolò Copernico</persName>
+					</person>
+					<person>
+						<persName xml:id="GF">G. Frizzo</persName>
+					</person>
+					<person>
+						<persName xml:id="JB" ref="https://it.wikipedia.org/wiki/J%C3%A1nos_Bolyai">János Bolyai</persName>
+					</person>
+					<person>
+						<persName xml:id="NIL" ref="https://it.wikipedia.org/wiki/Nikolaj_Ivanovi%C4%8D_Loba%C4%8Devskij">Nikolaj Ivanovič Lobačevskij</persName>
+					</person>
+					<person>
+						<persName xml:id="BR" ref="https://it.wikipedia.org/wiki/Bernhard_Riemann">Bernhard Riemann</persName>
+					</person>
+					<person>
+						<persName xml:id="EB" ref="https://it.wikipedia.org/wiki/Eugenio_Beltrami">Eugenio Beltrami</persName>
+					</person>
+					<person>
+						<persName xml:id="HVH" ref="https://it.wikipedia.org/wiki/Hermann_von_Helmholtz">Hermann von Helmholtz</persName>
+					</person>
+					<person>
+						<persName xml:id="EDB" ref="https://it.wikipedia.org/wiki/Eduard_Baltzer">Eduard Baltzer</persName>
+					</person>
+					<!--persone Notizie-->
+					<person>
+						<persName xml:id="JF" ref="https://it.wikipedia.org/wiki/Jules_Favre">Jules Favre</persName>
+					</person>
+					<person>
+						<persName xml:id="SS" ref="https://it.wikipedia.org/wiki/Sidney_Sonnino">Sidney Sonnino</persName>
+					</person>
+					<person>
+						<persName xml:id="PP">Pietro Pampaloni</persName>
+					</person>
+				</listPerson>
+
+				<listOrg>
+					<org xml:id="PI">
+						<orgName ref="https://it.wikipedia.org/wiki/Primo_Impero_francese">Primo Impero Francese</orgName>
+					</org>
+					<org xml:id="SR">
+						<orgName ref="https://it.wikipedia.org/wiki/Wolfenb%C3%BCttel_Ritter-Akademie#:~:text=La%20Wolfenb%C3%BCttel%20Ritter%2DAkademie%20(detta,Brunswick%2DWolfenb%C3%BCttel%2C%20in%20Germania.text=L'accademia%20venne%20fondata%20il,del%20ducato%20di%20Brunswick%2DWolfenb%C3%BCttel">Scuola di Ritter</orgName>
+					</org>
+					<org xml:id="PR">
+						<orgName ref="https://it.wikipedia.org/wiki/Prima_Restaurazione#:~:text=La%20Prima%20Restaurazione%20%C3%A8%20stato,cento%20giorni%20nel%20marzo%201815.">Prima Restaurazione</orgName>
+					</org>
+					<org xml:id="NJ">
+						<orgName ref="https://en.wikipedia.org/wiki/National_Journal">National Journal</orgName>
+					</org>
+					<org xml:id="DR">
+						<orgName ref="https://en.wikipedia.org/wiki/Le_Droit">Le Droit</orgName>
+					</org>
+					<org xml:id="CSE">
+						<orgName ref="https://it.wikipedia.org/wiki/Casa_Editrice_Barb%C3%A8ra">Casa Editrice Barbèra</orgName>
+					</org>
+				</listOrg>
+			</particDesc>
+
+			<settingDesc>
+				<listPlace>
+					<place xml:id="MAR">
+						<placeName ref="https://it.wikipedia.org/wiki/Maremma">Maremma</placeName>
+						<region>Toscana</region>
+					</place>
+					<place xml:id="M_FIU">
+						<placeName ref="https://it.wikipedia.org/wiki/Fiumalbo">Fiumalbo</placeName>
+						<region>Emilia-Romagna</region>
+					</place>
+					<place xml:id="M_PIE">
+						<placeName ref="https://it.wikipedia.org/wiki/Pieve">Pieve</placeName>
+					</place>
+					<place xml:id="MA_AGN">
+						<placeName ref="https://it.wikipedia.org/wiki/Agnone_Bagni">Agnone</placeName>
+						<region>Sicilia</region>
+					</place>
+					<place xml:id="MA_MON">
+						<placeName ref="https://it.wikipedia.org/wiki/Etna">Mongibello</placeName>
+						<region>Sicilia</region>
+					</place>
+					<place xml:id="MA_LAG">
+						<placeName ref="https://it.wikipedia.org/wiki/Lago_di_Lentini">Lago di Lentini</placeName>
+						<region>Sicilia</region>
+					</place>
+					<place xml:id="MA_VAL">
+						<placeName ref="https://it.wikipedia.org/wiki/Valsavoia">Valsavoia</placeName>
+						<region>Sicilia</region>
+					</place>
+					<place xml:id="B_FRA">
+						<placeName ref="https://it.wikipedia.org/wiki/Francia">Francia</placeName>
+					</place>
+					<place xml:id="B_GER">
+						<placeName ref="https://it.wikipedia.org/wiki/Germania">Germania</placeName>
+					</place>
+					<place xml:id="B_HOL">
+						<placeName ref="https://it.wikipedia.org/wiki/Holstein">Holstein</placeName>
+						<country>Germania</country>
+					</place>
+					<place xml:id="B_IEN">
+						<placeName ref="https://it.wikipedia.org/wiki/Jena">Iena</placeName>
+						<country>Germania</country>
+					</place>
+					<place xml:id="B_KIE">
+						<placeName ref="https://it.wikipedia.org/wiki/Kiel">Kiel</placeName>
+						<country>Germania</country>
+					</place>
+					<place xml:id="B_COP">
+						<placeName ref="https://it.wikipedia.org/wiki/Copenaghen">Copenhagen</placeName>
+						<country>Danimarca</country>
+					</place>
+					<place xml:id="B_DAN">
+						<placeName ref="https://it.wikipedia.org/wiki/Danimarca">Danimarca</placeName>
+					</place>
+					<place xml:id="B_PIE">
+						<placeName ref="https://it.wikipedia.org/wiki/San_Pietroburgo">Pietroburgo</placeName>
+						<country>Russia</country>
+					</place>
+					<place xml:id="B_MOS">
+						<placeName ref="https://it.wikipedia.org/wiki/Mosca_(Russia)">Mosca</placeName>
+						<country>Russia</country>
+					</place>
+					<place xml:id="B_RUS">
+						<placeName ref="https://it.wikipedia.org/wiki/Russia">Russia</placeName>
+					</place>
+					<place xml:id="B_BAL">
+						<placeName ref="https://it.wikipedia.org/wiki/Mar_Baltico">Baltico</placeName>
+					</place>
+					<place xml:id="B_SPA">
+						<placeName ref="https://it.wikipedia.org/wiki/Spagna">Spagna</placeName>
+					</place>
+					<place xml:id="B_PAR">
+						<placeName ref="https://it.wikipedia.org/wiki/Parigi">Parigi</placeName>
+						<country>Francia</country>
+					</place>
+					<place xml:id="B_MAD">
+						<placeName ref="https://it.wikipedia.org/wiki/Madrid">Madrid</placeName>
+						<country>Spagna</country>
+					</place>
+					<place xml:id="B_OCC">
+						<placeName ref="https://it.wikipedia.org/wiki/Occidente">Occidente</placeName>
+					</place>
+					<place xml:id="B_ILD">
+						<placeName ref="https://it.wikipedia.org/wiki/Real_Sitio_de_San_Ildefonso">Ildefonso</placeName>
+						<country>Spagna</country>
+					</place>
+					<place xml:id="B_ARA">
+						<placeName ref="https://it.wikipedia.org/wiki/Aranjuez">Aranjuez</placeName>
+						<country>Spagna</country>
+					</place>
+					<place xml:id="B_LIS">
+						<placeName ref="https://it.wikipedia.org/wiki/Lisbona">Lisbona</placeName>
+						<country>Portogallo</country>
+					</place>
+					<place xml:id="B_LON">
+						<placeName ref="https://it.wikipedia.org/wiki/Londra">Londra</placeName>
+						<country>Inghilterra</country>
+					</place>
+					<place xml:id="B_ING">
+						<placeName ref="https://it.wikipedia.org/wiki/Inghilterra">Inghilterra</placeName>
+					</place>
+					<place xml:id="B_HAM">
+						<placeName ref="https://it.wikipedia.org/wiki/Amburgo">Hamburgo</placeName>
+						<country>Germania</country>
+					</place>
+					<place xml:id="B_ISO">
+						<placeName ref="https://it.wikipedia.org/wiki/Isola_d%27Elba">Isola d'Elba</placeName>
+						<region>Toscana</region>
+					</place>
+					<place xml:id="B_MIL">
+						<placeName ref="https://it.wikipedia.org/wiki/Milano">Milano</placeName>
+						<region>Lombardia</region>
+					</place>
+					<place xml:id="B_PDP">
+						<placeName ref="https://it.wikipedia.org/wiki/Piedelpoggio">Piè del Poggio</placeName>
+						<region>Lazio</region>
+					</place>
+					<place xml:id="B_ROM">
+						<placeName ref="https://it.wikipedia.org/wiki/Roma">Roma</placeName>
+						<region>Lazio</region>
+					</place>
+					<place xml:id="B_VER">
+						<placeName ref="https://it.wikipedia.org/wiki/Verona">Verona</placeName>
+						<region>Veneto</region>
+					</place>
+					<place xml:id="B_PAD">
+						<placeName ref="https://it.wikipedia.org/wiki/Padova">Padova</placeName>
+						<region>Veneto</region>
+					</place>
+					<place xml:id="B_AME">
+						<placeName ref="https://it.wikipedia.org/wiki/America">America</placeName>
+					</place>
+					<place xml:id="B_CHI">
+						<placeName ref="https://it.wikipedia.org/wiki/Chicago">Chicago</placeName>
+						<country>Stati Uniti</country>
+					</place>
+					<place xml:id="CALA">
+						<placeName ref="https://it.wikipedia.org/wiki/Calabria">Calabria</placeName>
+						<country>Italia</country>
+					</place>
+				</listPlace>		
+			</settingDesc>
+			
+		</profileDesc>
+    </teiHeader>
+
+
+	<!--facsimile-->
+	<facsimile>
+		<!--TORNAN DI MAREMMA-->
+		<surface xml:id="Pagina1-TornanDiMaremma">
+			<graphic url='./img/mar_pag1.png' width='613.4px' height='906.4px' />
+			<zone ulx="322" uly="113" lrx="597" lry="126" xml:id="par1_1_TDM"/>
+			<zone ulx="323" uly="129" lrx="595" lry="255" xml:id="par1_2_TDM"/>
+			<zone ulx="324" uly="258" lrx="591" lry="358" xml:id="par1_3_TDM"/>
+			<zone ulx="323" uly="359" lrx="591" lry="454" xml:id="par1_4_TDM"/>
+			<zone ulx="323" uly="456" lrx="592" lry="558" xml:id="par1_5_TDM"/>
+			<zone ulx="322" uly="561" lrx="592" lry="648" xml:id="par1_6_TDM"/>
+			<zone ulx="322" uly="651" lrx="592" lry="833" xml:id="par1_7_TDM"/>
+		</surface>
+		<surface xml:id="Pagina2">
+			<graphic url='./img/mar_pag2.png' width='629.4px' height='907.4px' />
+			<zone ulx="59" uly="44" lrx="335" lry="162" xml:id="par2_1_TDM"/>
+			<zone ulx="59" uly="164" lrx="333" lry="326" xml:id="par2_2_TDM"/>
+			<zone ulx="59" uly="327" lrx="338" lry="500" xml:id="par2_3_TDM"/>
+			<zone ulx="59" uly="502" lrx="336" lry="618" xml:id="par2_4_TDM"/>
+			<zone ulx="59" uly="619" lrx="338" lry="743" xml:id="par2_5_TDM"/>
+			<zone ulx="63" uly="744" lrx="337" lry="831" xml:id="par2_6_TDM"/>
+			<zone ulx="341" uly="44" lrx="613" lry="175" xml:id="par2_7_TDM"/>
+			<zone ulx="342" uly="177" lrx="613" lry="316" xml:id="par2_8_TDM"/>
+			<zone ulx="342" uly="318" lrx="613" lry="443" xml:id="par2_9_TDM"/>
+			<zone ulx="343" uly="443" lrx="613" lry="571" xml:id="par2_10_TDM"/>
+			<zone ulx="343" uly="573" lrx="610" lry="698" xml:id="par2_11_TDM"/>
+			<zone ulx="343" uly="701" lrx="611" lry="826" xml:id="par2_12_TDM"/>
+		</surface>
+		<surface xml:id="Pagina3">
+			<graphic url='./img/mar_pag3.png' width='624.4px' height='912.4px' />
+			<zone ulx="19" uly="35" lrx="295" lry="204" xml:id="par3_1_TDM"/>
+			<zone ulx="19" uly="205" lrx="293" lry="362" xml:id="par3_2_TDM"/>
+			<zone ulx="20" uly="365" lrx="295" lry="458" xml:id="par3_3_TDM"/>
+			<zone ulx="20" uly="460" lrx="294" lry="586" xml:id="par3_4_TDM"/>
+			<zone ulx="20" uly="589" lrx="294" lry="762" xml:id="par3_5_TDM"/>
+		</surface>
+		<!--TORNAN DI MAREMMA BIBLIOGRAFIA-->
+		<surface xml:id="Pagina4-TornanDiMaremmaBibliografia">
+			<graphic url='./img/mar_bib1.png' width='638.4px' height='918.4px' />
+			<zone ulx="350" uly="250" lrx="617" lry="266" xml:id="par1_1TDM"/>
+			<zone ulx="347" uly="266" lrx="619" lry="543" xml:id="par1_TDM"/>
+			<zone ulx="349" uly="546" lrx="623" lry="836" xml:id="par2_TDM"/>
+		</surface>
+		<surface xml:id="Pagina5">
+			<graphic url='./img/mar_bib2.png' width='638.4px' height='917.4px' />
+			<zone ulx="28" uly="42" lrx="303" lry="413" xml:id="par3_TDM"/>
+			<zone ulx="30" uly="415" lrx="304" lry="822" xml:id="par4_TDM"/>
+			<zone ulx="311" uly="44" lrx="583" lry="158" xml:id="par5_TDM"/>
+		</surface>
+		<!--MALARIA-->
+		<surface xml:id="Pagina6-Malaria">
+			<graphic url='./img/mal_pag1.png' width='555.4px' height='825.4px' />
+			<zone ulx="302" uly="690" lrx="540" lry="707" xml:id="par1_MAL"/>
+			<zone ulx="302" uly="704" lrx="546" lry="760" xml:id="par1_1MAL" />
+		</surface>
+		<surface xml:id="Pagina7">
+			<graphic url='./img/mal_pag2.png' width='559.4px' height='813.4px' />
+			<zone ulx="27" uly="34" lrx="277" lry="184" xml:id="par2_1_MAL"/>
+			<zone ulx="28" uly="182" lrx="277" lry="307" xml:id="par2_2_MAL"/>
+			<zone ulx="28" uly="306" lrx="276" lry="549" xml:id="par2_3_MAL"/>
+			<zone ulx="29" uly="549" lrx="276" lry="682" xml:id="par2_4_MAL"/>
+			<zone ulx="30" uly="684" lrx="279" lry="738" xml:id="par2_5_MAL"/>
+			<zone ulx="283" uly="34" lrx="531" lry="131" xml:id="par2_6_MAL"/>
+			<zone ulx="283" uly="131" lrx="529" lry="299" xml:id="par2_7_MAL"/>
+			<zone ulx="283" uly="299" lrx="528" lry="351" xml:id="par2_8_MAL"/>
+			<zone ulx="283" uly="350" lrx="529" lry="540" xml:id="par2_9_MAL"/>
+			<zone ulx="283" uly="541" lrx="531" lry="740" xml:id="par2_10_MAL"/>
+		</surface>
+		<surface xml:id="Pagina8">
+			<graphic url='./img/mal_pag3.png' width='570.4px' height='825.4px' />
+			<zone ulx="44" uly="46" lrx="294" lry="215" xml:id="par3_1_MAL"/>
+			<zone ulx="46" uly="216" lrx="293" lry="383" xml:id="par3_2_MAL"/>
+			<zone ulx="47" uly="383" lrx="293" lry="508" xml:id="par3_3_MAL"/>
+			<zone ulx="49" uly="508" lrx="292" lry="697" xml:id="par3_4_MAL"/>
+			<zone ulx="48" uly="696" lrx="294" lry="751" xml:id="par3_5_MAL"/>
+			<zone ulx="299" uly="48" lrx="545" lry="195" xml:id="par3_6_MAL"/>
+			<zone ulx="300" uly="194" lrx="544" lry="319" xml:id="par3_7_MAL"/>
+			<zone ulx="299" uly="319" lrx="542" lry="402" xml:id="par3_8_MAL"/>
+			<zone ulx="299" uly="403" lrx="545" lry="497" xml:id="par3_9_MAL"/>
+			<zone ulx="299" uly="498" lrx="544" lry="548" xml:id="par3_10_MAL"/>
+			<zone ulx="299" uly="547" lrx="544" lry="613" xml:id="par3_11_MAL"/>
+		</surface>
+		<!--MALARIA BIBLIOGRAFIA-->
+		<surface xml:id="Pagina9-MalariaBibliografia">
+			<graphic url='./img/mal_bib1.png' width='560.4px' height='823.4px' />
+			<zone ulx="32" uly="630" lrx="275" lry="645" xml:id="bib1_1MAL"/>
+			<zone ulx="31" uly="646" lrx="279" lry="743" xml:id="bib1_MAL"/>
+			<zone ulx="279" uly="36" lrx="530" lry="141" xml:id="bib2_MAL"/>
+			<zone ulx="281" uly="141" lrx="530" lry="467" xml:id="bib3_MAL"/>
+			<zone ulx="283" uly="467" lrx="531" lry="740" xml:id="bib4_MAL"/>
+		</surface>
+		<surface xml:id="Pagina10">
+			<graphic url='./img/mal_bib2.png' width='559.4px' height='826.4px' />
+			<zone ulx="37" uly="46" lrx="285" lry="361" xml:id="bib5_MAL"/>
+			<zone ulx="37" uly="360" lrx="282" lry="445" xml:id="bib6_MAL"/>
+			<zone ulx="37" uly="447" lrx="283" lry="751" xml:id="bib7_MAL"/>
+			<zone ulx="287" uly="46" lrx="534" lry="246" xml:id="bib8_MAL"/>
+			<zone ulx="289" uly="247" lrx="534" lry="668" xml:id="bib9_MAL"/>
+			<zone ulx="291" uly="666" lrx="539" lry="751" xml:id="bib10_MAL"/>
+		</surface>
+		<!--NOTIZIE-->
+		<surface xml:id="Pagina11-Notizie">
+			<graphic url='./img/not1.png' width='564.4px' height='828.4px' />
+			<zone ulx="48" uly="39" lrx="292" lry="93" xml:id="bib11_MAL"/>
+			<zone ulx="49" uly="93" lrx="295" lry="346" xml:id="bib12_MAL"/>
+			<zone ulx="47" uly="354" lrx="293" lry="407" xml:id="bib13_MAL"/>
+			<zone ulx="47" uly="408" lrx="290" lry="746" xml:id="bib14_MAL"/>
+			<zone ulx="300" uly="46" lrx="544" lry="276" xml:id="bib15_MAL"/>
+			<zone ulx="300" uly="277" lrx="544" lry="392" xml:id="bib16_MAL"/>
+			<zone ulx="299" uly="393" lrx="546" lry="478" xml:id="bib17_MAL"/>
+			<zone ulx="302" uly="486" lrx="541" lry="507" xml:id="not1_1MAL"/>
+			<zone ulx="300" uly="509" lrx="542" lry="631" xml:id="not1_MAL"/>
+			<zone ulx="298" uly="634" lrx="543" lry="695" xml:id="not2_MAL"/>
+			<zone ulx="299" uly="699" lrx="541" lry="750" xml:id="not3_MAL"/>
+		</surface>
+		
+		
+	</facsimile>
+
+
+	<!--testo-->
+	<text xml:lang="it">
+  		<group>
+			<text xml:id="TDM"> <!--TORNAN DI MAREMMA-->
+			
+				<front>
+					<castList>
+						<castItem>
+							<role xml:id="verdiana">Verdiana</role>
+							<roleDesc>Proprietaria della bottega.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="giovanotto">Giovanotto</role>
+							<roleDesc>Personaggio principale della prosa.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="gianluca">Vecchio Gianluca</role>
+							<roleDesc>Amico del padre.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="marcello">Babbo Marcello</role>
+							<roleDesc>Padre di uno dei personaggi.</roleDesc>
+						</castItem>
+					</castList>
+				</front>
+
+				<body>
+					<div xml:id="maremma">
+						<pb n="1" />
+						<cb n="2" />
+
+						<head facs="#par1_1_TDM" xml:id="pag1_1">
+							<lb n="1" /><hi rend="head">TORNAN DI <placeName ref="#MAR">MAREMMA</placeName>.</hi>
+						</head>
+
+						<p facs="#par1_2_TDM" xml:id="pag1_2">
+							<lb n="2" />In una botteguccia d'un povero casolare alle falde della
+							<lb n="3" />montagna, stavano due pastori attempati oltre la cinquan-
+							<lb n="4" break="no"/>tina i quali, appena che fui entrato, attirarono tutta la mia
+							<lb n="5" />attenzione per una certa loro aria di impazienza e di sgo-
+							<lb n="6" break="no"/>mento, per la quale pareva non potessero trovare fermezza.
+							<lb n="7" />Si asciugavano il sudore della faccia senza che fosse caldo,
+							<lb n="8" />sospiravano forte e, barattando tra loro occhiate dolorose
+							<lb n="9" />e pochi monosillabi, non levavano un momento gli occhi
+							<lb n="10" />dalla vetrata per guardare attenti sulla via che per quattro
+							<lb n="11" />buoni tiri di schioppo si stendeva bianca e polverosa da-
+							<lb n="12" break="no"/>vanti alla porta.
+						</p>
+
+						<p facs="#par1_3_TDM" xml:id="pag1_3">
+							<seg ana="#verdiana"><lb n="13" />— Voi vorrete bere, eh, giovanotto? -</seg>mi domandò la padrona
+							<lb n="14" />vedendomi sedere in disparte a un tavolino di legno
+							<lb n="15" />tinto.
+							<seg ana="#giovanotto"><lb n="16" />— Mangerei anche un boccone, Verdiana, se ci avete
+							<lb n="27" />qualche cosa di buono da darmi.</seg>
+							<seg ana="#verdiana"><lb n="18" />— E sa -</seg> disse dopo avermi un pò osservato <seg ana="#verdiana">- mi
+							<lb n="19" />scusi tanto perchè proprio non l'avevo raffigurato. Che fa?
+							<lb n="20" />sta bene? O la <choice><orig>su'</orig><reg>sua</reg></choice> famiglia è fiera?</seg>
+							<seg ana="#giovanotto"><lb n="21" />— Tutti bene. Grazie. E voi?</seg>
+						</p>
+
+						<p facs="#par1_4_TDM" xml:id="pag1_4">
+							<seg ana="#verdiana">
+								<lb n="22" />— <choice><sic>Sissignore</sic><corr resp="#GDP">Sì signore</corr></choice>, mi contento. Quando devo andar male,
+								<lb n="23" />vada sempre così. O con chi si discorreva di lei l’altro
+								<lb n="24" />giorno? Ah! Ci passò quello delle strade che viene a con-
+								<lb n="25" break="no"/>tare i monti <choice><orig>de’</orig><reg>dei</reg></choice> sassi.... sarebbe l’ingegnere?
+								<lb n="26" />Mi domandò se c’era più stato, e io gli dissi di no. Se <choice><orig>vole</orig><reg>vuole</reg></choice> che gli af-
+								<lb n="26" break="no"/>frittelli dell’<choice><orig>ova</orig><reg>uova</reg></choice>, si fa in un momento; <choice><sic>se no</sic><corr resp="#GDP">sennò</corr></choice>, gli posso dare
+								<lb n="28" />un po’ di cacio fresco ma proprio <choice><orig>bono</orig><reg>buono</reg></choice>. Non ci ho altro.
+							</seg>
+							<seg ana="#giovanotto"><lb n="29" />— Tre uova pochissimo cotte, e subito.</seg>
+						</p>
+
+						<p facs="#par1_5_TDM" xml:id="pag1_5">
+							<seg ana="#verdiana"><lb n="30" />— <choice><sic>Sissignore</sic><corr resp="#GDP">Sì signore</corr></choice>.</seg> — E si avviò per andarmele a preparare.
+							<lb n="31" />Ma quando ebbe fatto quattro passi, tornò indietro per dirmi:
+							<seg ana="#verdiana">
+								<lb n="32" />— A proposito! Ci sarebbe del baccalà che ho lessato
+								<lb n="33" />per quest’<choice><orig>omini</orig><reg>uomini</reg></choice> e per quelli che devon’arrivare. Si deve
+								<lb n="34" />sentire se <choice><orig>glie ne</orig><reg>gliene</reg></choice> voglion ricedere un po’?
+							</seg>
+							<seg ana="#giovanotto">
+								<lb n="35" />— No, no; lasciate correre, Verdiana. Piuttosto, a pro-
+								<lb n="36" break="no"/>posito di questi uomini, ditemene qualche cosa: chi sono?
+								<lb n="37" />di dove vengono? chi deve arrivare? che hanno, chè mi
+								<lb n="38" />par di vederli tanto affannati?
+							</seg>
+						</p>
+
+						<p facs="#par1_6_TDM" xml:id="pag1_6">
+							<seg ana="#verdiana">
+								<lb n="39" />— Hanno il mal del povero, <choice><sic>glie lo</sic><corr resp="#GDP">glielo</corr></choice> dico io cos’hanno;
+								<lb n="40" />quel malaccio che si tira dietro le sette piaghe peggio della
+								<lb n="41" />carestia. So lo crede da un par d’ore che son qui, m’hanno
+								<lb n="42" />straziato il <choice><orig>core</orig><reg>cuore</reg></choice> che mi par d’essere come quando s’è fatto
+								<lb n="43" />un sognaccio <choice><orig>colla</orig><reg>con la</reg></choice> febbre. Proprio, a volte, si dà certi casi
+								<lb n="44" />che, in verità, anche a esser cristiani, ci sarebbe da dire
+								<lb n="45" />certe eresie da mettere a <choice><orig>risico</orig><reg>rischio</reg></choice> la <choice><sic>salvazione</sic><corr resp="#GDP">salvezza</corr></choice> dell’anima. Lo
+								<lb n="46" />vede quello appoggiato al banco che si gratta la barba?
+							</seg>
+						</p>
+
+						<p facs="#par1_7_TDM" xml:id="pag1_7">
+							<seg ana="#verdiana">
+								<lb n="47" />Quello lì è il babbo d’un giovanotto che s’innamorò della
+								<lb n="48" />figliola di quell’altro. Son tutt’e due di per in su; il posto
+								<lb n="49" />come si chiama non <choice><sic>glie l’ho</sic><corr resp="#GDP">gliel'ho</corr></choice> domandato; ma dev’ essere
+								<lb n="50" /><choice><sic>dimolto</sic><corr resp="#GDP">di molto</corr></choice> lontano perché dianzi alle dieci quando mi sono
+								<lb n="51" />arrivati, erano stracchi che non ne potevan più, e m’hanno
+								<lb n="52" />detto che <choice><sic>s’eran</sic><corr resp="#GDP">erano</corr></choice> partiti a levata di sole. Insomma, per fare
+								<lb n="53" />il discorso breve, dice che <choice><orig>que’</orig><reg>quei</reg></choice> ragazzi si volevano sposare
+								<lb n="54" />a tutti i costi e non c’era, dice, neanche tanto da comprare
+								<lb n="55" />le panchette del letto. Allora lui, si direbbe il giovanotto,
+								<lb n="56" />che non s’era <choice><orig>ma’</orig><reg>mai</reg></choice> mosso da casa perché pare che avesse
+								<lb n="57" />poca salute, fece un <choice><orig>cor</orig><reg>cuor</reg></choice> risoluto, <choice><orig>s’</orig><reg>si</reg></choice>attruppò con <choice><orig>de’</orig><reg>dei</reg></choice> pecorai
+								<lb n="58" />di <placeName ref="#M_FIU">Fiumalbo</placeName> e se n’andò per le <placeName ref="#MAR">Maremme</placeName> a tentar la ven-
+								<lb n="59" break="no"/>tura anche lui. Ma ora, aspetti, gli dico che faccia sentire
+								<lb n="60" />anche a lei l’ultima lettera che gli ha scritto <choice><orig>’l su’</orig><reg>il suo</reg></choice> figliolo.
+							</seg>
+							<seg ana="#giovanotto">
+								<lb n="61" />— No, no! Dio ve ne guardi! Raccontate, raccontate,
+								<lb n="62" />Verdiana.
+							</seg>
+						</p>
+
+						<pb n="2" />
+						<cb n="1" />
+						<p facs="#par2_1_TDM" xml:id="pag2_1">
+							<seg ana="#verdiana"><lb n="1" />— O l’<choice><orig>ova</orig><reg>uova</reg></choice> non le <choice><orig>vole</orig><reg>vuole</reg></choice>?</seg>
+							<seg ana="#giovanotto"><lb n="2" />— Non importa. Datemi un po’ di cacio e tornate qui. —</seg>
+							<lb n="3" />Io, benché non sapessi ancora di che cosa si trattava, guar-
+							<lb n="4" break="no"/>davo con crescente compassione <choice><orig>que’</orig><reg>quei</reg></choice> due poveri vecchi stra-
+							<lb n="5" break="no"/>lunati, pallidi e polverosi i quali ora sedendo, ora guardan-
+							<lb n="6" break="no"/>domi sconsolati, e non trovando mai posa in un luogo, pa-
+							<lb n="7" break="no"/>reva che cercassero dove liberarsi da un pensiero tormen-
+							<lb n="8" break="no"/>toso che li perseguitasse.
+							<seg ana="#gianluca"><lb n="9" />— Che ore sono, signore? -</seg>
+							<lb n="10" />Mi domandò finalmente uno dei vecchi.
+						</p>
+
+						<p facs="#par2_2_TDM" xml:id="pag2_2">
+							<seg ana="#gianluca"><lb n="11" />— Sentite? Suona mezzogiorno ora alla <placeName ref="#M_PIE">Pieve</placeName>. —</seg>
+							<lb n="12" />Si levarono il cappello, dissero l'<foreign xml:lang="la">angelus Domini</foreign> appog-
+							<lb n="13" break="no"/>giandosi coi gomiti ai regoli della vetrata e, dopo essersi
+							<lb n="14" />scambiati uno sguardo meno desolato degli altri, tornarono
+							<lb n="15" />a guardare attenti alla via.
+							<lb n="16" />In quel momento la padrona mi pose in tavola una fetta
+							<lb n="17" />di cacio sopra un foglio giallo, un bicchiere e un fiasco di
+							<lb n="18" />vino, e sedè di nuovo di faccia a me domandandomi dove
+							<lb n="19" /><choice><orig>s’era</orig><reg>eravamo</reg></choice> rimasti.
+							<seg ana="#giovanotto"><lb n="20" />— Alla lettera che il giovanotto...</seg>
+							<seg ana="#verdiana">
+								<lb n="21" />— Ah! <choice><sic>sissignore</sic><corr resp="#GDP">sì signore</corr></choice>. Se sentisse una bella lettera! Quello,
+								<lb n="22" />secondo me, dev’essere un giovanotto che deve aver letto
+								<lb n="23" /><choice><sic>dimolto</sic><corr resp="#GDP">di molto</corr></choice> perchè... Ma, aspetti, gli domando se <choice><sic>glie la</sic><corr resp="#GDP">gliela</corr></choice> <choice><orig>vol</orig><reg>vuol</reg></choice>
+								<lb n="24" />far legg...
+							</seg>
+						</p>
+
+						<p facs="#par2_3_TDM" xml:id="pag2_3">
+							<seg ana="#giovanotto"><lb n="25" />— No, no! v’ho detto di no.</seg>
+							<seg ana="#verdiana">
+								<lb n="26" />— Insomma, una lettera gli dico!... che, a male aggua-
+								<lb n="27" break="no"/>gliare, dice così: Dice che hanno fatto bene a mandargli
+								<lb n="28" />a dire della malattia della ragazza; che in quanto a restar
+								<lb n="29" />butterata nel viso non se ne dessero pena, chè a lui non
+								<lb n="30" /><choice><sic>glie ne</sic><corr resp="#GDP">gliene</corr></choice> importava nulla purché la <choice><orig>su’</orig><reg>sua</reg></choice> ragazza fosse restata
+								<lb n="31" />sempre della medesima idea di volergli bene: che lui era
+								<lb n="32" />fiero; che la <placeName ref="#MAR">Maremma</placeName>, grazie a Dio, gli era andata bene,
+								<lb n="33" />e che intanto gli mandava una ventina di lire per le prime
+								<lb n="34" />spese. <choice><sic>Eppoi</sic><corr resp="#GDP">E poi</corr></choice> tant’altre cose, <choice><sic>eppo’</sic><corr resp="#GDP">e poi</corr></choice> da ultimo dice che il dì
+								<lb n="35" />otto, che sarebbe oggi, ritornava e che mandava un bacio
+								<lb n="36" />a tutti e anche alla <choice><orig>su’</orig><reg>sua</reg></choice> Giuditta. <choice><sic>Eppoi</sic><corr resp="#GDP">E poi</corr></choice>, prima di finire, gli
+								<lb n="37" />dice che in caso d’una disgrazia <choice><sic>glie l’ hann’a</sic><corr resp="#GDP">gliel'hanno a</corr></choice> mandare
+								<lb n="38" />scritto subito perchè lui a casa non ci sarebbe più ritor-
+								<lb n="39" break="no"/>nato. —
+							</seg>
+						</p>
+
+						<p facs="#par2_4_TDM" xml:id="pag2_4">
+							<lb n="40" />I vecchi <choice><orig>s’eran</orig><reg>si erano</reg></choice> fermati a sedere, e ci guardavano fissi a
+							<lb n="41" />bocca aperta.
+							<seg ana="#giovanotto">
+								<lb n="42" />— Dite più adagio, Verdiana, perché vi stanno a sen-
+								<lb n="43" break="no"/>tire.
+							</seg>
+							<seg ana="#verdiana"><lb n="44" />— Eh! povera gente, chi sa <choice><orig>dov’</orig><reg>dove</reg></choice> hanno la testa</seg> — mi ris-
+							<seg ana="#verdiana">
+								<lb n="45" break="no"/>spose la padrona e continuò:
+								<lb n="46" />— Il <choice><orig>su’</orig><reg>suo</reg></choice> babbo del giovanotto dice che gli rispose su-
+								<lb n="47" break="no"/>bito la settimana passata che l’aspettavano a gloria, e che
+								<lb n="48" />la ragazza era addirittura fuor di pericolo.
+							</seg>
+							<seg ana="#giovanotto"><lb n="49" />— <choice><sic>Eppoi</sic><corr resp="#GDP">E poi</corr></choice>?</seg>
+						</p>
+
+						<p facs="#par2_5_TDM" xml:id="pag2_5">
+							<seg ana="#verdiana">
+								<lb n="50" />— <choice><sic>Eppoi</sic><corr resp="#GDP">E poi</corr></choice>, per fare il discorso breve, la ragazza cominciò
+								<lb n="51" />a peggiorare appena andato via il postino; la sera, peg-
+								<lb n="52" break="no"/>gio; la mattina dopo, peggio che mai, e ieri sera, per fare
+								<lb n="53" />un discorso solo, rese l’anima a Dio e a quest’ora è per la
+								<lb n="54" />strada che la portano al camposanto.
+							</seg>
+							<seg ana="#marcello"><lb n="55" />— O mio Dio, mio Dio, pigliate anche me, non ne posso
+								<lb n="56" />più, non ne posso più.— </seg> Così dicendo, il babbo della ragazza,
+							<lb n="57" />che aveva sentito le ultime parole del racconto, si buttò
+							<lb n="58" />attraverso alla tavola già apparecchiata per loro, dando in
+							<lb n="59" />un largo scoppio di pianto e lamentandosi con voce ranto-
+							<lb n="60" break="no"/>losa: <seg ana="#marcello">— Ah! ah! ah! —</seg>
+						</p>
+
+						<p facs="#par2_6_TDM" xml:id="pag2_6">
+							<lb n="61" />Detti un’ occhiata di rimprovero alla padrona e mi alzai
+							<lb n="62" />all’ improvviso per andare da lui; ma tornai subito al mio
+							<lb n="63" />posto, preso da un senso di rispetto per la santa dispera-
+							<lb n="64" break="no"/>zione di quell’uomo.
+							<lb n="65" />Il suo compagno gli si avvicinò, gli pose le mani sulle
+							<lb n="66" />spalle e si piegò su lui per dirgli qualche parola di con-
+							<lb n="67" break="no"/>solazione; ma il pianto gli serrava la gola. E allora guar-
+						</p>
+
+						<cb n="2" />
+						<p facs="#par2_7_TDM" xml:id="pag2_7">
+							<lb n="1" break="no"/>dava noi e accennava il suo compagno, e si contorceva e si
+							<lb n="2" />mordeva le labbra con una espressione ora di stupido
+							<lb n="3" />dolore, ora di rabbia feroce. Finalmente fece un <choice><orig>cor</orig><reg>cuor</reg></choice> riso-
+							<lb n="4" break="no"/>luto: si strisciò con una mano la barba, scosse la testa e,
+							<lb n="5" />voltosi al suo compagno, gli disse con voce ferma e sonora:
+							<seg ana="#gianluca"><lb n="6" />— Animo, Marcello. Fatevi coraggio, via, fatevi... —</seg> Ma
+							<lb n="7" />non potè continuare, chè singhiozzandosi buttò sulle spalle
+							<lb n="8" />dell’amico a lamentarsi: <seg ana="#marcello">— Dio ci vedeva nel <choice><orig>core</orig><reg>cuore</reg></choice>, non
+							<lb n="9" />ci doveva <choice><sic>gastigare</sic><corr resp="#GDP">castigare</corr></choice>! —</seg>
+							<seg ana="#giovanotto"><lb n="10" />— Che mondo, eh, Verdiana? —</seg> dissi sbacchiando il cap-
+							<lb n="11" break="no"/>pello e il pugno sulla tavola.
+						</p>
+
+						<p facs="#par2_8_TDM" xml:id="pag2_8">
+							<seg ana="#verdiana">
+								<lb n="12" />— Che <choice><orig>voi</orig><reg>vuoi</reg></choice> che gli dica? Ho cinquant’anni <choice><orig>sonati</orig><reg>suonati</reg></choice> e a un
+								<lb n="13" />affare a questa maniera non mi c’ero ancora ritrovata. —
+							</seg>
+							<lb n="14" />Il vecchio, sentendo come io partecipassi al loro dolore,
+							<lb n="15" />corse da me; e quasi che io solo fossi stato buono di ren-
+							<lb n="16" break="no"/>dergli la pace, mi si raccomandò, stringendomi forte la mano
+							<lb n="17" />fra i grossi calli delle sue, che non l’abbandonassi, per ca-
+							<lb n="18" break="no"/>rità; che l’assistessi, per l’amor di Dio.
+							<seg ana="#giovanotto"><lb n="19" />— Figuratevi, amico mio! Ma che posso fare per voi?</seg>
+							<seg ana="#gianluca">
+								<lb n="20" />— Non ci abbandoni. Noi non si voleva neanche venire. Ma
+								<lb n="21" />quelle donne non c’è stato versi di persuaderle; ci hanno
+								<lb n="22" />voluto mandare per forza incontro a quel ragazzo per ve-
+								<lb n="23" break="no"/>dere di prepararlo, che se ne facesse una ragione....
+							</seg>
+						</p>
+
+						<p facs="#par2_9_TDM" xml:id="pag2_9">
+							<seg ana="#giovanotto">
+								<lb n="24" />— Sta tutto bene. Ma che gli devo dire io meglio di voi
+								<lb n="25" />che siete suo padre?
+							</seg>
+							<seg ana="#marcello">
+								<lb n="26" />— Non importa. Gli dica quello che <choice><orig>vòle</orig><reg>vuole</reg></choice>, lei signoria
+								<lb n="27" />gli dirà sempre meglio di noi che siamo <choice><orig>du'</orig><reg>due</reg></choice> poveri igno-
+								<lb n="28" break="no"/>ranti. Mi faccia la carità, signore, perché io, ormai lo sento,
+								<lb n="29" />appena lo vedo mi manca il <choice><orig>core</orig><reg>cuore</reg></choice> e mi tradisco. Mi prometta
+								<lb n="30" />non lasciarci soli, me lo prometta, <choice><sic>se no</sic><corr resp="#GDP">sennò</corr></choice> quel ragazzo mi
+								<lb n="31" />fa qualche pazzia. <choice><sic>Eppoi</sic><corr resp="#GDP">E poi</corr></choice> ci comandi, e da poveri che siamo
+								<lb n="32" />c’ingegneremo di ricompensare la <choice><orig>su'</orig><reg>sua</reg></choice> carità.
+							</seg>
+							<seg ana="#verdiana">
+								<lb n="33" />— Mi tratterrò, via. Ma ora datevi pace e bevete un
+								<lb n="34" />bicchier di vino.
+							</seg>
+						</p>
+
+						<p facs="#par2_10_TDM" xml:id="pag2_10">
+							<seg ana="#gianluca">
+								<lb n="35" />— Non potrei... No, in coscienza, non potrei., no, lo
+								<lb n="36" />ringrazio., non lo bevo davvero.
+							</seg>
+							<seg ana="#verdiana"><lb n="37" />— O il vostro compagno?</seg>
+							<seg ana="#gianluca"><lb n="38" />— Ora s’è dato un po’ di pace; lasciamolo stare.</seg>
+							<seg ana="#verdiana"><lb n="39" />— Come volete. —</seg> Il vecchio tornò adagio adagio dal
+							<lb n="40" />suo compagno e tutti e due si misero di nuovo a guardare
+							<lb n="41" />silenziosi in fondo alla via.
+							<seg ana="#verdiana"><lb n="42" />— Non lo finisce il cacio? —</seg> Mi domandò la padrona.
+							<seg ana="#giovanotto"><lb n="43" />— Non ho più fame.</seg>
+							<seg ana="#verdiana"><lb n="44" />— Beve più?</seg>
+							<seg ana="#giovanotto"><lb n="45" /> — No; portate via ogni cosa: ho finito. —</seg>
+						</p>
+
+						<p facs="#par2_11_TDM" xml:id="pag2_11">
+							<lb n="46" />Accesi la pipa e mi misi in fondo alla bottega seduto
+							<lb n="47" />a guardare di sopra alle spalle dei vecchi la campagna al-
+							<lb n="48" break="no"/>legra e gli alberi sottili della via che, tremolanti alla
+							<lb n="49" />brezza del marino, lasciavano il loro cotone che, vagando
+							<lb n="50" />intorno per l’aria, cadeva fra gli olivi bianco, lento e silen-
+							<lb n="51" break="no"/>zioso come la neve.
+							<lb n="52" />Mi perdevo dietro alle mie fantasticherie malinconiche
+							<lb n="53" />quando:
+							<seg ana="#verdiana">
+								<lb n="54" />— Il cartello di sull’uscio non l’ho mica fatto mutare
+								<lb n="55" />ancora, sa? — Mi venne a dire a bassa voce la padrona.
+							</seg>
+							<seg ana="#giovanotto"><lb n="56" />— Che cartello?</seg>
+						</p>
+
+						<p facs="#par2_12_TDM" xml:id="pag2_12">
+							<seg ana="#verdiana">
+								<lb n="57" />— O non si ricorda che l’altra volta ci rise tanto e mi
+								<lb n="58" />disse che era pieno di spropositi?
+							</seg>
+							<seg ana="#giovanotto"><lb n="59" />— Ah! sì, sì.</seg>
+							<seg ana="#verdiana">
+								<lb n="60" />— Aveva ragione, sa? Un giorno il <choice><sic>figliuolo</sic><corr resp="#GDP">figlio</corr></choice> dello Scoti,
+								<lb n="61" />quello che va a scuola dal Piovano che come lui, dice, per
+								<lb n="62" />quel che sia la rattenitiva d’imparare le cose, non ce ne
+								<lb n="63" /><choice><orig>pol’</orig><reg>possono</reg></choice> esser altri, ci stette quasi un’ora per ricopiarlo tal
+								<lb n="64" />quale; <choice><orig>eppoi</orig><reg>e poi</reg></choice>, dopo, fra lui e il sig. Cappellano ci hanno
+								<lb n="65" />studiato tanto e m'hanno detto che lo sbaglio c’era sicuro
+								<lb n="66" />perché dice che ci mancava <choice><sic>l’i</sic><corr resp="#GDP">lì</corr></choice> dove ci diceva generi... Di
+								<lb n="67" />che ride?
+							</seg>
+						</p>
+
+						<pb n="3" />
+						<cb n="1" />
+
+						<p facs="#par3_1_TDM" xml:id="pag3_1">
+							<seg ana="#giovanotto"><lb n="1" />— Io?!</seg>
+							<seg ana="#verdiana">
+								<lb n="2" />— Credevo... sa, a volte.. Dunque anche lei mi dice che
+								<lb n="3" />ora sta bene?
+							</seg>
+							<seg ana="#giovanotto">
+								<lb n="4" />— Divinamente. E non lo fate toccar più, se no ve lo
+								<lb n="5" />sciupano.
+							</seg>
+							<seg ana="#verdiana">
+								<lb n="6" />— E allora, <choice><sic>sissignore</sic><corr resp="#GDP">sì signore</corr></choice>, <choice><orig>vòl</orig><reg>vuol</reg></choice> dire che quando torna Cec-
+								<lb n="7" break="no"/>chino legnaiolo <choice><sic>glie lo</sic><corr resp="#GDP">glielo</corr></choice> <choice><orig>fo</orig><reg>faccio</reg></choice> accomodare, si direbbe, in questa
+								<lb n="8" />conformità. —</seg> E tirò fuori di seno la copia corretta del
+							<lb n="9" />cartello per farmela vedere.
+							<lb n="10" />Era passata una ventina di minuti quando in fondo alla
+							<lb n="11" />strada comparve un cane bianco da pastori. I vecchi si al-
+							<lb n="12" break="no"/>zarono con impeto e si misero a guardar bene facendosi
+							<lb n="13" />ombra agli occhi con la mano. Ma il cane, dopo aver dato
+							<lb n="14" />una nasata all’aria, tornò indietro.
+						</p>
+
+						<p facs="#par3_2_TDM" xml:id="pag3_2">
+							<seg ana="#verdiana">
+								<lb n="15" />— È ci sono, sapete? — disse la padrona ch’era andata
+								<lb n="16" />a guardare dalla finestra di cucina. — Non li sentite i
+								<lb n="17" />campanacci delle pecore?
+							</seg>
+							<seg ana="#marcello">
+									<lb n="18" />— Sta’! son loro davvero, Gian Luca — disse il babbo
+									<lb n="19" />della ragazza. — Animo! fatevi core, e andiamogli incontro.
+							</seg>
+							<lb n="20" />Gian Luca era diventato bianco come un panno lavato.
+							<lb n="21" />S’alzò vacillando e, appoggiandosi al braccio dell’ amico,
+							<lb n="22" />s’ avviò incontro al <choice><orig>su’</orig><reg>suo</reg></choice> giovinotto. Io non mi mossi.
+							<lb n="23" />Già da qualche minuto avevo perso di vista i due vecchi
+							<lb n="24" />alla svoltata della via, quando vidi riapparire Gian Luca
+							<lb n="25" />solo che correva in su a balzelloni, gesticolando con le mani
+							<lb n="26" />all’aria come un demente. E dietro a lui subito l’altro
+							<lb n="27" />vecchio che si affaticava a seguitarlo e smaniante lo chia-
+							<lb n="28" break="no"/>mava senza essere ascoltato.
+						</p>
+
+						<p facs="#par3_3_TDM" xml:id="pag3_3">
+							<seg ana="#giovanotto"><lb n="29" />— Che sarà stato, Verdiana?</seg>
+							<seg ana="#verdiana"><lb n="30" />— Vergine santissima, che sarà stato? —</seg>
+							<lb n="31" />Il vecchio passò davanti alla bottega... <seg ana="#marcello">— Gian Luca!
+							<lb n="32" />Che v’è accaduto?</seg>
+							<seg ana="#gianluca"><lb n="33" />— Ah! ah! —</seg> disse trafelando dall’ ambascia e dalla fa-
+							<lb n="34" break="no"/>tica, e continuò la sua corsa affannosa, mandando un la-
+							<lb n="35" break="no"/>mento ad ogni sospiro.
+							<seg ana="#verdiana"><lb n="36" />— Ma che è accaduto, che è accaduto? —</seg>
+						</p>
+
+						<p facs="#par3_4_TDM" xml:id="pag3_4">
+							<lb n="37" />Il vecchio Marcello me lo disse: Il giovinotto impaziente
+							<lb n="38" />di rivedere la sua ragazza, alla prima scorciatoia che gli
+							<lb n="39" />avrebbe anticipato d’un par d’ore l’arrivo a casa, aveva
+							<lb n="40" />lasciato i suoi compagni, e via, come una capra, era sparito
+							<lb n="41" />in un batter d’occhio su <choice><orig>pei</orig><reg>per i</reg></choice> viottoli della poggiata, distrug-
+							<lb n="42" break="no"/>gendo così le previsioni amorose con tanta cura studiate
+							<lb n="43" />da <choice><orig>que'</orig><reg>quei</reg></choice> poveri vecchi e dalle loro donne sconsolate perché
+							<lb n="44" />la barbara notizia non lo colpisse atrocemente improvvisa.
+							<lb n="45" />Marcello seguitò la sua corsa dietro all’ amico, racco-
+							<lb n="46" break="no"/>mandandosi che l’aspettasse e chiamandolo a nome inutil-
+							<lb n="47" break="no"/>mente.
+						</p>
+
+						<p facs="#par3_5_TDM" xml:id="pag3_5">
+							<lb n="48" />Passarono le pecore quasi a corsa stimolate dalle grida
+							<lb n="49" />e dalle vergate degli uomini, i quali, sgomenti dell’accaduto,
+							<lb n="50" />senza sapere che nella bottega v’era un boccone prepa-
+							<lb n="51" break="no"/>rato anche per loro, tirarono innanzi mandando fischi e
+							<lb n="52" />sassate alle pigre; passarono i somari legati a fila per le
+							<lb n="53" />cavezze, sballottando fra sacelli e corbelli una donna e
+							<lb n="54" />due ragazzi che li cavalcavano; passò il nuvolo di polvere
+							<lb n="55" />sollevato da questa truppa tumultuosa, si allontanò adagio
+							<lb n="56" />adagiò il tintinnio de’ campanacci, e dopo poco si perse per
+							<lb n="57" />le forre del monte anche la voce di Marcello che sempre
+							<lb n="58" />più fioca e dolente chiamava <seg ana="#marcello">— Gian Luca, Gian Luca. —</seg>
+							<lb n="59" />La padrona, dando allora un’ultima occhiata dalla parte
+							<lb n="60" />dei poggi: <seg ana="#verdiana">— Povere creature ! —</seg> esclamò. Poi volgendosi
+							<lb n="61" />con un lungo sospiro alla sua bottega: <seg ana="#verdiana">— E ora, di tutto
+							<lb n="62" />quel baccalà che me ne faccio?! —</seg>
+							<lb n="63" /><persName ref="#RF">R. Fucini</persName>.
+						</p>
+
+					</div>
+				</body>
+			</text>
+
+			<text xml:id="bibliografiaTDM"> <!-- BIBLIOGRAFIA TORNAN DI MAREMMA -->
+				<body>
+					<div xml:id="biblio_maremma">
+						<pb n="4" />
+						<cb n="2" />
+
+						<head facs="#par1_1TDM" xml:id="pag4_1">
+							<lb n="1" /><hi rend="head">BIBLIOGRAFIA.</hi>
+						</head>
+
+						<p facs="#par1_TDM" xml:id="pag4_2">
+							<lb n="2" /><bibl><persName ref="#JGR" rend="italic">Johann Georg Rist</persName>'s <title level="m" rend="italic" xml:lang="de">Lebenserinnerungen, herausgegeben von
+							<lb n="3" />G. Poke.</title> (Memorie di <persName ref="#JGR">Giovanni Giorgio Rist</persName>, edite da
+							<lb n="4" />G. Poel). — 2 vol. Gotha, <persName ref="#FAP">Friedrich Andreas Perthes</persName>, <date when="1880">1880</date></bibl>.
+							<lb n="5" />La letteratura tedesca non è ricca di Ricordi, sebbene
+							<lb n="6" />essa conti molte autobiografie; ciò che è una cosa molto
+							<lb n="7" />diversa. Essa comincia ora ad arricchirsi per questo ri-
+							<lb n="8" break="no"/>spetto, e le memorie di <persName ref="#RV">Varnhagen</persName>, di Lang, di <persName ref="#FAP">Perthes</persName>,
+							<lb n="9" />possono senza scapitarci essere messe a fianco di ciò che la
+							<lb n="10" /><placeName ref="#B_FRA">Francia</placeName> ha di meglio in questo genere, sobbene il <term>"genere"</term>
+							<lb n="11" />abbia un carattere molto diverso nei due paesi. <bibl>Le <title level="m" rend="italic">Memorie</title>
+							<lb n="12" />di <persName ref="#JGR">Rist</persName></bibl> che annunziamo, e che ebbero un sì grande e legittimo
+							<lb n="13" />successo in <placeName ref="#B_GER">Germania</placeName>, possono essere considerate come un
+							<lb n="14" />reale acquisto per la letteratura tedesca e ad un tempo una
+							<lb n="15" />sorgente nuova e importante per la storia del <orgName ref="#PI">primo Impero</orgName>.
+							<lb n="16" />Queste memorie furono scritte <date from="1816" to="1818">dal 1816 al 1818</date> e non erano
+							<lb n="17" />destinate che alla famiglia dell’<persName ref="AF">A.</persName>; ciò che spiega certe
+							<lb n="18" />negligenze di stile che l’editore, ci pare, avrebbe dovuto
+							<lb n="19" />correggere; giacché <persName ref="#JGR">Rist</persName> è uno scrittore di prim’ordine, di
+							<lb n="20" />questa <orgName ref="#SR">scuola di Ritter e di Humboldt</orgName> della quale non so-
+							<lb n="21" break="no"/>pravvivono più guari altri aderenti che il maresciallo <persName ref="#HVM">Mol-
+							<lb n="22" break="no"/>tke</persName>: è un vero peccato che le continue sgrammaticature
+							<lb n="23" />sbertuccino questo stile nobile ad un tempo e originale, che
+							<lb n="24" />era abituale all’<persName ref="AF">A.</persName> anche nel buttar giù uno scritto non
+							<lb n="25" />destinato a veder mai la luce.
+						</p>
+
+						<p facs="#par2_TDM" xml:id="pag4_3">
+							<lb n="26" /><persName ref="#JGR">Rist</persName> nacque nel <date when="1775">1775</date> a <placeName ref="#B_HOL">Holstein</placeName>, figlio d’un pastore di
+							<lb n="27" />campagna. Dopo aver fatto i suoi studi universitari a <placeName ref="#B_IEN">Iena</placeName>
+							<lb n="28" />e <placeName ref="#B_KIE">Kiel</placeName> egli entrò all’età di 22 anni come segretario parti-
+							<lb n="29" break="no"/>colare nella casa del <persName ref="HVS">conte Schimmelmann</persName>, ministro delle
+							<lb n="30" />finanze a <placeName ref="#B_COP">Copenhagen</placeName>, di dove passò al ministero degli
+							<lb n="31" />affari esteri, allora diretto dal <persName ref="HVB">conte Bernstorff</persName>. Tutte que-
+							<lb n="32" break="no"/>ste persone, <persName ref="#JGR">Rist</persName> quanto e più che i suoi capi, seppero con-
+							<lb n="33" break="no"/>giungere il patriottismo politico per la <placeName ref="#B_DAN">Danimarca</placeName>, nel modo
+							<lb n="34" />più singolare, con il patriottismo morale e letterario per
+							<lb n="35" />la <placeName ref="#B_GER">Germania.</placeName> Egli pensa e scrive in tedesco e agisce in
+							<lb n="36" />danese press’a poco come gli Alsaziani pensarono e scris-
+							<lb n="37" break="no"/>sero in tedesco <date to="1789">fino al 1789</date> e anche <date to="1850">fino al 1850</date> pur mo-
+							<lb n="38" break="no"/>strando nello loro azioni il più ardente patriottismo fran-
+							<lb n="39" break="no"/>cese. Giovane appena compiuti venticinque anni, fu man-
+							<lb n="40" break="no"/>dato come segretario di legazione a <placeName ref="#B_PIE">Pietroburgo</placeName> e <placeName ref="#B_MOS">Mosca</placeName>
+							<lb n="41" />dove assistette all’incoronamento di <persName ref="ADR">Alessandro I</persName> e dove
+							<lb n="42" />malgrado la sua età egli doveva servire di <foreign xml:lang="la">ad latus</foreign> o, per
+							<lb n="43" />parlar chiaro, di sorvegliante del nobile ambasciatore le cui
+							<lb n="44" />attitudini ispiravano poca fiducia. Richiamato a <placeName ref="#B_COP">Copenaghen</placeName>
+							<lb n="45" />quando la <placeName ref="#B_RUS">Russia</placeName> abbandonò vergognosamente l’alleanza
+							<lb n="46" />dei neutri, egli fece un viaggio di quattro settimane in pieno
+							<lb n="47" />inverno dalla capitale russa a quella danese attraverso le
+							<lb n="48" />acque gelate del <placeName ref="#B_BAL">Baltico</placeName>, che fa drizzare i capelli solamente
+							<lb n="49" />a leggerlo e che è raccontato con una vivacità piena di mo-
+							<lb n="50" break="no"/>vimento. Mandato in <placeName ref="#B_SPA">Ispagna</placeName> nella stessa qualità che aveva 
+						</p>
+	
+						<pb n="5" />
+						<cb n="1" />
+						<p facs="#par3_TDM" xml:id="pag5_1">
+							<lb n="1" />avuto in <placeName ref="#B_RUS">Russia</placeName>, egli visitò nel suo viaggio <placeName ref="#B_PAR">Parigi,</placeName> vi strinse
+							<lb n="2" />relazione con tutti i personaggi importanti, fu presen-
+							<lb n="3" break="no"/>tato al primo console, e fece il viaggio di <placeName ref="#B_MAD">Madrid</placeName> ad occhi
+							<lb n="4" />aperti, ciò che ci valse un’ammirabile descrizione di un
+							<lb n="5" />paese a quel tempo ancora completamente separato dal re-
+							<lb n="6" break="no"/>sto dell’<placeName ref="#B_OCC">Occidente</placeName> e pieno del più vivo interesse pittoresco
+							<lb n="7" />e romantico. Dopo un anno di soggiorno a <placeName ref="#B_MAD">Madrid</placeName>, a <placeName ref="#B_ILD">S. II-
+							<lb n="8" break="no"/>defonso</placeName>, e <placeName ref="#B_ARA">Aranjuez</placeName>, divenne incaricato d’affari; e la pittura
+							<lb n="9" />dello stato politico e sociale della <placeName ref="#B_SPA">Spagna</placeName> <date from="1805" to="1806">dal 1805 al 1806</date>
+							<lb n="10" />appartiene a quel che v’ha di più <choice><sic>riescito</sic><corr resp="#GDP">riuscito</corr></choice> in quei volumi
+							<lb n="11" />dove tuttavia tutto sembra <choice><sic>riescito</sic><corr resp="#GDP">riuscito</corr></choice>. Il viaggio da <placeName ref="#B_MAD">Madrid</placeName>
+							<lb n="12" />a <placeName ref="#B_LIS">Lisbona</placeName> nel calore dell’ estate sempre a cavallo è un
+							<lb n="13" />riscontro ammirabile di quel viaggio da <placeName ref="#B_PIE">Pietroburgo</placeName> a
+							<lb n="14" /><placeName ref="#B_COP">Copenaghen</placeName> attraverso i ghiacci invernali di cui parlammo.
+							<lb n="15" />Dopo un soggiorno di un mese a <placeName ref="#B_LIS">Lisbona</placeName> di cui l<persName ref="AF">A.</persName> ci
+							<lb n="16" />presenta come in ogni dove i personaggi più eminenti o
+							<lb n="17" />caratterizzandoli con una rara finezza, egli va per mare a
+							<lb n="18" /><placeName ref="#B_LON">Londra</placeName> dove era stato nominato incaricato d’affari e dove ar-
+							<lb n="19" break="no"/>rivò alla fine del <date when="1806">1806</date>. Fu <persName ref="#JGR">Rist</persName> che negoziò con <persName ref="GC">Canning</persName>
+							<lb n="20" />sull’entrata della <placeName ref="#B_DAN">Danimarca</placeName> nell’alleanza anti-francese e
+							<lb n="21" />che mantenne con dignità e fermezza il principio della neu-
+							<lb n="22" break="no"/>tralità. Si sa quel che ne nacque e si conosce la brutalità 
+							<lb n="23" />piena di mala fede con cui l’<placeName ref="#B_ING">Inghilterra</placeName> gettò la <placeName ref="#B_DAN">Danimarca</placeName>
+							<lb n="24" />nell’alleanza francese ch’egli temeva. La storia ha pochi fatti
+							<lb n="25" />più crudeli e più sfrontati del bombardamento di <placeName ref="#B_COP">Cope-
+							<lb n="26" break="no"/>naghen</placeName>, in piena pace e senza pretesto alcuno, da parte di
+							<lb n="27" />una flotta inglese. <persName ref="#JGR">Rist</persName> racconta con una emozione dram-
+							<lb n="28" break="no"/>maticissima le angoscie di patriota ch’egli soffrì a <placeName ref="#B_LON">Londra</placeName>
+							<lb n="29" />e le spiegazioni che si scambiarono tra lui e il ministro in-
+							<lb n="30" break="no"/>glese, spiegazioni dove la vittima supera il sacrificatore di
+							<lb n="31" />tutta l’altezza morale che gli dà la purezza della sua co-
+							<lb n="32" break="no"/>scienza. 
+						</p>
+
+						<p facs="#par4_TDM" xml:id="pag5_2">
+							<lb n="33" />Dopo la rottura delle relazioni con l’<placeName ref="#B_ING">Inghilterra,</placeName> <persName ref="#JGR">Rist</persName> fu
+							<lb n="34" />mandato a <placeName ref="#B_HAM">Hamburgo</placeName>, posto importantissimo allora e che
+							<lb n="35" />doveva diventare anche più importante quando nel <date when="1810">1810</date> la
+							<lb n="36" />città e il territorio furono annessi all’Impero francese, e
+							<lb n="37" /><persName ref="#JGR">Rist</persName> divenne console-generale presso il governo generale
+							<lb n="38" />dei tre dipartimenti: non solo la contiguità della <placeName ref="#B_DAN">Dani-
+							<lb n="39" break="no"/>marca</placeName>, ma anche l’importanza politica europea che aveva
+							<lb n="40" />allora la posizione di <placeName ref="#B_HAM">Hambourg</placeName> fecero di <persName ref="#JGR">Rist</persName> per qualche
+							<lb n="41" />anno e massime <date from="1811" to="1813">dal 1811 al 1813</date>, il centro della diplomazia
+							<lb n="42" />danese. È interessante il vedere, quasi còlta sul fatto, la di-
+							<lb n="43" break="no"/>sposizione di questi poveri alleati, frementi sotto il giogo
+							<lb n="44" />del signore; o la storia dell’amministrazione francese di
+							<lb n="45" /><placeName ref="#B_HAM">Hambourg,</placeName> che fa <persName ref="#JGR">Rist</persName>, è certamente la parte più impor-
+							<lb n="46" break="no"/>tante, dal punto di vista storico, di tutto il libro. Diremo
+							<lb n="47" />passando che la testimonianza di <persName ref="#JGR">Rist</persName> è affatto favorevole
+							<lb n="48" />a <persName>Davoust</persName> in quanto concerne la sua superiorità intellet-
+							<lb n="49" break="no"/>tuale e la sua integrità e che viene completamente in appoggio dello memorie del <persName ref="EPN">principe d’Eckmiibl</persName>, recentemente
+							<lb n="50" />pubblicate da <persName ref="ALB">M<gap reason="illegible" extent="5" unit="chars"/> de Blocqueville</persName> e analizzate in questo
+							<lb n="51" />periodico. Per contro <persName ref="#JGR">Rist</persName> ci dipinge l’inesorabile durezza
+							<lb n="52" />dell’uomo, e la sua devozione cieca all’Imperatore coi colori
+							<lb n="53" />più vistosi, e non ci si meraviglia, dopo averlo letto, della
+							<lb n="54" />memoria che lasciò in <placeName ref="#B_GER">Germania</placeName> questo rigido soldato, che
+							<lb n="55" />l’A. novera tuttavia tra i più grandi uomini del suo tempo.
+							<lb n="56" />L’incidente degli <choice><orig>Spagnuoli</orig><reg>Spagnoli</reg></choice> in <placeName ref="#B_DAN">Danimarca,</placeName> il funzionare del
+							<lb n="57" />blocco continentale, la presa, la perdita e la ripresa di
+							<lb n="58" /><placeName ref="#B_HAM">Amburgo</placeName> per parte di <persName ref="AT">Tettenborn</persName>, il richiamo di <persName ref="#JGR">Rist</persName>, il
+							<lb n="59" />suo invio a <placeName ref="#B_PAR">Parigi</placeName> <date from="1814" to="1815">del 1814 al 1815</date> come commissario di
+							<lb n="60" />liquidazione, la descrizione della <placeName ref="#B_FRA">Francia</placeName> sotto la <orgName ref="#PR">prima Re-
+							<lb n="61" break="no"/>staurazione</orgName> , i ritratti poco lusinghieri di <persName ref="LRF">Luigi XVIII</persName>, del
+							<lb n="62" /><persName ref="#CA">conte d’Artois</persName>, del <persName ref="DB">duca di Berry</persName>, del <persName ref="PLDB">sig. de Blacas</persName> e l’ar-
+							<lb n="63" break="no"/>rivo di <persName ref="NB">Napoleone</persName> all’<placeName ref="#B_ISO">isola d’Elba</placeName> compiono il resto del se-
+							<lb n="64" break="no"/>condo volume che supera anche in interesse il primo. Per
+							<lb n="65" />ogni dove sono mescolati ritratti di uomini celebri del
+							<lb n="66" />tempo, disegnati con mano maestra, con quadri di costumi,
+						</p>
+
+						<cb n="2" />
+						<p facs="#par5_TDM" xml:id="pag5_3">
+							<lb n="1" />e narrazioni di avvenimenti. L’<persName ref="AF">A.</persName> si ferma al <date when="1815">1815</date> quando
+							<lb n="2" />egli cadde in disgrazia e lasciò per sempre il servizio. Non
+							<lb n="3" />aveva che quarant’anni e approfittò dei suoi ozi involon-
+							<lb n="4" break="no"/>tari per narrare ai suoi figli la storia della sua giovinezza
+							<lb n="5" />e della sua vita pubblica. E stato certamente un buon pen-
+							<lb n="6" break="no"/>siero quello dei suoi nipoti di darci, oggi che tutti gli attori
+							<lb n="7" />di quel tempo sono morti, queste pagine piene di vita che
+							<lb n="8" />ci fanno amare quest'uomo di cuore, tenero, sincero, co-
+							<lb n="9" break="no"/>raggioso e pieno di dignità, di cui quasi non conoscemmo
+							<lb n="10" />finora nemmeno il nome.
+						</p>
+					</div>
+				</body>
+			</text>
+
+			<text xml:id="MAL"> <!-- MALARIA -->
+
+				<front>
+					<castList>
+						<castItem>
+							<role xml:id="signore">Signore</role>
+						</castItem>
+						<castItem>
+							<role xml:id="rospo">Rospo</role>
+							<roleDesc>Personaggio della prosa.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="voci">Voci</role>
+							<roleDesc>Senso comune, pensiero dei cittadini.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="carmine">Compare Carmine</role>
+							<roleDesc>Oste del lago.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="nanni">Nanni</role>
+							<roleDesc>Personaggio della prosa.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="giovanetto">Giovanetto</role>
+							<roleDesc>Figlio di Compare Carmine.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="cirino">Cirino lo Scimunito</role>
+							<roleDesc>Personaggio della prosa.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="ammazzamogli">Ammazzamogli</role>
+							<roleDesc>Personaggio della prosa.</roleDesc>
+						</castItem>
+						<castItem>
+							<role xml:id="figlia">Figlia di massaro Turi Orichiazza</role>
+							<roleDesc>Personaggio della prosa.</roleDesc>
+						</castItem>
+					</castList>
+				</front>
+
+				<body>
+					<div xml:id="malaria">
+						<pb n="6" />
+						<cb n="2" />
+
+						<head facs="#par1_MAL" xml:id="pag6_1">
+							<lb n="1" /><hi rend="head">MALARIA.</hi>
+						</head>
+
+						<p facs="#par1_1MAL" xml:id="pag6_2">
+							<lb n="2" />E’ vi par di toccarla <choice><sic>colle</sic><corr resp="#GDP">con le</corr></choice> mani, come dalla terra grassa
+							<lb n="3" />che fumi, là, <choice><sic>dappertutto</sic><corr resp="#GDP">da per tutto</corr></choice>, torno torno alle montagne che 
+							<lb n="4" />la chiudono, da <placeName ref="#MA_AGN">Agnone</placeName> al <placeName ref="#MA_MON">Mongibello</placeName> incappucciato di 
+							<lb n="5" />neve, stagnante nella pianura, a guisa dell’ afa pesan-
+							<lb n="6" />te di luglio. Vi nasce o vi muore il solo di brace, a la 
+						</p>
+
+						<pb n="7" />
+						<cb n="1" />
+						<p facs="#par2_1_MAL" xml:id="pag7_1">
+							<lb n="7" />luna smorta, e la <hi rend="italic">Puddara</hi>, che sembra navigare in un 
+							<lb n="8" />mare che svapori, e gli uccelli e le margherite bianche 
+							<lb n="9" />della primavera, e l’estate arsa; e vi passano in lunghe file 
+							<lb n="10" />nere le <choice><sic>anitre</sic><corr resp="#GDP">anatre</corr></choice> nel nuvolo dell’autunno, e il fiume che luc-
+							<lb n="11" break="no"/>cica quasi fosse di metallo fra rive larghe e abbandonate,
+							<lb n="12" />bianche, slabbrate, sparse di ciottoli; e in fondo il <placeName ref="#MA_LAG">lago di
+							<lb n="13" />Lentini</placeName>, come uno stagno, <choice><sic>colle</sic><corr resp="#GDP">con le</corr></choice> sponde piatte, senza una 
+							<lb n="16" />sino al petto, col pelo irsuto. Quando risuona il campa-
+							<lb n="17" break="no"/>naccio della mandra, nel gran silenzio, volan via le cutret-
+							<lb n="18" break="no"/>tole, senza un grido, e il pastore <choice><orig>istesso</orig><reg>stesso</reg></choice>, giallo di febbre,
+							<lb n="19" />e bianco di polvere anche lui, schiude un istante le pal-
+							<lb n="20" break="no"/>pebre gonfie, levando il capo all’ombra dei giunchi secchi.
+						</p>
+
+						<p facs="#par2_2_MAL" xml:id="pag7_2">
+							<lb n="21" />È che la malaria v’entra nelle ossa col pane che man-
+							<lb n="22" break="no"/>giate, e se aprite bocca per parlare, mentre camminate 
+							<lb n="23" />lungo le strade soffocanti di polvere e di sole, e vi sentite
+							<lb n="24" />mancar le ginocchia, o vi accasciate sul basto della mula 
+							<lb n="25" />che va all’ambio, <choice><sic>colla</sic><corr resp="#GDP">con la</corr></choice> testa bassa. Invano Lentini, e Fran-
+							<lb n="26" break="no"/>cofonte, e Paternò cercano di arrampicarsi come pecore
+							<lb n="27" />sbrancate sulle prime colline che scappano dalla pianura,
+							<lb n="28" />e si circondano di aranceti, di vigne, di orti sempre verdi;
+							<lb n="29" />la malaria acchiappa gli abitanti per le vie spopolate, e li
+							<lb n="30" />inchioda dinanzi agli usci delle case scalcinate dal sole,
+							<lb n="31" />tremanti di febbre sotto il pastrano, e con tutte le coperte
+							<lb n="32" />del letto sulle spalle.
+						</p>
+
+						<p facs="#par2_3_MAL" xml:id="pag7_3">
+							<lb n="33" />Laggiù, nella pianura, le case son rare e di aspetto
+							<lb n="34" />malinconico, lungo le strade mangiate dal sole, fra due
+							<lb n="35" />mucchi di concime fumante, appoggiandosi alle tettoie
+							<lb n="36" />barcollanti, dove aspettano <choice><sic>coll’</sic><corr resp="#GDP">con l'</corr></choice>occhio spento, legati alla
+							<lb n="37" />mangiatoia vuota, i cavalli di ricambio. — O sulla sponda
+							<lb n="38" />del lago, <choice><sic>colla</sic><corr resp="#GDP">con la</corr></choice> frasca decrepita dell’osteria appesa all’uscio,
+							<lb n="39" />le grandi stanzacce vuote, e l’oste che sonnecchia accocco-
+							<lb n="40" break="no"/>lato sulla soglia, <choice><sic>colla</sic><corr resp="#GDP">con la</corr></choice> testa stretta nel fazzoletto, spiando
+							<lb n="41" />ad ogni svegliarsi nella campagna deserta se arriva un pas-
+							<lb n="42" break="no"/>seggiero assetato. — Oppure come cassette di legno bianco,
+							<lb n="43" />impennacchiate da quattro eucalipti magri e grigi, lungo
+							<lb n="44" />la ferrovia che taglia in due la pianura come un colpo
+							<lb n="45" />d’accetta, dove vola la macchina fischiando al pari di un vento
+							<lb n="46" />d’autunno, e la notte corruscano scintille infuocate. O in-
+							<lb n="47" break="no"/>fine qua e là sul limite dei poderi segnato da un pila-
+							<lb n="48" break="no"/>strino appena squadrato, coi tetti appuntellati dal di fuori,
+							<lb n="49" /><choice><sic>colle</sic><corr resp="#GDP">con le</corr></choice> imposte sconquassate, dinanzi all’<choice><sic>aja</sic><corr resp="#GDP">aia</corr></choice> screpolata, al-
+							<lb n="50" break="no"/>l’ombra delle alte biche di paglia dove dormono le galline
+							<lb n="51" /><choice><sic>colla</sic><corr resp="#GDP">con la</corr></choice> testa sotto l’ala, e l’asino lascia cascare il capo, <choice><sic>colla</sic><corr resp="#GDP">con la</corr></choice>
+							<lb n="52" />bocca ancora piena di paglia, e il cane si rizza sospettoso,
+							<lb n="53" />e abbaia roco al sasso che si stacca dall’intonaco, alla lucer-
+							<lb n="54" break="no"/>tola che striscia, alla foglia che si muove nella campagna
+							<lb n="55" />inerte.
+						</p>						
+
+						<p facs="#par2_4_MAL" xml:id="pag7_4">
+							<lb n="56" />La sera, appena cade il sole, si affacciano sull’uscio uo-
+							<lb n="57" break="no"/>mini arsi dal sole sotto il cappellaccio di paglia e le larghe
+							<lb n="58" />mutande di tela, sbadigliando e stirandosi le braccia; e
+							<lb n="59" />donne seminude <choice><sic>colle</sic><corr resp="#GDP">con le</corr></choice> spalle nere, allattando dei bambini
+							<lb n="60" />già pallidi e disfatti, che non si sa come si faranno grandi
+							<lb n="61" />e neri, e come ruzzeranno sull’erba quando tornerà l’ in-
+							<lb n="62" break="no"/>verno, e l’aia diverrà verde un’altra volta, e il cielo azzurro,
+							<lb n="63" />e tutt’ intorno la campagna riderà al sole. E non si sa nep-
+							<lb n="64" break="no"/>pure dove stia e perché ci stia tutta quella gente che la
+							<lb n="65" />domenica corre per la messa, nelle chiesuole solitarie, cir-
+							<lb n="66" break="no"/>condate dalle siepi di <choice><sic>fichidindia</sic><corr resp="#GDP">fichi d'india</corr></choice>, a dieci miglia in giro, sin
+							<lb n="67" />dove si ode squillare la campanella fessa nella pianura che
+							<lb n="68" />non finisce mai.
+						</p>
+
+						<p facs="#par2_5_MAL" xml:id="pag7_5">
+							<lb n="69" /><choice><sic>Gli</sic><corr resp="#GDP">Lì</corr></choice> è che dov’è la malaria è terra benedetta da Dio.
+							<lb n="70" />In giugno le spighe si coricano dal peso, e i solchi fumano
+							<lb n="71" />quasi avessero sangue nelle vene appena c’entra il vomero
+							<lb n="72" />in novembre. Allora bisogna pure che chi semina e chi
+							<lb n="73" />raccoglie caschi come una spiga matura, perchè il Signore
+						</p>
+
+						<cb n="2" />
+						<p facs="#par2_6_MAL" xml:id="pag7_6">
+							<lb n="1" />ha detto: <seg ana="#signore">« Il pane che si mangia bisogna sudarlo»</seg>. Come
+							<lb n="2" />il sudore della febbre lascia <choice><sic>qualcheduno</sic><corr resp="#GDP">qualche d'uno</corr></choice> stecchito sul pa-
+							<lb n="3" break="no"/>gliericcio di granturco non c’è più bisogno di solfato né
+							<lb n="4" />di decotto d’eucalipto; lo si carica sulla carretta del fieno,
+							<lb n="5" />o attraverso del basto dall’asino, o su di una scala, come
+							<lb n="6" />si può, con un sacco sulla faccia, e si va a deporlo alla
+							<lb n="7" />chiesuola solitaria, sotto i <choice><sic>fichidindia</sic><corr resp="#GDP">fichi d'india</corr></choice> spinosi di cui nes-
+							<lb n="8" break="no"/>suno perciò mangia i frutti. Le donne piangono in crocchio,
+							<lb n="9" />e gli uomini stanno a guardare, fumando.
+						</p>
+
+						<p facs="#par2_7_MAL" xml:id="pag7_7">
+							<lb n="10" />Così s’erano portato il camparo di <placeName ref="#MA_VAL">Valsavoja</placeName>, che si chia-
+							<lb n="11" break="no"/>mava Massaro Croce, ed erano trent’anni che inghiottiva
+							<lb n="12" />solfato e decotto d’eucalipto. In primavera stava meglio, ma
+							<lb n="13" />d’autunno, come ripassavano le <choice><sic>anitre</sic><corr resp="#GDP">anatre</corr></choice>, egli si metteva il faz-
+							<lb n="14" break="no"/>zoletto in testa, e non si faceva vedere più sull’uscio che
+							<lb n="15" />ogni due giorni; tanto che si era ridotto pelle ed ossa, e
+							<lb n="16" />aveva una pancia grossa come un tamburo, che lo chiama-
+							<lb n="17" break="no"/>vano <addName type="epithet">il Rospo</addName> anche pel suo fare rozzo e selvatico, e perché 
+							<lb n="18" />gli erano diventati gli occhi smorti e a fior di testa. Egli
+							<lb n="19" />diceva sempre prima di morire: <seg ana="#rospo">— Non temete che <choice><orig>pei</orig><reg>per i</reg></choice> miei
+							<lb n="20" />figliuoli il padrone ci penserà! —</seg> E con quegli occhiacci atto-
+							<lb n="21" break="no"/>niti guardava in faccia ad uno ad uno coloro che gli sta-
+							<lb n="22" break="no"/>vano attorno al letto l’ultima sera, e gli mettevano la candela
+							<lb n="23" />sotto il naso. E lo zio Menico, <addName type="epithet">il capraio</addName>, il quale se ne inten-
+							<lb n="24" break="no"/>deva, disse che doveva avere il fegato duro come un sasso, e
+							<lb n="25" />pesante un rotolo e mezzo. E qualcuno aggiungeva pure:
+						</p>
+
+						<p facs="#par2_8_MAL" xml:id="pag7_8">
+							<lb n="26" /><seg ana="#voci">— Adesso so ne impipa! ché s’è ingrassato e fatto ricco
+							<lb n="27" />a spese del padrone, e i suoi figli non hanno bisogno di nes-
+							<lb n="28" break="no"/>suno! Credete che l’abbia preso soltanto <choice><orig>pei</orig><reg>per i</reg></choice> begli occhi del
+							<lb n="29" />padrone tutto quel solfato e tutta quella malaria per tren-
+							<lb n="30" break="no"/>t’anni?</seg>
+						</p>
+
+						<p facs="#par2_9_MAL" xml:id="pag7_9">
+							<lb n="31" />Compare Carmine, l’oste del lago, aveva persi allo
+							<lb n="32" />stesso modo i suoi figliuoli, tutt’e cinque, l’un dopo l’altro, tre
+							<lb n="33" />maschi e due femmine. Pazienza le femmine. Ma i maschi mo-
+							<lb n="34" break="no"/>rivano appunto quando erano grandi, nell’età di guadagnarsi
+							<lb n="35" />il pane. Oramai egli lo sapeva; e come le febbri vincevano il
+							<lb n="36" />ragazzo dopo averlo travagliato due o tre anni, non spendeva
+							<lb n="37" />più un soldo, né per solfato né per decotti, prendeva del buon
+							<lb n="38" />vino, e si metteva ad <choice><sic>ammanire</sic><corr resp="#GDP">ammannire</corr></choice> tutti gli intingoli di pesce
+							<lb n="39" />che sapeva, onde stuzzicare l’appetito al malato. Andava ap-
+							<lb n="40" break="no"/>posta <choice><sic>colla</sic><corr resp="#GDP">con la</corr></choice> barca a pescare la mattina, tornava carico di ce-
+							<lb n="41" break="no"/>fali, di anguille grosse come il braccio, e poi diceva al
+							<lb n="42" />figliuolo, ritto dinanzi al letto e <choice><sic>colle</sic><corr resp="#GDP">con le</corr></choice> <choice><sic>lagrime</sic><corr resp="#GDP">lacrime</corr></choice> agli occhi:
+        					<lb n="43" /><seg ana="#carmine">— Tè! mangia! —</seg> Il resto lo pigliava Nanni <addName type="epithet">il carrettiere</addName> per
+							<lb n="44" />andare a venderlo in città. — <seg ana="#nanni">Il lago vi dà e il lago vi pi-
+							<lb n="45" break="no"/>glia! —</seg> Gli diceva Nanni vedendo piangere di nascosto
+							<lb n="46" />compare Carmine. <seg ana="#nanni">— Che volete farci, fratel mio? —</seg> Il lago
+							<lb n="47" />gli aveva dato dei bei guadagni. E a Natale, quando le an-
+							<lb n="48" break="no"/>guille si vendono bene, nella casa in riva al lago cenavano
+						</p>
+
+						<p facs="#par2_10_MAL" xml:id="pag7_10">
+							<lb n="49" />allegramente dinanzi al fuoco; maccheroni, salciccia e ogni
+							<lb n="50" />ben di Dio; mentre il vanto urlava di fuori come un lupo
+							<lb n="51" />che ha fame e freddo. In tal modo coloro che restavano si
+							<lb n="52" />consolavano dei morti. Ma a poco a poco andavano assotti-
+							<lb n="53" break="no"/>gliandosi così che la madre divenne curva come un gancio
+							<lb n="54" />dai crepacuori, e il padre che era grosso stava sempre sul
+							<lb n="55" />l’uscio, onde non vedere quelle stanzaccie vuote dove prima
+							<lb n="56" />andavano e venivano tutti i ragazzi. L’ultimo rimasto non
+							<lb n="57" />voleva morire assolutamente, e piangeva e si disperava al-
+							<lb n="58" break="no"/>lorché lo coglieva la febbre, e persino andò a buttarsi nel
+							<lb n="59" />lago dalla paura di morire. Ma il padre che sapeva nuotare
+							<lb n="60" />lo ripescò, e lo sgridava che con quel bagno freddo gli
+							<lb n="61" />sarebbe tornata la febbre più forte. <seg ana="#giovanetto">— Ah!</seg> singhiozzava il
+							<lb n="62" />giovanetto colle mani nei capelli. <seg ana="#giovanetto">— Per me non c’è più spe-
+							<lb n="63" break="no"/>ranza! Per me non c’ è più speranza! —</seg> <seg ana="#carmine">Tutto sua sorella
+							<lb n="64" />Agata che non voleva morire perchè era sposa! —</seg> Osservava
+							<lb n="65" />compare Carmine di faccia a sua moglie, seduta accanto al
+							<lb n="66" />letto; e lei, che non piangeva più da un pezzo, confermava
+							<lb n="67" />col capo curva al pari di un gaucio.
+						</p>
+
+						<pb n="8" />
+						<cb n="1" />
+						<p facs="#par3_1_MAL" xml:id="pag8_1">
+							<lb n="1" />Lei, ridotta a quel modo, e <unclear reason="illegible">dal marito</unclear> grasso e gros-
+							<lb n="2" break="no"/>so, avevano il cuoio duro, e <unclear reason="illegible">rimasero</unclear> soli a guardar la
+							<lb n="3" />casa. La malaria non ce l’ha contro di tutti. Alle volte
+							<lb n="4" />uno ci campa cent’anni, come Cirino <addName type="epithet">lo scimunito</addName>, il quale
+							<lb n="5" />non aveva né re né regno, né arte né parte, né padre né
+							<lb n="6" />madre, né casa per dormire, né pane da mangiare, e tutti
+							<lb n="7" />lo conoscevano a quaranta miglia intorno, siccome andava
+							<lb n="8" />da una fattoria all’altra, aiutando a governare i buoi, a
+							<lb n="9" />trasportare il concime, a scorticare le bestie morte, a fare
+							<lb n="10" />gli uffici vili; e pigliava delle pedate o un tozzo di pane,
+							<lb n="11" />dormiva nei fossati, sul cigliono dei campi, a ridosso delle
+							<lb n="14" />con due lembi di mutande tenuti insieme da una funicella
+							<lb n="15" />sulle gambe magre e nere, e andava cantando a squarcia-
+							<lb n="16" break="no"/>gola sotto il sole che gli martellava nella testa nuda, giallo
+						</p>
+
+						<p facs="#par3_2_MAL" xml:id="pag8_2">
+							<lb n="17" />come lo zafferano. Egli non prendeva più né solfato, né
+							<lb n="18" />medicine, né pigliava le febbri. Cento volte l’avevano rac-
+							<lb n="19" break="no"/>colto disteso quasi fosse morto attraverso la strada; infine
+							<lb n="20" />la malaria l’aveva lasciato perchè non sapeva più che far-
+							<lb n="21" break="no"/>sene di lui. Dopo che gli aveva mangiato il cervello, e la
+							<lb n="22" />polpa delle gambe, e gli era entrata tutta nella pancia
+							<lb n="23" />gonfia come un otre, l’aveva lasciato contento come una
+							<lb n="24" />pasqua, a cantare al sole meglio di un grillo. Di preferenza
+							<lb n="25" /><addName type="epithet">lo scimunito</addName> soleva stare davanti allo stallatico di <placeName ref="#MA_VAL">Valsavoja</placeName>,
+							<lb n="26" />perché ci passava della gente, ed egli correva loro dietro
+							<lb n="27" />per un miglio gridando, <seg ana="#cirino">uuh! uuh!</seg> finché gli buttavano
+							<lb n="28" />due centesimi. L’oste gli prendeva i centesimi e lo te-
+							<lb n="29" break="no"/>neva a dormire sotto la tettoia, sullo strame dei cavalli, che
+							<lb n="30" />quando si tiravano dei calci, Cirino correva a svegliare il
+							<lb n="31" />padrone gridando <seg ana="#cirino">uuh!</seg> e la mattina li strigliava e li go-
+							<lb n="32" break="no"/>vernava.
+						</p>
+
+						<p facs="#par3_3_MAL" xml:id="pag8_3">
+							<lb n="33" />Più tardi era stato attratto dalla ferrovia che costrussero
+							<lb n="34" />lì vicino. I vetturali e i viandanti erano diventati più rari
+							<lb n="35" />sulla strada, e <addName type="epithet">lo scimunito</addName> non sapeva che pensare guar-
+							<lb n="36" break="no"/>dando in aria delle ore le rondini che volavano, e batteva
+							<lb n="37" />le palpebre al sole per capacitarsene. La prima volta che
+							<lb n="38" />vide tutta quella gente insaccata nei carrozzoni che pas-
+							<lb n="39" break="no"/>savano dalla stazione parve che indovinasse. E d’allora in
+							<lb n="40" />poi ogni giorno aspettava il treno senza sbagliare di un
+							<lb n="41" />minuto, quasi avesse l’orologio in testa, e mentre gli fug-
+							<lb n="42" break="no"/>giva dinanzi gettandogli contro la faccia il fumo e lo stre-
+							<lb n="43" break="no"/>pito, egli si dava a corrergli dietro, <choice><sic>colle</sic><corr resp="#GDP">con le</corr></choice> braccia in aria,
+							<lb n="44" />urlando in tuono di collera e di minaccia: <seg ana="#cirino">uuh! uuh!....</seg>
+						</p>
+
+						<p facs="#par3_4_MAL" xml:id="pag8_4">
+							<lb n="45" />L’oste anche lui, ogni volta che da lontano vedeva pas-
+							<lb n="46" break="no"/>sare il treno sbuffante nella malaria, non diceva nulla, ma
+							<lb n="47" />gli sputava contro il fatto suo scrollando il capo, davanti
+							<lb n="48" />alla tettoia deserta e ai boccali vuoti. Prima gli affari an-
+							<lb n="49" break="no"/>davano così bene che egli aveva prese quattro mogli, l’una
+							<lb n="50" />dopo l’altra, tanto che lo chiamavano « <addName type="epithet">ammazzamogli</addName> »
+							<lb n="51" />e dicevano che ci aveva fatto il callo, e tirava a prendere
+							<lb n="52" />la quarta, se la figlia di massaro Turi Oricchiazza non gli
+							<lb n="53" />faceva rispondere: <seg ana="#figlia">— Dio ne liberi! nemmeno se fosso
+							<lb n="54" />d’oro, quel cristiano! Ei si mangia il prossimo suo come
+							<lb n="55" />un coccodrillo! —</seg> Ma non era vero che ci avesse fatto il
+							<lb n="56" />callo, perché quando gli era morta comare Santa, ed era
+							<lb n="57" />la terza, egli sino all’ora di <choice><sic>colezione</sic><corr resp="#GDP">colazione</corr></choice> non ci aveva messo
+							<lb n="58" />un boccone di pane in bocca, né un sorso d’acqua; e pian-
+							<lb n="59" break="no"/>geva per davvero, dietro il banco dell’osteria. <seg ana="#ammazzamogli">— Stavolta
+							<lb n="60" />voglio pigliarmi una che è avvezza alla malaria —</seg> aveva
+							<lb n="61" />detto dopo quel fatto, <seg ana="#ammazzamogli">— Non voglio più soffrirne di questi
+							<lb n="62" />dispiaceri.</seg>
+						</p>
+
+						<p facs="#par3_5_MAL" xml:id="pag8_5">
+							<lb n="63" />Le mogli gliele ammazzava la malaria, ad una ad una,
+							<lb n="64" />ma lui lo lasciava tal quale, vecchio e grinzoso, che non
+							<lb n="65" />avreste creduto che quell’uomo lì ci avesse anche lui il suo
+							<lb n="66" />bravo omicidio sulle spalle, quantunque tirasse a prendere
+							<lb n="67" />la quarta moglie. Pure la moglie ogni volta la cercava gio-
+						</p>
+
+						<cb n="2" />
+						<p facs="#par3_6_MAL" xml:id="pag8_6">
+							<lb n="1" break="no"/>vane e appetitosa, ché senza moglie l’osteria non può andare,
+							<lb n="2" />e per questo gli avventori s’erano diradati. Ora non restava
+							<lb n="3" />altri che compare Mominu, il cantoniere della ferrovia li
+							<lb n="4" />vicino, un uomo che non parlava mai e veniva a bere il
+							<lb n="5" />suo bicchiere fra un treno e l’altro, mettendosi a sedere
+							<lb n="6" />sulla panchetta accanto all’uscio, <choice><sic>colle</sic><corr resp="#GDP">con le</corr></choice> scarpe in mano, per
+							<lb n="7" />lasciare riposare i piedi. <seg ana="#ammazzamogli">— Questi qui non li coglie la
+							<lb n="8" />malaria! —</seg> pensava <addName type="epithet">Ammazzamogli</addName> senza aprir bocca
+							<lb n="9" />nemmeno lui, ché se la malaria li avesse fatto cadere come
+							<lb n="10" />le mosche non ci sarebbe stato chi facesse andare quella
+							<lb n="11" />ferrovia là. Il pover uomo, dacché s’era levato dinanzi agli
+							<lb n="12" />occhi il solo uomo che gli avvelenava l’ esistenza, non ci
+							<lb n="13" />aveva più che due nemici al mondo: la ferrovia che gli
+							<lb n="14" />rubava gli avventori, e la malaria che gli portava via le
+						</p>
+
+						<p facs="#par3_7_MAL" xml:id="pag8_7">
+							<lb n="15" />mogli. Tutti gli altri, nella pianura, sin dove arrivavano gli 
+							<lb n="16" />occhi, provavano un momento di contentezza, anche se nel
+							<lb n="17" />lettuccio ci avevano qualcuno che se ne andava a poco a poco,
+							<lb n="18" />o se la febbre li abbatteva sull’uscio, col fazzoletto in testa e
+							<lb n="19" />il tabarro addosso. Si ricreavano guardando il seminato
+							<lb n="20" />che veniva prosperoso e verde come il velluto, o le biade
+							<lb n="21" />che ondeggiavano al par di un mare, e ascoltavano la can-
+							<lb n="22" break="no"/>tilena lunga dei mietitori, distesi come una fila di soldati,
+							<lb n="23" />e in ogni viottolo si udiva la cornamusa, dietro la quale
+							<lb n="24" />arrivavano dalla <placeName ref="#CALA">Calabria</placeName> degli sciami di contadini per la
+							<lb n="25" />messe, polverosi, curvi sotto la bisaccia piena, gli uomini
+							<lb n="26" />avanti e le donne in coda, zoppicanti e guardando la strada
+						</p>
+
+						<p facs="#par3_8_MAL" xml:id="pag8_8">
+							<lb n="27" />che si allungava con la faccia arsa e stanca. E sull’orlo
+							<lb n="28" />di ogni fossato, dietro ogni macchia d’aloe, nell’ora in cui
+							<lb n="29" />cala la sera come un velo grigio, fischiava lo zufolo del
+							<lb n="30" />guardiano, in mezzo alte spighe mature che tacevano, im-
+							<lb n="31" break="no"/>mobili al cascare del vento, invase anch’esse dal silenzio
+							<lb n="32" />della notte. <seg ana="#ammazzamogli">— Ecco! —</seg> pensava <addName type="epithet">Ammazzamogli</addName>. <seg ana="#ammazzamogli">—Tutta
+							<lb n="33" />quella gente là se fa tanto di non lasciarci la pelle e
+							<lb n="34" />di tornare a casa, ci torna con dei denari in tasca. —</seg>
+						</p>
+
+						<p facs="#par3_9_MAL" xml:id="pag8_9">
+							<lb n="35" />Solo lui non aspettava né la raccolta, né altro, e non
+							<lb n="36" />aveva animo di cantare. La sera calava tanto triste, nello
+							<lb n="37" />stallazzo vuoto e nell’osteria buia. A quell’ora il treno
+							<lb n="38" />passava da lontano fischiando, e compare Mominu stava
+							<lb n="39" />accanto al suo casotto <choice><sic>colla</sic><corr resp="#GDP">con la</corr></choice> bandieruola in mano; ma fin
+							<lb n="40" />lassù, dopo che il treno era svanito nelle tenebre, si udiva
+							<lb n="41" />Cirino <addName type="epithet">lo scimunito</addName> che gli correva dietro urlando, <seg ana="#cirino">uuh !...</seg>
+							<lb n="42" />E <addName type="epithet">Ammazzamogli</addName> sulla porta dell’osteria buia e deserta
+							<lb n="43" />pensava che per quelli lì la malaria non ci era.
+						</p>
+
+						<p facs="#par3_10_MAL" xml:id="pag8_10">
+							<lb n="44" />Infine quando non potè pagar più l’affitto dell’osteria e
+							<lb n="45" />dello stallazzo, il padrone lo mandò via dopo 57 anni che
+							<lb n="46" />c’era stato, e <addName type="epithet">Ammazzamogli</addName> si ridusse a cercare impiego
+							<lb n="47" />nella ferrovia anche lui, e a tenere in mano la bandieruola
+							<lb n="48" />allorché passava il treno.
+						</p>
+
+						<p facs="#par3_11_MAL" xml:id="pag8_11">
+							<lb n="49" />Allora stanco di correre tutto il giorno su e giù lungo
+							<lb n="50" />le rotaie, rifinito dagli anni e dai malanni, mentre vedeva
+							<lb n="51" />passare le belle signore che si affacciavano allo sportello
+							<lb n="52" /><choice><sic>colle</sic><corr resp="#GDP">con le</corr></choice> teste e il cappellino avvolti nei veli, borbottava:
+							<lb n="53" /><seg ana="#ammazzamogli">— Ah! per questi qui non c’è proprio la malaria. —</seg>
+							<lb n="54" /><persName ref="GV">G. Verga</persName>
+						</p>
+					</div>
+				</body>
+			</text>
+
+			<text xml:id="malariaBib"> <!-- MALARIA BIBLIOGRAFIA E NOTIZIE -->
+				<body>
+					<div xml:id="malariaBibliografia">
+						<pb n="9" />
+						<cb n="1" />
+
+						<head facs="#bib1_1MAL" xml:id="pag9_1">
+							<lb n="1" /><hi rend="head">BIBLIOGRAFIA.</hi>
+						</head>
+
+						<p facs="#bib1_MAL" xml:id="pag9_2">
+							<lb n="2" /><bibl><persName ref="AF">A. Fogazzaro</persName>, <title level="m" rend="italic">Malombra</title> — <placeName ref="#B_MIL">Milano</placeName>, lib. ed. G. Brigola, <date when="1881">1881</date></bibl>.
+							<lb n="3" />Letto rapidamente, talvolta con vivissima curiosità, questo
+							<lb n="4" />grosso volume <quote>— grosso e stampato a caratteri fitti fitti —</quote>
+							<lb n="5" />si affaccia la domanda: <quote>« È possibile?»</quote> Non solo possibile,
+							<lb n="6" />ma vero. È un romanzo italiano, è un romanzo lungo, ep-
+							<lb n="7" break="no"/>pure non annoia; si percorre tutto intero, senza interru-
+							<lb n="8" break="no"/>zioni, senza salti. E badate che non segue nessuna moda;
+							<lb n="9" />non solletica i sensi, non s’accosta allo scandalo tanto da
+							<lb n="10" />rasentarlo; piuttosto che indurvi a pensare al <persName ref="HDB">Balzac</persName> o
+						</p>
+
+						<cb n="2" />
+						<p facs="#bib2_MAL" xml:id="pag9_3">
+							<lb n="11" />allo <persName ref="EMZ">Zola</persName>, vi ricorda il <persName ref="CD">Dickens</persName>, ma nessuna figura o si-
+							<lb n="12" break="no"/>tuazione del fecondo o geniale scrittore inglese in partico-
+							<lb n="13" break="no"/>lare; piuttosto che cercare attrattive in un intreccio com-
+							<lb n="14" break="no"/>plicato, si ferma a disegnar paesaggi, a riferire conversa-
+							<lb n="15" break="no"/>zioni intime, a cesellare caratteri; tra i caratteri coglie i
+							<lb n="16" />secondari e gli umili assai meglio <choice><orig>de’</orig><reg>dei</reg></choice> principali.
+							<lb n="17" />Il <persName ref="AF">Fogazzaro</persName> aveva tutte le buone intenzioni di scrivere
+							<lb n="18" />un libro illeggibile. Pare un bisticcio, ed è la pura verità,
+							<lb n="19" />essendosi egli messo al lavoro col capo pieno di preconcetti,
+							<lb n="20" />artistici e anti-artistici, di modelli, di tesi.
+						</p>
+
+						<p facs="#bib3_MAL" xml:id="pag9_4">
+							<lb n="21" />Il nodo del romanzo, infatti, vorrebbe arieggiare, nel
+							<lb n="22" />terribile, nel fantastico, ai racconti del <persName ref="P">Pöe</persName>, dell’<persName ref="ETH">Hoffman</persName>,
+							<lb n="23" />ma ne rimane di gran lunga lontano, perchè il terribile
+							<lb n="24" />e il fantastico vi sono toccati alla sfuggita, quasi con timi-
+							<lb n="25" break="no"/>dezza. Marina, fanciulla capricciosa, indocile, obbligata dalla
+							<lb n="26" />perdita dei parenti e della fortuna a chiudersi nel solitario
+							<lb n="27" />castello del conte Cesare suo zio, tra luoghi selvaggi, po-
+							<lb n="28" break="no"/>polati di spiriti dalla fantasia popolare, legge per caso la
+							<lb n="29" />storia d’una povera donna della sua famiglia, maniaca, la
+							<lb n="30" />quale si credeva chiusa e maltrattata dal marito per un
+							<lb n="31" />amore colpevole, e, aspirando a vendetta, la prevedeva si-
+							<lb n="32" break="no"/>cura in una nuova vita, in cui, sotto altro nome, avrebbe
+							<lb n="33" />serbato la ricordanza della infelicissima esistenza che me-
+							<lb n="34" break="no"/>nava mentre scriveva quelle pagine destinate a sè stessa.
+							<lb n="35" />Marina, a lungo andare, finisce che s’<hi rend="italic">immedesima</hi>, come
+							<lb n="36" />direbbe un filosofo, con la povera Cecilia; si figura una
+							<lb n="37" />missione vendicatrice, l’accetta con piena fede, crede Cor-
+							<lb n="38" break="no"/>rado Siila, da lei amato a dispetto di prevenzioni e di antipa-
+							<lb n="39" break="no"/>tie, sia l’amante di Cecilia, ritornato in terra a renderla felice,
+							<lb n="40" />fors’anche ad aiutarla a compiere i suoi biechi proponimenti.
+							<lb n="41" />Per vendetta, consente a sposare Nepo, parente del conte
+							<lb n="42" />Cesare d’Ormengo, promettendosi di <quote>« calpestarlo »</quote> dopo
+							<lb n="43" />le nozze; per vendetta si presenta una notte al conte, e gli
+							<lb n="44" />parla in guisa da spaventarlo, da fargli venire un'apoplessia
+							<lb n="45" />che lo uccide in pochi giorni. E quando vede che Corrado
+							<lb n="46" />non ricorda punto di essere stato altra volta Renato, e di
+							<lb n="47" />aver amato Cecilia, quando lo vede freddo, pronto ad allon-
+							<lb n="48" break="no"/>tanarsi da lei, gli tira un colpo di pistola; poi va a get-
+							<lb n="49" break="no"/>tarsi in una voragine, come si contava avesse fatto Cecilia.
+						</p>
+
+						<p facs="#bib4_MAL" xml:id="pag9_5">
+							<lb n="50" />Or se il <persName ref="AF">Fogazzaro</persName> ha immaginato un complesso di cir-
+							<lb n="51" break="no"/>costanze adatte a produrre fremiti e ansietà, gli è mancata
+							<lb n="52" />la forza o il coraggio di valersene in modo da colpire la
+							<lb n="53" />nostra fantasia, da sollevarci nella regione del misterioso e
+							<lb n="54" />dello strano e trattencrvici esterrefatti. Poiché si può es-
+							<lb n="57" break="no"/>sere sicuri della assoluta insussistenza di certi fenomeni, o
+							<lb n="58" />della loro indole affatto subbiettiva, e nondimeno esser tra-
+							<lb n="59" break="no"/>scinati a dimenticare tale sicurezza, a prestar fede all’incre-
+							<lb n="60" break="no"/>dibile. Anche la <persName ref="AR">Radcliffe</persName>, anche <persName ref="PF">Paolo Féval</persName>, riescono,
+							<lb n="61" />nostro malgrado, a darci la pelle d’oca, a sollevare irti i ca-
+							<lb n="62" break="no"/>pelli sul nostro capo. Di ciò non è traccia in <bibl><title level="m" rend="italic">Malombra</title></bibl>.
+							<lb n="63" />L’apparizione di Marina al conte Cesare, il quale non era
+							<lb n="64" />un dappoco — tutt’altro — le parole roventi ch’ella dovè pro-
+							<lb n="65" break="no"/>nunziare, la resistenza del vecchio gentiluomo al terrore
+							<lb n="66" />dal quale sentiva invadersi, e la vittoria del terrore, ecco
+							<lb n="67" />una scena altamente drammatica, dove il fantastico avrebbe
+							<lb n="68" />potuto produrre i suoi effètti più profondi: è certo avve-
+							<lb n="69" break="no"/>nuta, l'<persName ref="AF">A.</persName> ce lo assicura, ce ne dà a vedere gli effetti tri-
+							<lb n="70" break="no"/>stissimi; ma egli non l’ ha descritta. Pure, il romanzo, in
+							<lb n="70" />ciò che ha di essenziale, si avvolge intorno a detta scena;
+							<lb n="71" />i fatti che la precedono ne sono, nella mente dello scrit-
+							<lb n="72" break="no"/>tore, gli antecedenti, la preparazione necessaria; i fatti che
+							<lb n="73" />la seguono, son determinati da essa.
+							<lb n="74" />Ma lasciamo stare il fantastico, dimentichiamo l’ appa-
+							<lb n="75" break="no"/>rizione di Marina al conto, sforziamoci a persuaderci che
+							<lb n="76" />il <persName ref="AF">Fogazzaro</persName> abbia voluto semplicemente narrare la storia
+							<lb n="77" />della mania della fanciulla. In astratto, anche se leggete
+							<lb n="78" />non il libro, ma un semplice sunto, ammetterete la verosi­-
+						</p>
+
+						<pb n="10" />
+						<cb n="1" />
+						<p facs="#bib5_MAL" xml:id="pag10_1">
+							<lb n="1" break="no"/>miglianza del caso. Ma basta ciò in un romanzo? Sarebbe
+							<lb n="2" />lo stesso che dire: <quote>« datemi la trama, indicatemi il sog-
+							<lb n="3" break="no"/>getto, e risparmiatevi la pena di scrivere il libro. »</quote> L’im-
+							<lb n="4" break="no"/>pressione vivissima della lettura del manoscritto di Cecilia,
+							<lb n="5" />in una donna come Marina; la vita di lei nel castello; l’am-
+							<lb n="6" break="no"/>biente da cui è circondata; in una parola, tutto quello che
+							<lb n="7" />ogni giorno, ad ogni ora, la costringe a ritornare con la
+		 					<lb n="8" />mente a Cecilia; il lento svolgersi della malattia morale,
+							<lb n="9" />il passaggio graduale e forse insensibile dall’impressione
+							<lb n="10" />prima all’idea fissa, le allucinazioni, la soddisfazione sel-
+							<lb n="11" break="no"/>vaggia di aver compiuto la vendetta sul conte Cesare, il do-
+							<lb n="12" break="no"/>lore acutissimo di non sentirsi amata freneticamente come ella
+							<lb n="13" />ama da quello ch’è al tempo stesso, per lei, Renato e Cor-
+							<lb n="14" break="no"/>rado, la tempesta che dovè scatenarlesi nell’anima prima della
+							<lb n="15" />uccisione del giovane, la fermezza con cui si avvia al suicidio
+							<lb n="16" />— quale storia truce insieme e patetica, se un artista avesse
+							<lb n="17" />l’attitudine'a svolgerla, a colorirla tutta! Ma cercatela in
+							<lb n="18" /><bibl><title level="m" rend="italic">Malombra</title></bibl>, e non vi troverete se non accenni e vi chiede-
+							<lb n="19" break="no"/>rete se davvero francasse la spesa d’immaginare un perso-
+							<lb n="20" break="no"/>naggio da tragedia, qual è Marina, per farne un fantoccio
+							<lb n="21" />dotato di parola, il quale, a tempo e a luogo, quando piace
+							<lb n="22" />all’autore di tirare il filo, chiacchieri, imprechi, vada in
+							<lb n="23" />barca sul lago, spari colpi di pistola. Nè vale opporre che
+							<lb n="24" />Marina è pazza; poiché pazzia non diremo più ragionante,
+							<lb n="25" />ma certo più calma e meno appariscente della sua, è diffi-
+							<lb n="26" break="no"/>cile figurarsela. Pazza nel vero senso non è; l’idea fissa
+							<lb n="27" />non le impedisce punto di condursi da persona perfetta-
+							<lb n="28" break="no"/>mente sana; anzi è questa un’antitesi naturalissima dalla
+							<lb n="29" />quale l’autore non ha tratto tutto il partito che avrebbe
+							<lb n="30" />potuto.
+						</p>
+
+						<p facs="#bib6_MAL" xml:id="pag10_2">
+							<lb n="31" />Ci si permetta di addurre almeno una prova a conferma
+							<lb n="32" />delle nostre opinioni. Marina, pur amando Corrado, ha
+							<lb n="33" />consentito a sposare Nepo. Ritiratasi nelle sue stanze (e
+							<lb n="34" />qui il <persName ref="AF">Fogazzaro</persName> s’avventura a una descrizione delle forme
+							<lb n="35" />della fanciulla, in cui le frasi <hi rend="italic">accusano</hi> il convenzio-
+							<lb n="36" break="no"/>nalismo), abbandonatasi alle sue fantasie, giunge a doman-
+							<lb n="37" break="no"/>darsi perchè non fugga per raggiungere Corrado, perchè
+							<lb n="38" /><quote>«questa commedia con Nepo Salvador. »</quote>
+						</p>
+
+						<p facs="#bib7_MAL" xml:id="pag10_3">
+							<lb n="39" /><quote>« C’era bene il perchè, e Marina non poteva dimenticarlo
+							<lb n="40" />a lungo. Quelle ultime parole del manoscritto! — Lasciar
+							<lb n="41" />fare a Dio. Sieno figli, sieno nipoti, sieno parenti, la ven-
+							<lb n="42" break="no"/>detta sarà buona su tutti. Qui, aspettarla qui. — E i fatti
+							<lb n="43" />non accennavano già confusamente da lontano com’ella potrebbe raggiungere insieme la Vendetta e l’amore ? Le
+							<lb n="44" />tornò la fede. »</quote> Ecco il momento, per l’<persName ref="AF">A.</persName> di tirarsi da
+							<lb n="45" />parte lui, di lasciare i pensieri, i sentimenti diversi, contrad-
+							<lb n="46" break="no"/>dittori di Marina liberi di manifestarsi nella loro spontaneità.
+							<lb n="47" />Invece, egli procede oltre a narrare come la fanciulla, mes-
+							<lb n="48" break="no"/>sasi a contemplare <quote>« lo stipo del segreto »</quote> fu <quote>« assalita,
+							<lb n="49" />pietrificata da una delle sue reminiscenze misteriose. Le
+							<lb n="50" />pareva esser venuta su quella soglia un’altra volta, anni
+							<lb n="51" />ed anni addietro, di notte, discinta, con i capelli sciolti;
+							<lb n="52" />aver visto a’ suoi piedi l’ombra oscillante del candeliere, il
+							<lb n="53" />lume intorno a sè per breve spazio di pareti e di pavimento,
+							<lb n="54" />e là davanti lo stipo nero, i caratteri arcani. »</quote> Niente al-
+							<lb n="55" break="no"/>tro; il capitolo si chiude là. Chi di voi s’è sentito rime-
+							<lb n="56" break="no"/>scolare il sangue? <quote><hi rend="italic">Le tornò la fede, fu assalita da una remini-
+							<lb n="57" break="no"/>scenza, le pareva...</hi></quote> Generalità vuote e subito dopo una de-
+							<lb n="58" break="no"/>scrizioncella importuna, la quale scaccia, se pur venivansi
+							<lb n="59" />producendo, l’aspettativa intensa, la sensazione glaciale
+							<lb n="60" />dell’ignoto, il presentimento vago d’una grande sciagura,
+							<lb n="61" />che dalla situazione rampollerebbero. Noteremo qui che l’<persName ref="AF">A.</persName>
+							<lb n="62" />si era anche proposto di attribuire alla fatalità una parte
+							<lb n="63" />importante nel suo racconto. Il sentimento della fatalità,
+							<lb n="64" />quando si sa ispirarlo, è aiuto efficace per gli scrittori che mi-
+							<lb n="65" break="no"/>rano al grandioso, al terribile. In <bibl><title level="m" rend="italic">Malombra</title></bibl> però certe com-
+							<lb n="66" break="no"/>binazioni o son volgari o troppo artificiose, perchè appa-
+						</p>
+
+						<cb n="2" />
+						<p facs="#bib8_MAL" xml:id="pag10_4">
+							<lb n="1" break="no"/>riscano effetto d’una legge occulta ma inesorabile. È un
+							<lb n="2" />destino un po’ a uso Dumas: se D’Artagnan soccombesse
+							<lb n="3" />a uno <choice><orig>de’</orig><reg>dei</reg></choice> tanti pericoli che gli si parano innanzi mentre
+							<lb n="4" />va in <placeName ref="#B_ING">Inghilterra</placeName>, i <bibl><title level="m" rend="italic">Tre Moschettieri</title></bibl> finirebbero <foreign xml:lang="la"><hi rend="italic">ipso facto</hi></foreign>.
+							<lb n="5" />Son casi; a voler prenderli e farli prendere per opera del
+							<lb n="6" />fato si rischia di scoprire la mano del romanziere che li
+							<lb n="7" />va apparecchiando. Ad ogni modo, non vi lasciano punto
+							<lb n="8" />l’impressione di ferrea necessità, alla quale volere o forza
+							<lb n="9" />umana non possa sottrarsi. Forse non è tutta colpa del <persName ref="AF">Fo-
+							<lb n="10" break="no"/>gazzaro</persName>: ma come non ha riflettuto che nell’ambiente in-
+							<lb n="11" break="no"/>tellettuale, in cui viviamo lui e noi, non c’è posto per il con-
+							<lb n="12" break="no"/>cetto della predestinazione e simili? Ma ci credeva Marina.
+							<lb n="13" />Sì, e all’esaltata fantasia di lei dovevano veramente affac-
+							<lb n="14" break="no"/>ciarsi come effetto del fato alcuni eventi; ina sarebbe stato
+							<lb n="15" />utile secondo noi contrapporre a quella illusione il concetto
+							<lb n="16" />scientifico della vita, e far intendere ai lettori che il roman-
+							<lb n="17" break="no"/>ziere non è responsabile delle opinioni dei suoi personaggi.
+							<lb n="18" />Si poteva, senza turbare il racconto nè con professioni di
+							<lb n="19" />fede, nè con disquisizioni astratte.
+						</p>
+
+						<p facs="#bib9_MAL" xml:id="pag10_5">
+							<lb n="20" />Altro preconcetto. Il <persName ref="AF">Fogazzaro</persName> ha voluto introdurre
+							<lb n="21" />in <bibl><title level="m" rend="italic">Malombra</title></bibl> il problema religioso e discuterlo, obbligarci
+							<lb n="22" />a fermarvi su l’attenzione, a discuterlo anche noi. <persName>Steinegge</persName>,
+							<lb n="23" />un vecchio tedesco materialista, è convertito al cattolicismo
+							<lb n="24" />da sua figlia Edith, con l’aiuto d’un buon curato di cam-
+							<lb n="25" break="no"/>pagna: torna a credere, e fino ad eseguire i precetti del
+							<lb n="26" />culto esterno. Fortunatamente, l’arte ha cacciato da banda
+							<lb n="27" />le preoccupazioni religiose e filosofiche dello scrittore.
+							<lb n="28" /><persName>Steinegge</persName>, in fondo, non si converte perchè le ragioni del
+							<lb n="29" />curato lo persuadano, o perchè le sue stesse riflessioni lo in-
+							<lb n="30" break="no"/>ducano a uscire dallo scetticismo, in cui è rimasto per tanto
+							<lb n="31" />tempo. No, ciò che il <persName ref="AF">Fogazzaro</persName> chiama conversione, è
+							<lb n="32" />semplice sovrabbondanza di affetto paterno. Quell’uomo
+							<lb n="33" />prega Dio, in buona fede, ma non sa figurarsi Dio se non
+							<lb n="34" />pensa alla figliuola, così affettuosa, così pura, così pronta
+							<lb n="35" />all’abnegazione, al sacrifizio. Il fenomeno è assai bene os-
+							<lb n="36" break="no"/>servato, e assai bene dipinto, forse a dispetto dell’<persName ref="AF">A.</persName> e no-
+							<lb n="37" break="no"/>nostante le dispute affatto inutili tra il curato e <persName>Stei-
+							<lb n="38" break="no"/>negge</persName>. Ma il preconcetto ha prodotto risultati deplorevoli.
+							<lb n="39" />Il curato ha una fisonomia sua propria; però, in fondo, non
+							<lb n="40" />è un carattere, è una personificazione, di quelle ch’erano di
+							<lb n="41" />moda, non son molti anni, nei libri de’ manzoniani. <persName>Steinegge</persName>,
+							<lb n="42" />benché scettico, rozzo, era una gran brava persona, fior di ga-
+							<lb n="43" break="no"/>lantuomo, pieno di aspirazioni nobili, di sentimenti forti e
+							<lb n="44" />delicati. Che ci ha guadagnato a ridiventar cattolico? Edith
+							<lb n="45" />è un miracolo; val quanto dire che non è una donna. S’in-
+							<lb n="46" break="no"/>tende il suo affetto smisurato pel padre, s’intendono le sue
+							<lb n="47" />smanie per la salute eterna di lui; non s’intende perchè a
+							<lb n="48" />quell’affetto e a quelle smanie debba sacrificare l’amore che
+							<lb n="49" />sente per Siila, amore ricambiato. O davvero non potevano
+							<lb n="50" />star tutti e tre in una stessa casa? O altre donne, pure e
+							<lb n="51" />sante, non han saputo conciliare sulla terra, come nei romanzi
+							<lb n="52" />e nei drammi, la devozione filiale con la qualità di spose amo-
+							<lb n="53" break="no"/>revoli? Carattere chiuso, mistico, Edith è un enigma; ed
+							<lb n="54" />è antipatica appunto perchè la sua condotta non si spiega.
+							<lb n="55" />Nulla, ripetiamo, tranne il suo misticismo, la obbliga a
+							<lb n="56" />comportarsi a quel modo, ed è un misticismo poco attivo, fin
+							<lb n="57" />troppo sereno, sicuro di sè tanto da parere egoismo. Almeno
+							<lb n="58" />le battaglie, che senza dubbio, secondo l’<persName ref="AF">A.</persName> si combattono
+							<lb n="59" />nel cuore di lei, ci fossero svelate!
+						</p>
+
+						<p facs="#bib10_MAL" xml:id="pag10_6">
+							<lb n="60" />Siamo stati severi, fin qui, perchè abbiam creduto do-
+							<lb n="61" break="no"/>ver nostro sollevare la critica alle altezze che il <persName ref="AF">Fogaz-
+							<lb n="62" break="no"/>zaro</persName> ha vagheggiate. Egli pensa; egli intende l’arte come
+							<lb n="63" />qualcosa di molto più serio che generalmente non si creda.
+							<lb n="64" />Ha sbagliato; ma vi son cadute, le quali annunziano trionfi
+							<lb n="65" />vicini. Invece è riuscito felicemente dove forse non ha messo
+							<lb n="66" />il maggiore studio, il più forte desiderio. Intorno al fatto
+							<lb n="67" />centrale, che abbiam indicato, si svolgono i mille incidenti
+						</p>
+					</div>
+
+					<div xml:id="notizie">
+						<pb n="11" />
+						<cb n="1" />
+						<!--poesia-->
+						<lg facs="#bib11_MAL" xml:id="pag11_1" type="poem" xml:lang="ro-IT">
+							<l n="1"><choice><orig>’Ntene</orig><reg>Non te ne</reg></choice> <note target="#note1">*</note> darei neppure <choice><orig>’na</orig><reg>una</reg></choice> mollica,</l>
+							<l n="2">Se <choice><orig>te</orig><reg>ti</reg></choice> vedessi morta <choice><orig>pe’</orig><reg>per</reg></choice> la fame.</l>
+							<l n="3">Son <choice><orig>peccolina</orig><reg>piccolina</reg></choice> e vado <choice><orig>pe’</orig><reg>per</reg></choice> la spica:</l>
+							<l n="4">Tu che sei <choice><orig>granne</orig><reg>grande</reg></choice> e stai <choice><orig>sempr’a</orig><reg>sempre a</reg></choice> <choice><orig>canta’</orig><reg>cantare</reg></choice>,</l>
+							<l n="5">Canta cicala che <choice><orig>pozzi</orig><reg>possa</reg></choice> <note target="#note2">**</note> <choice><orig>crepa'</orig><reg>crepare</reg></choice>.</l>
+						</lg>
+
+						<p facs="#bib12_MAL" xml:id="pag11_2">
+							<lb n="6" />Il <persName ref="ADN">De Nino</persName> tocca d’un fatto importante a pag. 134 del
+							<lb n="7" />suo libro: <quote>« V’è dei pastori che scrivono e stampano i loro
+							<lb n="8" />versi. Ognuno di noi ricorda il <hi rend="italic">Poeta pastore</hi>, l’amico di <persName ref="GG">Ga-
+							<lb n="9" break="no"/>ribaldi</persName>. La <hi rend="italic">Siringa</hi> pastorale del nostro Maccaroni ha fatto
+							<lb n="10" />maravigliare anche le persone serie. I vecchi ricordano an-
+							<lb n="11" break="no"/>cora il pastore Filippo Mariani di Leonessa che dava mo-
+							<lb n="12" break="no"/>deste accademie d'improvvisi; e, senza disprezzo, si leggono
+							<lb n="13" />i versi di Sante Nanni, soprannominato l’abate Runci di
+							<lb n="14" />Terzone; abate, per essere stato chierico prima di darsi
+							<lb n="15" />alla pastorizia. Il più famoso di tutti è stato però un An-
+							<lb n="16" break="no"/>drea Pietrolucci di <placeName ref="#B_PDP">Piè del Poggio</placeName>, anche nel <placeName>Leonessano</placeName>.
+							<lb n="17" />Un cantico intitolato : <bibl><title level="m" rend="italic">Incitamento alle laudi e benedizioni di
+							<lb n="18" />Dio — L’armentizio pastore all'anima contemplativa</title></bibl> meritò
+							<lb n="19" />di essere stampato in <placeName ref="#B_ROM">Roma</placeName> nel <date when="1850">1850</date> pei tipi Chiassi. Ma
+							<lb n="20" />prima del cantico, aveva composto: <bibl><title level="m" rend="italic">Il giro del sole e degli
+							<lb n="21" />astri a fronte di <persName ref="NC">Nicolò Copernico</persName> che vuole giri la terra intorno
+							<lb n="22" />al sole, comprovato con l'autorità della Sacra Scrittura, come
+							<lb n="23" />ancora con l'esperienza e con le ragioni »</title></bibl></quote>. L’<persName ref="AF">A.</persName> offre delle poe-
+							<lb n="24" break="no"/>sie inedite del Pietrolucci, a <quote>« chi vorrà scrivere della
+							<lb n="25" />poesia popolare negli <region>Abruzzi</region> »</quote>. Chi meglio di lui, diligente e amoroso raccoglitore di proverbi, di novelline, di
+							<lb n="26" />tradizioni, di canti, (e senza dubbio, come appare negli
+							<lb n="27" /><bibl><title level="m" rend="italic">Usi e Costumi</title></bibl>, dove aver già molto materiale pronto), po-
+							<lb n="28" break="no"/>trebbe darci il libro che propone ad altri di fare?
+						</p>
+
+						<p facs="#bib13_MAL" xml:id="pag11_3">
+							<lb n="29" /><bibl><persName ref="GF">G. Frizzo</persName>, <title level="m" rend="italic">L’Aritmetica per le scuole ginnasiali, tecniche e
+							<lb n="30" />normali.</title> Drucker e Tedeschi, <placeName ref="#B_VER">Verona</placeName>, <placeName ref="#B_PAD">Padova</placeName>, <date when="1881">1881</date></bibl>
+							<lb n="31" />— <bibl><title level="m" rend="italic">La Geometria per le scuole tecniche esposta secondo i nuovi
+							<lb n="32" />programmi.</title> Seconda edizione. — Drucker e Tedeschi,
+							<lb n="33" /><placeName ref="#B_VER">Verona</placeName>- <placeName ref="#B_PAD">Padova</placeName>, 1881.</bibl>
+						</p>
+
+						<p facs="#bib14_MAL" xml:id="pag11_4">
+							<lb n="34" />In questi due volumi splendidamente stampati il profes-
+							<lb n="35" break="no"/>sore <persName ref="GF">G. Frizzo</persName> con alquanta prolissità, ma sempre con
+							<lb n="36" />chiarezza e spesso con molta semplicità e precisione, svolge
+							<lb n="37" />completamente la materia dei programmi di matematica
+							<lb n="38" />per le scuole tecniche, propone agli alunni utili esercizi e
+							<lb n="39" />fornisce loro nozioni preziose sulla storia delle matematiche
+							<lb n="40" />in alcune note a piè di pagina le quali rivelano nell’<persName ref="AF">A.</persName> una
+							<lb n="41" />erudizione al certo non comune fra gli insegnanti delle
+							<lb n="42" />scuole secondarie. Considerando però che il trattato di
+							<lb n="43" />aritmetica è proposto anche alle scuole ginnasiali ove (nelle
+							<lb n="44" />classi superiori) l’insegnamento deve essere dato con me-
+							<lb n="45" break="no"/>todo rigorosamente scientifico, ci pare che l’ <persName ref="AF">A.</persName> potrebbe
+							<lb n="46" />migliorare in alcuni punti il suo libro, per esempio, espo-
+							<lb n="47" break="no"/>nendo con maggior generalità la teoria da cui dipendono
+							<lb n="48" />i criteri di divisibilità, rendendo più evidente la pratica
+							<lb n="49" />semplicità della così detta riprova del nove coll’indicare
+							<lb n="50" />esplicitamente il modo brevissimo di calcolare i resti e so-
+							<lb n="51" break="no"/>prattutto dimostrando con maggior rigore la regola per
+							<lb n="52" />l’estrazione della radice quadrata di un numero intero. In
+							<lb n="53" />fatti dal ragionamento che fa l’<persName ref="AF">A.</persName> nel <seg rend="symbol">§</seg> 283 non si vede
+							<lb n="54" />che il numero delle decine della radice debba essere la
+							<lb n="55" />radice del maggior quadrato contenuto nelle centinaia del
+							<lb n="56" />numero dato, ma soltanto che esso è radice di un quadrato
+							<lb n="57" />non maggiore di questo numero di centinaia. Finalmente ci
+							<lb n="58" />sembra che la teoria dei numeri irrazionali, che l’<persName ref="AF">A.</persName> vuol
+							<lb n="59" />chiamare inesprimibili, poteva essere esposta con maggior
+							<lb n="60" />larghezza, ma non insistiamo su questo punto, perchè al-
+							<lb n="61" break="no"/>cuni vogliono, e forse non a torto, riserbare alle classi
+							<lb n="62" />liceali l’insegnamento rigoroso di questa teoria che non è
+							<lb n="63" />certo una delle più facili a trattarsi in un corso elementare.
+							<!--note fondo pagina-->
+							<note place="foot" xml:id="note1">	
+								<lb n="64" />* Non te ne 
+							</note>
+							<note place="foot" xml:id="note2">
+								<lb n="65" />** Possa crepare
+							</note>
+						</p>
+
+						<cb n="2" />
+						<p facs="#bib15_MAL" xml:id="pag11_5">
+							<lb n="1" /><unclear reason="illegible">Nella geometria si fa molto uso della semirotazione</unclear>
+							<lb n="2" />delle figure per dimostrare i teoremi della planimetria,
+							<lb n="3" />della quale i concetti fondamentali sono esposti con esat-
+							<lb n="4" break="no"/>tezza e con linguaggio molto accurato (notiamo in parti-
+							<lb n="5" break="no"/>colare la sostituzione della parola <term rend="italic">tratto</term> all’espressione <hi rend="italic">seg-
+							<lb n="6" break="no"/>mento rettilineo</hi>). L’ <persName ref="AF">A.</persName> si è dapprincipio molto giovato,
+							<lb n="7" />come egli stesso fa intendere, del trattato del <persName ref="EDB">Baltzer</persName> (tra-
+							<lb n="8" break="no"/>dotto dal Cremona) e dell’opuscolo di Iloüel (<bibl><title level="m" rend="italic" xml:lang="fr">Essai critique
+							<lb n="9" />sur les principes fondamentaux de la Géométrie élémentaire</title></bibl>).
+							<lb n="10" />A questo riguardo però dobbiamo osservare che non è ac-
+							<lb n="11" break="no"/>cettabile la definizione del piano come luogo geometrico
+							<lb n="12" />delle rette che passano per un punto dato e incontrano
+							<lb n="13" />una retta data, perchè questa definizione esclude dalla
+							<lb n="14" />superficie che si vuol definire una retta o più secondochè
+							<lb n="15" />si ammette o no il famoso postulato delle parallele. Ci
+							<lb n="16" />sorprende poi il vedere come l’<persName ref="AF">A.</persName> in una nota (a pag. 71)
+							<lb n="17" />accusi di troppa generalità i concetti di <persName ref="JB">Bolyai</persName> e di <persName ref="NIL">Lobat-
+							<lb n="18" break="no"/>schewsky</persName> sulla geometria. Persuasi che di essi non occorra
+							<lb n="19" />far menzione in un libro destinato alle scuole tecniche, ci
+							<lb n="20" />sembra però che, specialmente dopo i celebri lavori di
+							<lb n="21" /><persName ref="BR">Riemann</persName>, di <persName ref="EB">Beltrami</persName> e di <persName ref="HVH">Helmholtz</persName> (per tacer d’altri),
+							<lb n="22" />tali concetti meritino di essere molto apprezzati e studiati.
+						</p>
+
+						<p facs="#bib16_MAL" xml:id="pag11_6">
+							<lb n="23" />Noteremo ancora che, anche senza esporre con tutto il
+							<lb n="24" />rigore la sottile teoria della misura del cerchio e dei corpi
+							<lb n="25" />rotondi, si poteva, trattando questi argomenti, usare un
+							<lb n="26" />linguaggio alquanto più preciso, in modo almeno da non
+							<lb n="27" />far credere che il perimetro del poligono inscritto arrivi
+							<lb n="28" />al limite ad uguagliare la circonferenza (§ 95). Difettosa è
+							<lb n="29" />pure la dimostrazione del teorema fondamentale sulla retta
+							<lb n="30" />perpendicolare al piano ove (§ 105 osservazione) vien data
+							<lb n="31" />per evidente una cosa che non lo è affatto. Non vi era ra-
+							<lb n="32" />gione per sopprimere la semplice e facile dimostrazione di
+							<lb n="33" />autore anonimo che è riportata dal <persName ref="EDB">Baltzer</persName>.
+						</p>
+
+						<p facs="#bib17_MAL" xml:id="pag11_7">
+							<lb n="34" />Presi nel loro insieme, i libri del <persName ref="GF">sig. Frizzo</persName>, ad onta
+							<lb n="35" />delle imperfezioni notate e di altre che vorremmo veder
+							<lb n="36" />corrette, ci sembrano molto preferibili a tanti altri desti-
+							<lb n="37" />nati all’insegnamento tecnico elementare. Ciò va detto in
+							<lb n="38" />ispecial modo per la geometria, poiché vi sono libri ove
+							<lb n="39" />col pretesto del metodo <term rend="italic">intuitivo</term> (eccellente quando sia ben
+							<lb n="40" />inteso) si fa a meno di qualunque dimostrazione razionale,
+							<lb n="41" />riducendo il tutto ad un puro giuochetto di cartoncini.
+						</p>
+					</div>
+
+					<div xml:id="notizie1">
+						<head facs="#not1_1MAL" xml:id="pag11_8">
+							<lb n="42" /><hi rend="head">NOTIZIE.</hi>
+						</head>
+						
+						<p facs="#not1_MAL" xml:id="pag11_9">
+							<lb n="43" />— È terminata presso la libreria Plon una bella e completa edi-
+							<lb n="44" break="no"/>zione dei <bibl><title level="m" rend="italic" xml:lang="fr">Discours parlementaires ile Jules Paure</title> (<foreign xml:lang="fr"> publiés par M<gap reason="illegible" extent="2" unit="chars"/> veuve
+							<lb n="45" /><persName ref="JF">Jules Favre</persName> née Velten</foreign></bibl>). Sono quattro grossi volumi, di cui il primo
+							<lb n="46" />racchiudo, oltre una brove introduzione biografica scritta dalla signora
+							<lb n="47" /><persName ref="JF">Favre</persName> o un’ opera giovanile del grande oratore intitolata <bibl><title level="m" rend="italic" xml:lang="fr">Anathème</title></bibl>,
+							<lb n="48" />i discorsi pronunciati <date from="1848" to="1851">dal 1848 al 1851</date>; il secondo volumo contiene i
+							<lb n="49" />discorsi pronunciati <date from="1860" to="1865">dal 1860 al 1865</date>; il terzo i discorsi pronunciati
+							<lb n="50" /><date from="1865" to="1870-09-03">dal 1865 al 1870 (3 settembre)</date>; il quarto i discorsi dal <date from="1870-09-04" to="1879">4 settembre
+							<lb n="51" />1870 al 1879</date>, le circolari o i dispacci di <persName ref="JF">Jules Favre</persName> quando fu mini-
+							<lb n="52" break="no"/>stro degli affari ostori; e sotto la rubrica, scritti vari, degli articoli
+							<lb n="53" />pubblicati nel <orgName ref="#NJ">National</orgName> o nel <orgName ref="#DR">Droit</orgName> <date from="1836" to="1838">(1836-1838)</date> e diversi scritti sullo
+							<lb n="54" />questioui che preoccuparono 1’ opiuiono pubblica <date from="1876" to="1879">dal 1876 al 1879</date>.
+							<lb n="55" />(<bibl><publisher>Revue critique</publisher></bibl>)
+						</p>
+
+						<p facs="#not2_MAL" xml:id="pag11_10">
+							<lb n="56" />— Si è pubblicato in <placeName ref="#B_ING">Inghilterra</placeName> una nuova edizione del Nuovo Te-
+							<lb n="57" break="no"/>stamento, variamento giudicata, ma che si vendo molto rapidamente.
+							<lb n="58" />In <placeName ref="#B_AME">America</placeName> comparvero prontamente molto contraffazioni di tale edi-
+							<lb n="59" break="no"/>zione. Un giornale di <placeName ref="#B_CHI">Chicago</placeName> poi si sarebbe fatto telegrafare il testo
+							<lb n="60" />della nuova edizione e l’avrebbe dato in appendice ai suoi lettoti.
+							<lb n="61" />(<bibl><publisher>Revue politique et littéraire</publisher></bibl>)
+							<lb n="61" /><persName ref="SS">SIDNEY SONNINO</persName>, Direttore Proprietario.
+							<lb n="62" /><persName ref="PP">PIETRO PAMPALONI</persName>, Gerente responsabile.
+							<lb n="63" /><placeName ref="#B_ROM">ROMA</placeName>. <date when="1881">1881</date> — <orgName ref="#CSE">Tipografia Barbèra</orgName>.
+						</p>
+					</div>
+				</body>
+			</text>
+
+		</group>
+	</text>
+			
+</TEI>

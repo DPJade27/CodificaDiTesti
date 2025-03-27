@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100..900&family=Noto+Serif:wght@100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #e8f5e9;
+    font-family: "Noto Serif", serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* HEADER & NAVBAR */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;  
+    background: #81c784;
+    color: #000;
+    font-family: "Chivo Mono", monospace;
+    height: 70px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+}
+
+.logo img {
+    max-height: 55px;
+}
+
+
+
+/* NAVBAR LINKS */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: #000; 
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.navbar a.nameproject {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+    margin-left: 5px;
+}
+.dropdown .dropbtn {
+    background: none;
+    border: none;
+    color: #000;
+    font: inherit;
+    font-size: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.dropdown:hover .dropbtn {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: #fdfdfd;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    min-width: 140px;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1000;
+}
+.dropdown-content a {
+    display: block;
+    color: #2C3E50;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-family: "Chivo Mono", monospace;
+    font-size: 14px;
+}
+.dropdown-content a:hover {
+    background-color: #eaeaea;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+body {
+    padding-top: 70px;
+}
+
+/* DESCRIPTION BLOCK */
+.desc {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.5em;
+    margin: 2% 10% 3% 10%;
+    font-size: 14px;
+    font-family: "Noto Serif", serif;
+    color: #2C3E50;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* PHENOMENA SECTION */
+#fenomeni {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 998;
+    background-color: #81c784;
+    color: #ecf0f1;
+    border-radius: 6px 0 0 6px;
+    padding: 10px;
+    transition: width 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+}
+
+#fenomeni.collapsed {
+    width: 140px;
+    height: auto;
+}
+
+#fenomeni.expanded {
+    width: 220px;
+}
+
+#fenomeni-toggle {
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 16px;
+    padding: 12px; 
+    background: #fff;
+    color: #2C3E50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Chivo Mono", monospace;
+    font-weight: 600;
+}
+
+#fenomeni.collapsed .bottoni_fenomeni {
+    display: none; 
+}
+
+#fenomeni.expanded .bottoni_fenomeni {
+    display: block;  
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottoni_fenomeni {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottoni_fenomeni button {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 14px;
+    font-family: "Chivo Mono", monospace;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #2C3E50; 
+    background-color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.bottoni_fenomeni button:hover {
+    background-color: #ddd;
+    transform: scale(1.01);
+}
+
+#persone          { background-color: #d55656; }
+.highlight_p      { background-color: #d55656; }
+
+#epithet          { background-color: #e28a2c; }
+.highlight_ep     { background-color: #e28a2c; }
+
+#luoghi           { background-color: #00f5d0; }
+.highlight_l      { background-color: #33b5a1; }
+
+#date             { background-color: #fade07; }
+.highlight_d      { background-color: #fade07; }
+
+#organizzazioni   { background-color: #ed63d9; }
+.highlight_o      { background-color: #ed63d9; }
+
+#citazioni        { background-color: #a53fdc; }
+.highlight_c      { background-color: #a53fdc; }
+
+#bibliografia     { background-color: #4df54d; }
+.highlight_op     { background-color: #4df54d; }
+
+#casaeditrice     { background-color: #8b8ed4; }
+.highlight_ce     { background-color: #8b8ed4; }
+
+#termini          { background-color: #695c27; }
+.highlight_cl     { background-color: #695c27; }
+
+#foreign          { background-color: #17cde2; }
+.highlight_f      { background-color: #17cde2; }
+
+#correzioni       { background-color: #e2848b; }
+.highlightChoice  { background-color: #e2848b; }
+
+#dialettali        { background-color: #7ea170; }
+.highlightChoices  { background-color: #7ea170; }
+
+#dialoghi         { background-color: #d9cfb1; }
+.highlight_seg    { background-color: #d9cfb1; }
+
+.bottoni_fenomeni button:active {
+  background-color: #916868;
+  transform: scale(0.98);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#fenomeniSummary {
+    margin: 2em 10%;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+#fenomeniSummary h2 {
+    margin-top: 0;
+    font-family: "Chivo Mono", monospace;
+}
+
+#fenomeniSummary p {
+    margin: 0.5em 0;
+}
+
+.unclear {
+    border-bottom: 1px dotted #888;
+    cursor: help;
+    color: #b00;
+}
+
+.gap {
+    border-bottom: 1px dotted #888;
+    cursor: help;
+    color: rgb(0, 12, 187);
+}
+
+
+/* MAIN TEXT SECTION */
+.text {
+    font-family: "Noto Serif", serif;
+    font-size: 14px;
+    color: #2C3E50;
+    padding: 1em 2em;
+}
+
+.text h2 {
+    font-family: "Chivo Mono", monospace;
+    font-size: 20px;
+    color: #34495E;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #bbb;
+    margin: 40px auto 20px auto;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: fit-content;
+}
+
+.italic {
+    font-style: italic;
+}
+
+p, span {
+    margin: 0;
+    padding: 0;
+    white-space: normal
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    gap: 2%;
+}
+
+.box {
+    width: 35%;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.boxtext {
+    display: flex;
+    width: 65%;
+    height: 720px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden; 
+}
+
+.column {
+    width: 50%;
+    padding: 1em;
+    overflow-y: auto;
+    border-right: 1px solid #eee;
+}
+
+.column2 {
+    border-right: none;
+}
+
+.poem {
+    font-style: italic;
+    margin: 1em 2em;
+    line-height: 1.6;
+}
+
+.poem .line {
+display: block;
+margin-bottom: 0.2em;
+}
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+/* CORREZIONI / HIGHLIGHT */
+.choice .orig, .choice .sic {
+    display: inline;
+}
+
+.choice .reg, .choice .corr {
+    display: none;
+}
+  
+.choice:hover .orig, .choice:hover .sic {
+    display: none;
+}
+  
+.choice:hover .reg, .choice:hover .corr {
+    display: inline;
+}
+  
+.highlightChoice {
+    background-color: #f3a6ac;
+}
+
+.highlightChoices {
+    background-color: #bef3a6;
+}
+
+/* FOOTER & ABOUT SECTION */
+#about {
+    margin-top: 60px;
+    padding: 0 2em;
+}
+
+footer {
+    text-align: left;
+    font-family: "Chivo Mono", monospace;
+    padding: 40px;
+    background-color: #81c784;
+    color: #000;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 0;
+}
+
+footer h1 {
+    margin-top: 0;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+}
+
+footer .box {
+    width: 30%;
+}
+
+footer h2 {
+    font-size: 16px;
+    margin-top: 0;
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    .box, .boxtext {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .boxtext {
+        height: auto;
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+        border-right: none; 
+        border-bottom: 1px solid #eee;
+    }
+    .column2 {
+        border-bottom: none;
+    }
+
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+  
+  #scrollTopBtn:hover {
+    background: #555;
+}

@@ -1,0 +1,1437 @@
+<!DOCTYPE HTML><html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Progetto di Codifica di Testi</title><script src="https://code.jquery.com/jquery-3.7.1.js"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script><script src="./src/script.js"></script><link href="./src/style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <header>
+         <div class="logo"><a href="https://rassegnasettimanale.animi.it/" target="_blank"><img src="logo.png" alt="La Rassegna Settimanale"></a></div>
+         <nav>
+            <div class="navbar"><a class="nameproject" href="https://github.com/angelodel80/corsoCodifica">Codifica di Testi</a><a href="#">Home</a><div class="dropdown"><button class="dropbtn">Pagine <i class="fa fa-caret-down"></i></button><div class="dropdown-content"><a href="#Pagina1-TornanDiMaremma">Pagina1-TornanDiMaremma</a><a href="#Pagina2">Pagina2</a><a href="#Pagina3">Pagina3</a><a href="#Pagina4-TornanDiMaremmaBibliografia">Pagina4-TornanDiMaremmaBibliografia</a><a href="#Pagina5">Pagina5</a><a href="#Pagina6-Malaria">Pagina6-Malaria</a><a href="#Pagina7">Pagina7</a><a href="#Pagina8">Pagina8</a><a href="#Pagina9-MalariaBibliografia">Pagina9-MalariaBibliografia</a><a href="#Pagina10">Pagina10</a><a href="#Pagina11-Notizie">Pagina11-Notizie</a></div>
+               </div><a href="#about">About</a></div>
+         </nav>
+      </header>
+      <div class="desc">
+         <h2>Titolo dell’Opera:</h2>
+         <div>
+            <p><strong>Titolo Principale: </strong>La rassegna settimanale</p>
+            <p><strong>Sottotitolo: </strong>di politica, scienze, lettere ed arti</p>
+            <p><strong>Autori: </strong>Leopoldo Franchetti, Sidney Sonnino</p>
+         </div>
+         <h2>Descrizione della Fonte:</h2>
+         <div>
+            <p><strong>Luogo di Pubblicazione: </strong>Roma</p>
+            <p><strong>Editore: </strong>Casa Editrice Barbèra</p>
+            <p><strong>Data: </strong>1878</p>
+         </div>
+         <h2>Descrizione del Manoscritto:</h2>
+         <div>
+            <p><strong>Supporto: </strong>Fogli di carta</p>
+            <p><strong>Condizioni: </strong>
+               									Le pagine sono completamente integre, con qualche piccola macchia di inchiostro
+               sul testo e sui bordi; il testo rimane facilmente leggibile.
+               								</p>
+         </div>
+         <div>
+            <p><strong>Layout:</strong>
+               									Le pagine sono divise in due colonne, ciascuna con una media di 67 righe,
+               per un totale di circa 135 righe per pagina. 
+               									Nelle pagine pari (esclusa la copertina), la numerazione è posizionata sul
+               lato sinistro, mentre le informazioni sul volume e sul fascicolo sono sulla destra.
+               
+               									Nelle pagine dispari, invece, la data è a sinistra e il numero di pagina
+               è a destra. 
+               									Al centro di ogni pagina è presente la scritta LA RASSEGNA SETTIMANALE.
+               								</p>
+         </div>
+         <h2>Descrizione della Codifica:</h2>
+         <p id="">Questo file codifica una trascrizione di "Rassegna Settimanale" utilizzando le linee guida del TEI P5. 
+					Collega la trascrizione alle immagini dei facsimili per analisi e preservazione digitale.</p>
+         <p id="">Gli articoli selezionati sono: 
+					Tornan di Maremma, 
+					Bibliografia Tornan di Maremma, 
+					Malaria, 
+					Bibliografia Malaria, 
+					Notizie.
+				</p>
+      </div>
+      <div id="fenomeni">
+         <ul class="bottoni_fenomeni"><button type="button" id="persone">persone</button><button type="button" id="date">date</button><button type="button" id="casaeditrice">casaeditrice</button><button type="button" id="organizzazioni">organizzazioni</button><button type="button" id="luoghi">luoghi</button><button type="button" id="foreign">foreign</button><button type="button" id="bibliografia">bibliografia</button><button type="button" id="termini">termini</button><button type="button" id="epithet">epithet</button><button type="button" id="citazioni">citazioni</button><button type="button" id="correzioni">correzioni</button><button type="button" id="dialettali">dialettali</button><button type="button" id="dialoghi">dialoghi</button></ul>
+      </div>
+      <div class="text">
+         <h2 id="Pagina1-TornanDiMaremma">Pagina1-TornanDiMaremma</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina1-TornanDiMaremma" src="./img/mar_pag1.png"><map id="Pagina1-TornanDiMaremma"><area shape="rect" coords="322,113,597,126" style="cursor: help;" title="par1_1_TDM"><area shape="rect" coords="323,129,595,255" style="cursor: help;" title="par1_2_TDM"><area shape="rect" coords="324,258,591,358" style="cursor: help;" title="par1_3_TDM"><area shape="rect" coords="323,359,591,454" style="cursor: help;" title="par1_4_TDM"><area shape="rect" coords="323,456,592,558" style="cursor: help;" title="par1_5_TDM"><area shape="rect" coords="322,561,592,648" style="cursor: help;" title="par1_6_TDM"><area shape="rect" coords="322,651,592,833" style="cursor: help;" title="par1_7_TDM"></map></div>
+            <div class="boxtext">
+               <div class="column column1"></div>
+               <div class="column column2">
+                  <h2 id="par1_1_TDM">
+							 <br>TORNAN DI <span class="placeName" id="MAR">MAREMMA</span>.
+						</h2>
+                  <p id="par1_2_TDM">
+							 <br>In una botteguccia d'un povero casolare alle falde della
+							 <br>montagna, stavano due pastori attempati oltre la cinquan-
+							 <br>tina i quali, appena che fui entrato, attirarono tutta la mia
+							 <br>attenzione per una certa loro aria di impazienza e di sgo-
+							 <br>mento, per la quale pareva non potessero trovare fermezza.
+							 <br>Si asciugavano il sudore della faccia senza che fosse caldo,
+							 <br>sospiravano forte e, barattando tra loro occhiate dolorose
+							 <br>e pochi monosillabi, non levavano un momento gli occhi
+							 <br>dalla vetrata per guardare attenti sulla via che per quattro
+							 <br>buoni tiri di schioppo si stendeva bianca e polverosa da-
+							 <br>vanti alla porta.
+						</p>
+                  <p id="par1_3_TDM">
+							<span class="dialoghi" id="d1e615"> <br>— Voi vorrete bere, eh, giovanotto? -</span>mi domandò la padrona
+							 <br>vedendomi sedere in disparte a un tavolino di legno
+							 <br>tinto.
+							<span class="dialoghi" id="d1e623"> <br>— Mangerei anche un boccone, Verdiana, se ci avete
+							 <br>qualche cosa di buono da darmi.</span>
+							<span class="dialoghi" id="d1e629"> <br>— E sa -</span> disse dopo avermi un pò osservato <span class="dialoghi" id="d1e634">- mi
+							 <br>scusi tanto perchè proprio non l'avevo raffigurato. Che fa?
+							 <br>sta bene? O la <span class="choice dialettale" id="d1e640"><span class="orig visible">su'</span><span class="reg hidden" style="color: red;">sua</span></span> famiglia è fiera?</span>
+							<span class="dialoghi" id="d1e646"> <br>— Tutti bene. Grazie. E voi?</span>
+						</p>
+                  <p id="par1_4_TDM">
+							<span class="dialoghi" id="d1e652">
+								 <br>— <span class="choice correzione" id="d1e656"><span class="sic visible">Sissignore</span><span class="corr hidden" style="color: blue;">Sì signore</span></span>, mi contento. Quando devo andar male,
+								 <br>vada sempre così. O con chi si discorreva di lei l’altro
+								 <br>giorno? Ah! Ci passò quello delle strade che viene a con-
+								 <br>tare i monti <span class="choice dialettale" id="d1e668"><span class="orig visible">de’</span><span class="reg hidden" style="color: red;">dei</span></span> sassi.... sarebbe l’ingegnere?
+								 <br>Mi domandò se c’era più stato, e io gli dissi di no. Se <span class="choice dialettale" id="d1e675"><span class="orig visible">vole</span><span class="reg hidden" style="color: red;">vuole</span></span> che gli af-
+								 <br>frittelli dell’<span class="choice dialettale" id="d1e682"><span class="orig visible">ova</span><span class="reg hidden" style="color: red;">uova</span></span>, si fa in un momento; <span class="choice correzione" id="d1e687"><span class="sic visible">se no</span><span class="corr hidden" style="color: blue;">sennò</span></span>, gli posso dare
+								 <br>un po’ di cacio fresco ma proprio <span class="choice dialettale" id="d1e695"><span class="orig visible">bono</span><span class="reg hidden" style="color: red;">buono</span></span>. Non ci ho altro.
+							</span>
+							<span class="dialoghi" id="d1e701"> <br>— Tre uova pochissimo cotte, e subito.</span>
+						</p>
+                  <p id="par1_5_TDM">
+							<span class="dialoghi" id="d1e707"> <br>— <span class="choice correzione" id="d1e710"><span class="sic visible">Sissignore</span><span class="corr hidden" style="color: blue;">Sì signore</span></span>.</span> — E si avviò per andarmele a preparare.
+							 <br>Ma quando ebbe fatto quattro passi, tornò indietro per dirmi:
+							<span class="dialoghi" id="d1e718">
+								 <br>— A proposito! Ci sarebbe del baccalà che ho lessato
+								 <br>per quest’<span class="choice dialettale" id="d1e724"><span class="orig visible">omini</span><span class="reg hidden" style="color: red;">uomini</span></span> e per quelli che devon’arrivare. Si deve
+								 <br>sentire se <span class="choice dialettale" id="d1e731"><span class="orig visible">glie ne</span><span class="reg hidden" style="color: red;">gliene</span></span> voglion ricedere un po’?
+							</span>
+							<span class="dialoghi" id="d1e737">
+								 <br>— No, no; lasciate correre, Verdiana. Piuttosto, a pro-
+								 <br>posito di questi uomini, ditemene qualche cosa: chi sono?
+								 <br>di dove vengono? chi deve arrivare? che hanno, chè mi
+								 <br>par di vederli tanto affannati?
+							</span>
+						</p>
+                  <p id="par1_6_TDM">
+							<span class="dialoghi" id="d1e750">
+								 <br>— Hanno il mal del povero, <span class="choice correzione" id="d1e754"><span class="sic visible">glie lo</span><span class="corr hidden" style="color: blue;">glielo</span></span> dico io cos’hanno;
+								 <br>quel malaccio che si tira dietro le sette piaghe peggio della
+								 <br>carestia. So lo crede da un par d’ore che son qui, m’hanno
+								 <br>straziato il <span class="choice dialettale" id="d1e766"><span class="orig visible">core</span><span class="reg hidden" style="color: red;">cuore</span></span> che mi par d’essere come quando s’è fatto
+								 <br>un sognaccio <span class="choice dialettale" id="d1e773"><span class="orig visible">colla</span><span class="reg hidden" style="color: red;">con la</span></span> febbre. Proprio, a volte, si dà certi casi
+								 <br>che, in verità, anche a esser cristiani, ci sarebbe da dire
+								 <br>certe eresie da mettere a <span class="choice dialettale" id="d1e782"><span class="orig visible">risico</span><span class="reg hidden" style="color: red;">rischio</span></span> la <span class="choice correzione" id="d1e788"><span class="sic visible">salvazione</span><span class="corr hidden" style="color: blue;">salvezza</span></span> dell’anima. Lo
+								 <br>vede quello appoggiato al banco che si gratta la barba?
+							</span>
+						</p>
+                  <p id="par1_7_TDM">
+							<span class="dialoghi" id="d1e798">
+								 <br>Quello lì è il babbo d’un giovanotto che s’innamorò della
+								 <br>figliola di quell’altro. Son tutt’e due di per in su; il posto
+								 <br>come si chiama non <span class="choice correzione" id="d1e806"><span class="sic visible">glie l’ho</span><span class="corr hidden" style="color: blue;">gliel'ho</span></span> domandato; ma dev’ essere
+								 <br><span class="choice correzione" id="d1e812"><span class="sic visible">dimolto</span><span class="corr hidden" style="color: blue;">di molto</span></span> lontano perché dianzi alle dieci quando mi sono
+								 <br>arrivati, erano stracchi che non ne potevan più, e m’hanno
+								 <br>detto che <span class="choice correzione" id="d1e822"><span class="sic visible">s’eran</span><span class="corr hidden" style="color: blue;">erano</span></span> partiti a levata di sole. Insomma, per fare
+								 <br>il discorso breve, dice che <span class="choice dialettale" id="d1e829"><span class="orig visible">que’</span><span class="reg hidden" style="color: red;">quei</span></span> ragazzi si volevano sposare
+								 <br>a tutti i costi e non c’era, dice, neanche tanto da comprare
+								 <br>le panchette del letto. Allora lui, si direbbe il giovanotto,
+								 <br>che non s’era <span class="choice dialettale" id="d1e841"><span class="orig visible">ma’</span><span class="reg hidden" style="color: red;">mai</span></span> mosso da casa perché pare che avesse
+								 <br>poca salute, fece un <span class="choice dialettale" id="d1e848"><span class="orig visible">cor</span><span class="reg hidden" style="color: red;">cuor</span></span> risoluto, <span class="choice dialettale" id="d1e853"><span class="orig visible">s’</span><span class="reg hidden" style="color: red;">si</span></span>attruppò con <span class="choice dialettale" id="d1e859"><span class="orig visible">de’</span><span class="reg hidden" style="color: red;">dei</span></span> pecorai
+								 <br>di <span class="placeName" id="M_FIU">Fiumalbo</span> e se n’andò per le <span class="placeName" id="MAR">Maremme</span> a tentar la ven-
+								 <br>tura anche lui. Ma ora, aspetti, gli dico che faccia sentire
+								 <br>anche a lei l’ultima lettera che gli ha scritto <span class="choice dialettale" id="d1e877"><span class="orig visible">’l su’</span><span class="reg hidden" style="color: red;">il suo</span></span> figliolo.
+							</span>
+							<span class="dialoghi" id="d1e883">
+								 <br>— No, no! Dio ve ne guardi! Raccontate, raccontate,
+								 <br>Verdiana.
+							</span>
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina2">Pagina2</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina2" src="./img/mar_pag2.png"><map id="Pagina2"><area shape="rect" coords="59,44,335,162" style="cursor: help;" title="par2_1_TDM"><area shape="rect" coords="59,164,333,326" style="cursor: help;" title="par2_2_TDM"><area shape="rect" coords="59,327,338,500" style="cursor: help;" title="par2_3_TDM"><area shape="rect" coords="59,502,336,618" style="cursor: help;" title="par2_4_TDM"><area shape="rect" coords="59,619,338,743" style="cursor: help;" title="par2_5_TDM"><area shape="rect" coords="63,744,337,831" style="cursor: help;" title="par2_6_TDM"><area shape="rect" coords="341,44,613,175" style="cursor: help;" title="par2_7_TDM"><area shape="rect" coords="342,177,613,316" style="cursor: help;" title="par2_8_TDM"><area shape="rect" coords="342,318,613,443" style="cursor: help;" title="par2_9_TDM"><area shape="rect" coords="343,443,613,571" style="cursor: help;" title="par2_10_TDM"><area shape="rect" coords="343,573,610,698" style="cursor: help;" title="par2_11_TDM"><area shape="rect" coords="343,701,611,826" style="cursor: help;" title="par2_12_TDM"></map></div>
+            <div class="boxtext">
+               <div class="column column1">
+                  <p id="par2_1_TDM">
+							<span class="dialoghi" id="d1e895"> <br>— O l’<span class="choice dialettale" id="d1e898"><span class="orig visible">ova</span><span class="reg hidden" style="color: red;">uova</span></span> non le <span class="choice dialettale" id="d1e903"><span class="orig visible">vole</span><span class="reg hidden" style="color: red;">vuole</span></span>?</span>
+							<span class="dialoghi" id="d1e909"> <br>— Non importa. Datemi un po’ di cacio e tornate qui. —</span>
+							 <br>Io, benché non sapessi ancora di che cosa si trattava, guar-
+							 <br>davo con crescente compassione <span class="choice dialettale" id="d1e917"><span class="orig visible">que’</span><span class="reg hidden" style="color: red;">quei</span></span> due poveri vecchi stra-
+							 <br>lunati, pallidi e polverosi i quali ora sedendo, ora guardan-
+							 <br>domi sconsolati, e non trovando mai posa in un luogo, pa-
+							 <br>reva che cercassero dove liberarsi da un pensiero tormen-
+							 <br>toso che li perseguitasse.
+							<span class="dialoghi" id="d1e931"> <br>— Che ore sono, signore? -</span>
+							 <br>Mi domandò finalmente uno dei vecchi.
+						</p>
+                  <p id="par2_2_TDM">
+							<span class="dialoghi" id="d1e939"> <br>— Sentite? Suona mezzogiorno ora alla <span class="placeName" id="M_PIE">Pieve</span>. —</span>
+							 <br>Si levarono il cappello, dissero l'<a class="foreign" id="d1e948">angelus Domini</a> appog-
+							 <br>giandosi coi gomiti ai regoli della vetrata e, dopo essersi
+							 <br>scambiati uno sguardo meno desolato degli altri, tornarono
+							 <br>a guardare attenti alla via.
+							 <br>In quel momento la padrona mi pose in tavola una fetta
+							 <br>di cacio sopra un foglio giallo, un bicchiere e un fiasco di
+							 <br>vino, e sedè di nuovo di faccia a me domandandomi dove
+							 <br><span class="choice dialettale" id="d1e965"><span class="orig visible">s’era</span><span class="reg hidden" style="color: red;">eravamo</span></span> rimasti.
+							<span class="dialoghi" id="d1e971"> <br>— Alla lettera che il giovanotto...</span>
+							<span class="dialoghi" id="d1e975">
+								 <br>— Ah! <span class="choice correzione" id="d1e979"><span class="sic visible">sissignore</span><span class="corr hidden" style="color: blue;">sì signore</span></span>. Se sentisse una bella lettera! Quello,
+								 <br>secondo me, dev’essere un giovanotto che deve aver letto
+								 <br><span class="choice correzione" id="d1e987"><span class="sic visible">dimolto</span><span class="corr hidden" style="color: blue;">di molto</span></span> perchè... Ma, aspetti, gli domando se <span class="choice correzione" id="d1e992"><span class="sic visible">glie la</span><span class="corr hidden" style="color: blue;">gliela</span></span> <span class="choice dialettale" id="d1e998"><span class="orig visible">vol</span><span class="reg hidden" style="color: red;">vuol</span></span>
+								 <br>far legg...
+							</span>
+						</p>
+                  <p id="par2_3_TDM">
+							<span class="dialoghi" id="d1e1008"> <br>— No, no! v’ho detto di no.</span>
+							<span class="dialoghi" id="d1e1012">
+								 <br>— Insomma, una lettera gli dico!... che, a male aggua-
+								 <br>gliare, dice così: Dice che hanno fatto bene a mandargli
+								 <br>a dire della malattia della ragazza; che in quanto a restar
+								 <br>butterata nel viso non se ne dessero pena, chè a lui non
+								 <br><span class="choice correzione" id="d1e1023"><span class="sic visible">glie ne</span><span class="corr hidden" style="color: blue;">gliene</span></span> importava nulla purché la <span class="choice dialettale" id="d1e1029"><span class="orig visible">su’</span><span class="reg hidden" style="color: red;">sua</span></span> ragazza fosse restata
+								 <br>sempre della medesima idea di volergli bene: che lui era
+								 <br>fiero; che la <span class="placeName" id="MAR">Maremma</span>, grazie a Dio, gli era andata bene,
+								 <br>e che intanto gli mandava una ventina di lire per le prime
+								 <br>spese. <span class="choice correzione" id="d1e1046"><span class="sic visible">Eppoi</span><span class="corr hidden" style="color: blue;">E poi</span></span> tant’altre cose, <span class="choice correzione" id="d1e1051"><span class="sic visible">eppo’</span><span class="corr hidden" style="color: blue;">e poi</span></span> da ultimo dice che il dì
+								 <br>otto, che sarebbe oggi, ritornava e che mandava un bacio
+								 <br>a tutti e anche alla <span class="choice dialettale" id="d1e1060"><span class="orig visible">su’</span><span class="reg hidden" style="color: red;">sua</span></span> Giuditta. <span class="choice correzione" id="d1e1065"><span class="sic visible">Eppoi</span><span class="corr hidden" style="color: blue;">E poi</span></span>, prima di finire, gli
+								 <br>dice che in caso d’una disgrazia <span class="choice correzione" id="d1e1073"><span class="sic visible">glie l’ hann’a</span><span class="corr hidden" style="color: blue;">gliel'hanno a</span></span> mandare
+								 <br>scritto subito perchè lui a casa non ci sarebbe più ritor-
+								 <br>nato. —
+							</span>
+						</p>
+                  <p id="par2_4_TDM">
+							 <br>I vecchi <span class="choice dialettale" id="d1e1087"><span class="orig visible">s’eran</span><span class="reg hidden" style="color: red;">si erano</span></span> fermati a sedere, e ci guardavano fissi a
+							 <br>bocca aperta.
+							<span class="dialoghi" id="d1e1094">
+								 <br>— Dite più adagio, Verdiana, perché vi stanno a sen-
+								 <br>tire.
+							</span>
+							<span class="dialoghi" id="d1e1101"> <br>— Eh! povera gente, chi sa <span class="choice dialettale" id="d1e1104"><span class="orig visible">dov’</span><span class="reg hidden" style="color: red;">dove</span></span> hanno la testa</span> — mi ris-
+							<span class="dialoghi" id="d1e1111">
+								 <br>spose la padrona e continuò:
+								 <br>— Il <span class="choice dialettale" id="d1e1117"><span class="orig visible">su’</span><span class="reg hidden" style="color: red;">suo</span></span> babbo del giovanotto dice che gli rispose su-
+								 <br>bito la settimana passata che l’aspettavano a gloria, e che
+								 <br>la ragazza era addirittura fuor di pericolo.
+							</span>
+							<span class="dialoghi" id="d1e1127"> <br>— <span class="choice correzione" id="d1e1130"><span class="sic visible">Eppoi</span><span class="corr hidden" style="color: blue;">E poi</span></span>?</span>
+						</p>
+                  <p id="par2_5_TDM">
+							<span class="dialoghi" id="d1e1138">
+								 <br>— <span class="choice correzione" id="d1e1142"><span class="sic visible">Eppoi</span><span class="corr hidden" style="color: blue;">E poi</span></span>, per fare il discorso breve, la ragazza cominciò
+								 <br>a peggiorare appena andato via il postino; la sera, peg-
+								 <br>gio; la mattina dopo, peggio che mai, e ieri sera, per fare
+								 <br>un discorso solo, rese l’anima a Dio e a quest’ora è per la
+								 <br>strada che la portano al camposanto.
+							</span>
+							<span class="dialoghi" id="d1e1157"> <br>— O mio Dio, mio Dio, pigliate anche me, non ne posso
+								 <br>più, non ne posso più.— </span> Così dicendo, il babbo della ragazza,
+							 <br>che aveva sentito le ultime parole del racconto, si buttò
+							 <br>attraverso alla tavola già apparecchiata per loro, dando in
+							 <br>un largo scoppio di pianto e lamentandosi con voce ranto-
+							 <br>losa: <span class="dialoghi" id="d1e1172">— Ah! ah! ah! —</span>
+						</p>
+                  <p id="par2_6_TDM">
+							 <br>Detti un’ occhiata di rimprovero alla padrona e mi alzai
+							 <br>all’ improvviso per andare da lui; ma tornai subito al mio
+							 <br>posto, preso da un senso di rispetto per la santa dispera-
+							 <br>zione di quell’uomo.
+							 <br>Il suo compagno gli si avvicinò, gli pose le mani sulle
+							 <br>spalle e si piegò su lui per dirgli qualche parola di con-
+							 <br>solazione; ma il pianto gli serrava la gola. E allora guar-
+						</p>
+               </div>
+               <div class="column column2">
+                  <p id="par2_7_TDM">
+							 <br>dava noi e accennava il suo compagno, e si contorceva e si
+							 <br>mordeva le labbra con una espressione ora di stupido
+							 <br>dolore, ora di rabbia feroce. Finalmente fece un <span class="choice dialettale" id="d1e1201"><span class="orig visible">cor</span><span class="reg hidden" style="color: red;">cuor</span></span> riso-
+							 <br>luto: si strisciò con una mano la barba, scosse la testa e,
+							 <br>voltosi al suo compagno, gli disse con voce ferma e sonora:
+							<span class="dialoghi" id="d1e1211"> <br>— Animo, Marcello. Fatevi coraggio, via, fatevi... —</span> Ma
+							 <br>non potè continuare, chè singhiozzandosi buttò sulle spalle
+							 <br>dell’amico a lamentarsi: <span class="dialoghi" id="d1e1219">— Dio ci vedeva nel <span class="choice dialettale" id="d1e1221"><span class="orig visible">core</span><span class="reg hidden" style="color: red;">cuore</span></span>, non
+							 <br>ci doveva <span class="choice correzione" id="d1e1228"><span class="sic visible">gastigare</span><span class="corr hidden" style="color: blue;">castigare</span></span>! —</span>
+							<span class="dialoghi" id="d1e1234"> <br>— Che mondo, eh, Verdiana? —</span> dissi sbacchiando il cap-
+							 <br>pello e il pugno sulla tavola.
+						</p>
+                  <p id="par2_8_TDM">
+							<span class="dialoghi" id="d1e1243">
+								 <br>— Che <span class="choice dialettale" id="d1e1247"><span class="orig visible">voi</span><span class="reg hidden" style="color: red;">vuoi</span></span> che gli dica? Ho cinquant’anni <span class="choice dialettale" id="d1e1252"><span class="orig visible">sonati</span><span class="reg hidden" style="color: red;">suonati</span></span> e a un
+								 <br>affare a questa maniera non mi c’ero ancora ritrovata. —
+							</span>
+							 <br>Il vecchio, sentendo come io partecipassi al loro dolore,
+							 <br>corse da me; e quasi che io solo fossi stato buono di ren-
+							 <br>dergli la pace, mi si raccomandò, stringendomi forte la mano
+							 <br>fra i grossi calli delle sue, che non l’abbandonassi, per ca-
+							 <br>rità; che l’assistessi, per l’amor di Dio.
+							<span class="dialoghi" id="d1e1271"> <br>— Figuratevi, amico mio! Ma che posso fare per voi?</span>
+							<span class="dialoghi" id="d1e1275">
+								 <br>— Non ci abbandoni. Noi non si voleva neanche venire. Ma
+								 <br>quelle donne non c’è stato versi di persuaderle; ci hanno
+								 <br>voluto mandare per forza incontro a quel ragazzo per ve-
+								 <br>dere di prepararlo, che se ne facesse una ragione....
+							</span>
+						</p>
+                  <p id="par2_9_TDM">
+							<span class="dialoghi" id="d1e1288">
+								 <br>— Sta tutto bene. Ma che gli devo dire io meglio di voi
+								 <br>che siete suo padre?
+							</span>
+							<span class="dialoghi" id="d1e1295">
+								 <br>— Non importa. Gli dica quello che <span class="choice dialettale" id="d1e1299"><span class="orig visible">vòle</span><span class="reg hidden" style="color: red;">vuole</span></span>, lei signoria
+								 <br>gli dirà sempre meglio di noi che siamo <span class="choice dialettale" id="d1e1306"><span class="orig visible">du'</span><span class="reg hidden" style="color: red;">due</span></span> poveri igno-
+								 <br>ranti. Mi faccia la carità, signore, perché io, ormai lo sento,
+								 <br>appena lo vedo mi manca il <span class="choice dialettale" id="d1e1316"><span class="orig visible">core</span><span class="reg hidden" style="color: red;">cuore</span></span> e mi tradisco. Mi prometta
+								 <br>non lasciarci soli, me lo prometta, <span class="choice correzione" id="d1e1323"><span class="sic visible">se no</span><span class="corr hidden" style="color: blue;">sennò</span></span> quel ragazzo mi
+								 <br>fa qualche pazzia. <span class="choice correzione" id="d1e1330"><span class="sic visible">Eppoi</span><span class="corr hidden" style="color: blue;">E poi</span></span> ci comandi, e da poveri che siamo
+								 <br>c’ingegneremo di ricompensare la <span class="choice dialettale" id="d1e1338"><span class="orig visible">su'</span><span class="reg hidden" style="color: red;">sua</span></span> carità.
+							</span>
+							<span class="dialoghi" id="d1e1344">
+								 <br>— Mi tratterrò, via. Ma ora datevi pace e bevete un
+								 <br>bicchier di vino.
+							</span>
+						</p>
+                  <p id="par2_10_TDM">
+							<span class="dialoghi" id="d1e1353">
+								 <br>— Non potrei... No, in coscienza, non potrei., no, lo
+								 <br>ringrazio., non lo bevo davvero.
+							</span>
+							<span class="dialoghi" id="d1e1360"> <br>— O il vostro compagno?</span>
+							<span class="dialoghi" id="d1e1364"> <br>— Ora s’è dato un po’ di pace; lasciamolo stare.</span>
+							<span class="dialoghi" id="d1e1368"> <br>— Come volete. —</span> Il vecchio tornò adagio adagio dal
+							 <br>suo compagno e tutti e due si misero di nuovo a guardare
+							 <br>silenziosi in fondo alla via.
+							<span class="dialoghi" id="d1e1377"> <br>— Non lo finisce il cacio? —</span> Mi domandò la padrona.
+							<span class="dialoghi" id="d1e1381"> <br>— Non ho più fame.</span>
+							<span class="dialoghi" id="d1e1385"> <br>— Beve più?</span>
+							<span class="dialoghi" id="d1e1389"> <br> — No; portate via ogni cosa: ho finito. —</span>
+						</p>
+                  <p id="par2_11_TDM">
+							 <br>Accesi la pipa e mi misi in fondo alla bottega seduto
+							 <br>a guardare di sopra alle spalle dei vecchi la campagna al-
+							 <br>legra e gli alberi sottili della via che, tremolanti alla
+							 <br>brezza del marino, lasciavano il loro cotone che, vagando
+							 <br>intorno per l’aria, cadeva fra gli olivi bianco, lento e silen-
+							 <br>zioso come la neve.
+							 <br>Mi perdevo dietro alle mie fantasticherie malinconiche
+							 <br>quando:
+							<span class="dialoghi" id="d1e1413">
+								 <br>— Il cartello di sull’uscio non l’ho mica fatto mutare
+								 <br>ancora, sa? — Mi venne a dire a bassa voce la padrona.
+							</span>
+							<span class="dialoghi" id="d1e1420"> <br>— Che cartello?</span>
+						</p>
+                  <p id="par2_12_TDM">
+							<span class="dialoghi" id="d1e1426">
+								 <br>— O non si ricorda che l’altra volta ci rise tanto e mi
+								 <br>disse che era pieno di spropositi?
+							</span>
+							<span class="dialoghi" id="d1e1433"> <br>— Ah! sì, sì.</span>
+							<span class="dialoghi" id="d1e1437">
+								 <br>— Aveva ragione, sa? Un giorno il <span class="choice correzione" id="d1e1441"><span class="sic visible">figliuolo</span><span class="corr hidden" style="color: blue;">figlio</span></span> dello Scoti,
+								 <br>quello che va a scuola dal Piovano che come lui, dice, per
+								 <br>quel che sia la rattenitiva d’imparare le cose, non ce ne
+								 <br><span class="choice dialettale" id="d1e1451"><span class="orig visible">pol’</span><span class="reg hidden" style="color: red;">possono</span></span> esser altri, ci stette quasi un’ora per ricopiarlo tal
+								 <br>quale; <span class="choice dialettale" id="d1e1459"><span class="orig visible">eppoi</span><span class="reg hidden" style="color: red;">e poi</span></span>, dopo, fra lui e il sig. Cappellano ci hanno
+								 <br>studiato tanto e m'hanno detto che lo sbaglio c’era sicuro
+								 <br>perché dice che ci mancava <span class="choice correzione" id="d1e1468"><span class="sic visible">l’i</span><span class="corr hidden" style="color: blue;">lì</span></span> dove ci diceva generi... Di
+								 <br>che ride?
+							</span>
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina3">Pagina3</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina3" src="./img/mar_pag3.png"><map id="Pagina3"><area shape="rect" coords="19,35,295,204" style="cursor: help;" title="par3_1_TDM"><area shape="rect" coords="19,205,293,362" style="cursor: help;" title="par3_2_TDM"><area shape="rect" coords="20,365,295,458" style="cursor: help;" title="par3_3_TDM"><area shape="rect" coords="20,460,294,586" style="cursor: help;" title="par3_4_TDM"><area shape="rect" coords="20,589,294,762" style="cursor: help;" title="par3_5_TDM"></map></div>
+            <div class="boxtext">
+               <div class="column column1">
+                  <p id="par3_1_TDM">
+							<span class="dialoghi" id="d1e1480"> <br>— Io?!</span>
+							<span class="dialoghi" id="d1e1484">
+								 <br>— Credevo... sa, a volte.. Dunque anche lei mi dice che
+								 <br>ora sta bene?
+							</span>
+							<span class="dialoghi" id="d1e1491">
+								 <br>— Divinamente. E non lo fate toccar più, se no ve lo
+								 <br>sciupano.
+							</span>
+							<span class="dialoghi" id="d1e1498">
+								 <br>— E allora, <span class="choice correzione" id="d1e1502"><span class="sic visible">sissignore</span><span class="corr hidden" style="color: blue;">sì signore</span></span>, <span class="choice dialettale" id="d1e1507"><span class="orig visible">vòl</span><span class="reg hidden" style="color: red;">vuol</span></span> dire che quando torna Cec-
+								 <br>chino legnaiolo <span class="choice correzione" id="d1e1514"><span class="sic visible">glie lo</span><span class="corr hidden" style="color: blue;">glielo</span></span> <span class="choice dialettale" id="d1e1520"><span class="orig visible">fo</span><span class="reg hidden" style="color: red;">faccio</span></span> accomodare, si direbbe, in questa
+								 <br>conformità. —</span> E tirò fuori di seno la copia corretta del
+							 <br>cartello per farmela vedere.
+							 <br>Era passata una ventina di minuti quando in fondo alla
+							 <br>strada comparve un cane bianco da pastori. I vecchi si al-
+							 <br>zarono con impeto e si misero a guardar bene facendosi
+							 <br>ombra agli occhi con la mano. Ma il cane, dopo aver dato
+							 <br>una nasata all’aria, tornò indietro.
+						</p>
+                  <p id="par3_2_TDM">
+							<span class="dialoghi" id="d1e1543">
+								 <br>— È ci sono, sapete? — disse la padrona ch’era andata
+								 <br>a guardare dalla finestra di cucina. — Non li sentite i
+								 <br>campanacci delle pecore?
+							</span>
+							<span class="dialoghi" id="d1e1552">
+									 <br>— Sta’! son loro davvero, Gian Luca — disse il babbo
+									 <br>della ragazza. — Animo! fatevi core, e andiamogli incontro.
+							</span>
+							 <br>Gian Luca era diventato bianco come un panno lavato.
+							 <br>S’alzò vacillando e, appoggiandosi al braccio dell’ amico,
+							 <br>s’ avviò incontro al <span class="choice dialettale" id="d1e1566"><span class="orig visible">su’</span><span class="reg hidden" style="color: red;">suo</span></span> giovinotto. Io non mi mossi.
+							 <br>Già da qualche minuto avevo perso di vista i due vecchi
+							 <br>alla svoltata della via, quando vidi riapparire Gian Luca
+							 <br>solo che correva in su a balzelloni, gesticolando con le mani
+							 <br>all’aria come un demente. E dietro a lui subito l’altro
+							 <br>vecchio che si affaticava a seguitarlo e smaniante lo chia-
+							 <br>mava senza essere ascoltato.
+						</p>
+                  <p id="par3_3_TDM">
+							<span class="dialoghi" id="d1e1586"> <br>— Che sarà stato, Verdiana?</span>
+							<span class="dialoghi" id="d1e1590"> <br>— Vergine santissima, che sarà stato? —</span>
+							 <br>Il vecchio passò davanti alla bottega... <span class="dialoghi" id="d1e1596">— Gian Luca!
+							 <br>Che v’è accaduto?</span>
+							<span class="dialoghi" id="d1e1601"> <br>— Ah! ah! —</span> disse trafelando dall’ ambascia e dalla fa-
+							 <br>tica, e continuò la sua corsa affannosa, mandando un la-
+							 <br>mento ad ogni sospiro.
+							<span class="dialoghi" id="d1e1610"> <br>— Ma che è accaduto, che è accaduto? —</span>
+						</p>
+                  <p id="par3_4_TDM">
+							 <br>Il vecchio Marcello me lo disse: Il giovinotto impaziente
+							 <br>di rivedere la sua ragazza, alla prima scorciatoia che gli
+							 <br>avrebbe anticipato d’un par d’ore l’arrivo a casa, aveva
+							 <br>lasciato i suoi compagni, e via, come una capra, era sparito
+							 <br>in un batter d’occhio su <span class="choice dialettale" id="d1e1627"><span class="orig visible">pei</span><span class="reg hidden" style="color: red;">per i</span></span> viottoli della poggiata, distrug-
+							 <br>gendo così le previsioni amorose con tanta cura studiate
+							 <br>da <span class="choice dialettale" id="d1e1636"><span class="orig visible">que'</span><span class="reg hidden" style="color: red;">quei</span></span> poveri vecchi e dalle loro donne sconsolate perché
+							 <br>la barbara notizia non lo colpisse atrocemente improvvisa.
+							 <br>Marcello seguitò la sua corsa dietro all’ amico, racco-
+							 <br>mandandosi che l’aspettasse e chiamandolo a nome inutil-
+							 <br>mente.
+						</p>
+                  <p id="par3_5_TDM">
+							 <br>Passarono le pecore quasi a corsa stimolate dalle grida
+							 <br>e dalle vergate degli uomini, i quali, sgomenti dell’accaduto,
+							 <br>senza sapere che nella bottega v’era un boccone prepa-
+							 <br>rato anche per loro, tirarono innanzi mandando fischi e
+							 <br>sassate alle pigre; passarono i somari legati a fila per le
+							 <br>cavezze, sballottando fra sacelli e corbelli una donna e
+							 <br>due ragazzi che li cavalcavano; passò il nuvolo di polvere
+							 <br>sollevato da questa truppa tumultuosa, si allontanò adagio
+							 <br>adagiò il tintinnio de’ campanacci, e dopo poco si perse per
+							 <br>le forre del monte anche la voce di Marcello che sempre
+							 <br>più fioca e dolente chiamava <span class="dialoghi" id="d1e1676">— Gian Luca, Gian Luca. —</span>
+							 <br>La padrona, dando allora un’ultima occhiata dalla parte
+							 <br>dei poggi: <span class="dialoghi" id="d1e1683">— Povere creature ! —</span> esclamò. Poi volgendosi
+							 <br>con un lungo sospiro alla sua bottega: <span class="dialoghi" id="d1e1688">— E ora, di tutto
+							 <br>quel baccalà che me ne faccio?! —</span>
+							 <br><span class="persName" id="RF">R. Fucini</span>.
+						</p>
+               </div>
+               <div class="column column2"></div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina4-TornanDiMaremmaBibliografia">Pagina4-TornanDiMaremmaBibliografia</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina4-TornanDiMaremmaBibliografia" src="./img/mar_bib1.png"><map id="Pagina4-TornanDiMaremmaBibliografia"><area shape="rect" coords="350,250,617,266" style="cursor: help;" title="par1_1TDM"><area shape="rect" coords="347,266,619,543" style="cursor: help;" title="par1_TDM"><area shape="rect" coords="349,546,623,836" style="cursor: help;" title="par2_TDM"></map></div>
+            <div class="boxtext">
+               <div class="column column1"></div>
+               <div class="column column2">
+                  <h2 id="par1_1TDM">
+							 <br>BIBLIOGRAFIA.
+						</h2>
+                  <p id="par1_TDM">
+							 <br><a class="bibl" id="d1e1713"><span style="font-style: italic;">Johann Georg Rist</span>'s <span style="font-style: italic;">Lebenserinnerungen, herausgegeben von
+							 <br>G. Poke.</span> (Memorie di <span class="persName" id="JGR">Giovanni Giorgio Rist</span>, edite da
+							 <br>G. Poel). — 2 vol. Gotha, <span class="persName" id="FAP">Friedrich Andreas Perthes</span>, <a class="date" id="d1e1730">1880</a></a>.
+							 <br>La letteratura tedesca non è ricca di Ricordi, sebbene
+							 <br>essa conti molte autobiografie; ciò che è una cosa molto
+							 <br>diversa. Essa comincia ora ad arricchirsi per questo ri-
+							 <br>spetto, e le memorie di <span class="persName" id="RV">Varnhagen</span>, di Lang, di <span class="persName" id="FAP">Perthes</span>,
+							 <br>possono senza scapitarci essere messe a fianco di ciò che la
+							 <br><span class="placeName" id="B_FRA">Francia</span> ha di meglio in questo genere, sobbene il <a class="term" id="d1e1754">"genere"</a>
+							 <br>abbia un carattere molto diverso nei due paesi. <a class="bibl" id="d1e1759">Le <span style="font-style: italic;">Memorie</span>
+							 <br>di <span class="persName" id="JGR">Rist</span></a> che annunziamo, e che ebbero un sì grande e legittimo
+							 <br>successo in <span class="placeName" id="B_GER">Germania</span>, possono essere considerate come un
+							 <br>reale acquisto per la letteratura tedesca e ad un tempo una
+							 <br>sorgente nuova e importante per la storia del <span class="orgName" id="PI">primo Impero</span>.
+							 <br>Queste memorie furono scritte <a class="date" id="d1e1784">dal 1816 al 1818</a> e non erano
+							 <br>destinate che alla famiglia dell’<span class="persName" id="">A.</span>; ciò che spiega certe
+							 <br>negligenze di stile che l’editore, ci pare, avrebbe dovuto
+							 <br>correggere; giacché <span class="persName" id="JGR">Rist</span> è uno scrittore di prim’ordine, di
+							 <br>questa <span class="orgName" id="SR">scuola di Ritter e di Humboldt</span> della quale non so-
+							 <br>pravvivono più guari altri aderenti che il maresciallo <span class="persName" id="HVM">Mol-
+							 <br>tke</span>: è un vero peccato che le continue sgrammaticature
+							 <br>sbertuccino questo stile nobile ad un tempo e originale, che
+							 <br>era abituale all’<span class="persName" id="">A.</span> anche nel buttar giù uno scritto non
+							 <br>destinato a veder mai la luce.
+						</p>
+                  <p id="par2_TDM">
+							 <br><span class="persName" id="JGR">Rist</span> nacque nel <a class="date" id="d1e1828">1775</a> a <span class="placeName" id="B_HOL">Holstein</span>, figlio d’un pastore di
+							 <br>campagna. Dopo aver fatto i suoi studi universitari a <span class="placeName" id="B_IEN">Iena</span>
+							 <br>e <span class="placeName" id="B_KIE">Kiel</span> egli entrò all’età di 22 anni come segretario parti-
+							 <br>colare nella casa del <span class="persName" id="">conte Schimmelmann</span>, ministro delle
+							 <br>finanze a <span class="placeName" id="B_COP">Copenhagen</span>, di dove passò al ministero degli
+							 <br>affari esteri, allora diretto dal <span class="persName" id="">conte Bernstorff</span>. Tutte que-
+							 <br>ste persone, <span class="persName" id="JGR">Rist</span> quanto e più che i suoi capi, seppero con-
+							 <br>giungere il patriottismo politico per la <span class="placeName" id="B_DAN">Danimarca</span>, nel modo
+							 <br>più singolare, con il patriottismo morale e letterario per
+							 <br>la <span class="placeName" id="B_GER">Germania.</span> Egli pensa e scrive in tedesco e agisce in
+							 <br>danese press’a poco come gli Alsaziani pensarono e scris-
+							 <br>sero in tedesco <a class="date" id="d1e1883">fino al 1789</a> e anche <a class="date" id="d1e1887">fino al 1850</a> pur mo-
+							 <br>strando nello loro azioni il più ardente patriottismo fran-
+							 <br>cese. Giovane appena compiuti venticinque anni, fu man-
+							 <br>dato come segretario di legazione a <span class="placeName" id="B_PIE">Pietroburgo</span> e <span class="placeName" id="B_MOS">Mosca</span>
+							 <br>dove assistette all’incoronamento di <span class="persName" id="">Alessandro I</span> e dove
+							 <br>malgrado la sua età egli doveva servire di <a class="foreign" id="d1e1910">ad latus</a> o, per
+							 <br>parlar chiaro, di sorvegliante del nobile ambasciatore le cui
+							 <br>attitudini ispiravano poca fiducia. Richiamato a <span class="placeName" id="B_COP">Copenaghen</span>
+							 <br>quando la <span class="placeName" id="B_RUS">Russia</span> abbandonò vergognosamente l’alleanza
+							 <br>dei neutri, egli fece un viaggio di quattro settimane in pieno
+							 <br>inverno dalla capitale russa a quella danese attraverso le
+							 <br>acque gelate del <span class="placeName" id="B_BAL">Baltico</span>, che fa drizzare i capelli solamente
+							 <br>a leggerlo e che è raccontato con una vivacità piena di mo-
+							 <br>vimento. Mandato in <span class="placeName" id="B_SPA">Ispagna</span> nella stessa qualità che aveva 
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina5">Pagina5</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina5" src="./img/mar_bib2.png"><map id="Pagina5"><area shape="rect" coords="28,42,303,413" style="cursor: help;" title="par3_TDM"><area shape="rect" coords="30,415,304,822" style="cursor: help;" title="par4_TDM"><area shape="rect" coords="311,44,583,158" style="cursor: help;" title="par5_TDM"></map></div>
+            <div class="boxtext">
+               <div class="column column1">
+                  <p id="par3_TDM">
+							 <br>avuto in <span class="placeName" id="B_RUS">Russia</span>, egli visitò nel suo viaggio <span class="placeName" id="B_PAR">Parigi,</span> vi strinse
+							 <br>relazione con tutti i personaggi importanti, fu presen-
+							 <br>tato al primo console, e fece il viaggio di <span class="placeName" id="B_MAD">Madrid</span> ad occhi
+							 <br>aperti, ciò che ci valse un’ammirabile descrizione di un
+							 <br>paese a quel tempo ancora completamente separato dal re-
+							 <br>sto dell’<span class="placeName" id="B_OCC">Occidente</span> e pieno del più vivo interesse pittoresco
+							 <br>e romantico. Dopo un anno di soggiorno a <span class="placeName" id="B_MAD">Madrid</span>, a <span class="placeName" id="B_ILD">S. II-
+							 <br>defonso</span>, e <span class="placeName" id="B_ARA">Aranjuez</span>, divenne incaricato d’affari; e la pittura
+							 <br>dello stato politico e sociale della <span class="placeName" id="B_SPA">Spagna</span> <a class="date" id="d1e1991">dal 1805 al 1806</a>
+							 <br>appartiene a quel che v’ha di più <span class="choice correzione" id="d1e1997"><span class="sic visible">riescito</span><span class="corr hidden" style="color: blue;">riuscito</span></span> in quei volumi
+							 <br>dove tuttavia tutto sembra <span class="choice correzione" id="d1e2004"><span class="sic visible">riescito</span><span class="corr hidden" style="color: blue;">riuscito</span></span>. Il viaggio da <span class="placeName" id="B_MAD">Madrid</span>
+							 <br>a <span class="placeName" id="B_LIS">Lisbona</span> nel calore dell’ estate sempre a cavallo è un
+							 <br>riscontro ammirabile di quel viaggio da <span class="placeName" id="B_PIE">Pietroburgo</span> a
+							 <br><span class="placeName" id="B_COP">Copenaghen</span> attraverso i ghiacci invernali di cui parlammo.
+							 <br>Dopo un soggiorno di un mese a <span class="placeName" id="B_LIS">Lisbona</span> di cui l<span class="persName" id="">A.</span> ci
+							 <br>presenta come in ogni dove i personaggi più eminenti o
+							 <br>caratterizzandoli con una rara finezza, egli va per mare a
+							 <br><span class="placeName" id="B_LON">Londra</span> dove era stato nominato incaricato d’affari e dove ar-
+							 <br>rivò alla fine del <a class="date" id="d1e2047">1806</a>. Fu <span class="persName" id="JGR">Rist</span> che negoziò con <span class="persName" id="">Canning</span>
+							 <br>sull’entrata della <span class="placeName" id="B_DAN">Danimarca</span> nell’alleanza anti-francese e
+							 <br>che mantenne con dignità e fermezza il principio della neu-
+							 <br>tralità. Si sa quel che ne nacque e si conosce la brutalità 
+							 <br>piena di mala fede con cui l’<span class="placeName" id="B_ING">Inghilterra</span> gettò la <span class="placeName" id="B_DAN">Danimarca</span>
+							 <br>nell’alleanza francese ch’egli temeva. La storia ha pochi fatti
+							 <br>più crudeli e più sfrontati del bombardamento di <span class="placeName" id="B_COP">Cope-
+							 <br>naghen</span>, in piena pace e senza pretesto alcuno, da parte di
+							 <br>una flotta inglese. <span class="persName" id="JGR">Rist</span> racconta con una emozione dram-
+							 <br>maticissima le angoscie di patriota ch’egli soffrì a <span class="placeName" id="B_LON">Londra</span>
+							 <br>e le spiegazioni che si scambiarono tra lui e il ministro in-
+							 <br>glese, spiegazioni dove la vittima supera il sacrificatore di
+							 <br>tutta l’altezza morale che gli dà la purezza della sua co-
+							 <br>scienza. 
+						</p>
+                  <p id="par4_TDM">
+							 <br>Dopo la rottura delle relazioni con l’<span class="placeName" id="B_ING">Inghilterra,</span> <span class="persName" id="JGR">Rist</span> fu
+							 <br>mandato a <span class="placeName" id="B_HAM">Hamburgo</span>, posto importantissimo allora e che
+							 <br>doveva diventare anche più importante quando nel <a class="date" id="d1e2121">1810</a> la
+							 <br>città e il territorio furono annessi all’Impero francese, e
+							 <br><span class="persName" id="JGR">Rist</span> divenne console-generale presso il governo generale
+							 <br>dei tre dipartimenti: non solo la contiguità della <span class="placeName" id="B_DAN">Dani-
+							 <br>marca</span>, ma anche l’importanza politica europea che aveva
+							 <br>allora la posizione di <span class="placeName" id="B_HAM">Hambourg</span> fecero di <span class="persName" id="JGR">Rist</span> per qualche
+							 <br>anno e massime <a class="date" id="d1e2148">dal 1811 al 1813</a>, il centro della diplomazia
+							 <br>danese. È interessante il vedere, quasi còlta sul fatto, la di-
+							 <br>sposizione di questi poveri alleati, frementi sotto il giogo
+							 <br>del signore; o la storia dell’amministrazione francese di
+							 <br><span class="placeName" id="B_HAM">Hambourg,</span> che fa <span class="persName" id="JGR">Rist</span>, è certamente la parte più impor-
+							 <br>tante, dal punto di vista storico, di tutto il libro. Diremo
+							 <br>passando che la testimonianza di <span class="persName" id="JGR">Rist</span> è affatto favorevole
+							 <br>a <span class="persName" id="d1e2175">Davoust</span> in quanto concerne la sua superiorità intellet-
+							 <br>tuale e la sua integrità e che viene completamente in appoggio dello memorie del <span class="persName" id="">principe d’Eckmiibl</span>, recentemente
+							 <br>pubblicate da <span class="persName" id="">M<span class="gap" title="illegible, 5 chars">[...]</span> de Blocqueville</span> e analizzate in questo
+							 <br>periodico. Per contro <span class="persName" id="JGR">Rist</span> ci dipinge l’inesorabile durezza
+							 <br>dell’uomo, e la sua devozione cieca all’Imperatore coi colori
+							 <br>più vistosi, e non ci si meraviglia, dopo averlo letto, della
+							 <br>memoria che lasciò in <span class="placeName" id="B_GER">Germania</span> questo rigido soldato, che
+							 <br>l’A. novera tuttavia tra i più grandi uomini del suo tempo.
+							 <br>L’incidente degli <span class="choice dialettale" id="d1e2210"><span class="orig visible">Spagnuoli</span><span class="reg hidden" style="color: red;">Spagnoli</span></span> in <span class="placeName" id="B_DAN">Danimarca,</span> il funzionare del
+							 <br>blocco continentale, la presa, la perdita e la ripresa di
+							 <br><span class="placeName" id="B_HAM">Amburgo</span> per parte di <span class="persName" id="">Tettenborn</span>, il richiamo di <span class="persName" id="JGR">Rist</span>, il
+							 <br>suo invio a <span class="placeName" id="B_PAR">Parigi</span> <a class="date" id="d1e2237">del 1814 al 1815</a> come commissario di
+							 <br>liquidazione, la descrizione della <span class="placeName" id="B_FRA">Francia</span> sotto la <span class="orgName" id="PR">prima Re-
+							 <br>staurazione</span> , i ritratti poco lusinghieri di <span class="persName" id="">Luigi XVIII</span>, del
+							 <br><span class="persName" id="CA">conte d’Artois</span>, del <span class="persName" id="">duca di Berry</span>, del <span class="persName" id="">sig. de Blacas</span> e l’ar-
+							 <br>rivo di <span class="persName" id="">Napoleone</span> all’<span class="placeName" id="B_ISO">isola d’Elba</span> compiono il resto del se-
+							 <br>condo volume che supera anche in interesse il primo. Per
+							 <br>ogni dove sono mescolati ritratti di uomini celebri del
+							 <br>tempo, disegnati con mano maestra, con quadri di costumi,
+						</p>
+               </div>
+               <div class="column column2">
+                  <p id="par5_TDM">
+							 <br>e narrazioni di avvenimenti. L’<span class="persName" id="">A.</span> si ferma al <a class="date" id="d1e2287">1815</a> quando
+							 <br>egli cadde in disgrazia e lasciò per sempre il servizio. Non
+							 <br>aveva che quarant’anni e approfittò dei suoi ozi involon-
+							 <br>tari per narrare ai suoi figli la storia della sua giovinezza
+							 <br>e della sua vita pubblica. E stato certamente un buon pen-
+							 <br>siero quello dei suoi nipoti di darci, oggi che tutti gli attori
+							 <br>di quel tempo sono morti, queste pagine piene di vita che
+							 <br>ci fanno amare quest'uomo di cuore, tenero, sincero, co-
+							 <br>raggioso e pieno di dignità, di cui quasi non conoscemmo
+							 <br>finora nemmeno il nome.
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina6-Malaria">Pagina6-Malaria</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina6-Malaria" src="./img/mal_pag1.png"><map id="Pagina6-Malaria"><area shape="rect" coords="302,690,540,707" style="cursor: help;" title="par1_MAL"><area shape="rect" coords="302,704,546,760" style="cursor: help;" title="par1_1MAL"></map></div>
+            <div class="boxtext">
+               <div class="column column1"></div>
+               <div class="column column2">
+                  <h2 id="par1_MAL">
+							 <br>MALARIA.
+						</h2>
+                  <p id="par1_1MAL">
+							 <br>E’ vi par di toccarla <span class="choice correzione" id="d1e2389"><span class="sic visible">colle</span><span class="corr hidden" style="color: blue;">con le</span></span> mani, come dalla terra grassa
+							 <br>che fumi, là, <span class="choice correzione" id="d1e2396"><span class="sic visible">dappertutto</span><span class="corr hidden" style="color: blue;">da per tutto</span></span>, torno torno alle montagne che 
+							 <br>la chiudono, da <span class="placeName" id="MA_AGN">Agnone</span> al <span class="placeName" id="MA_MON">Mongibello</span> incappucciato di 
+							 <br>neve, stagnante nella pianura, a guisa dell’ afa pesan-
+							 <br>te di luglio. Vi nasce o vi muore il solo di brace, a la 
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina7">Pagina7</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina7" src="./img/mal_pag2.png"><map id="Pagina7"><area shape="rect" coords="27,34,277,184" style="cursor: help;" title="par2_1_MAL"><area shape="rect" coords="28,182,277,307" style="cursor: help;" title="par2_2_MAL"><area shape="rect" coords="28,306,276,549" style="cursor: help;" title="par2_3_MAL"><area shape="rect" coords="29,549,276,682" style="cursor: help;" title="par2_4_MAL"><area shape="rect" coords="30,684,279,738" style="cursor: help;" title="par2_5_MAL"><area shape="rect" coords="283,34,531,131" style="cursor: help;" title="par2_6_MAL"><area shape="rect" coords="283,131,529,299" style="cursor: help;" title="par2_7_MAL"><area shape="rect" coords="283,299,528,351" style="cursor: help;" title="par2_8_MAL"><area shape="rect" coords="283,350,529,540" style="cursor: help;" title="par2_9_MAL"><area shape="rect" coords="283,541,531,740" style="cursor: help;" title="par2_10_MAL"></map></div>
+            <div class="boxtext">
+               <div class="column column1">
+                  <p id="par2_1_MAL">
+							 <br>luna smorta, e la <span style="font-style: italic;">Puddara</span>, che sembra navigare in un 
+							 <br>mare che svapori, e gli uccelli e le margherite bianche 
+							 <br>della primavera, e l’estate arsa; e vi passano in lunghe file 
+							 <br>nere le <span class="choice correzione" id="d1e2430"><span class="sic visible">anitre</span><span class="corr hidden" style="color: blue;">anatre</span></span> nel nuvolo dell’autunno, e il fiume che luc-
+							 <br>cica quasi fosse di metallo fra rive larghe e abbandonate,
+							 <br>bianche, slabbrate, sparse di ciottoli; e in fondo il <span class="placeName" id="MA_LAG">lago di
+							 <br>Lentini</span>, come uno stagno, <span class="choice correzione" id="d1e2444"><span class="sic visible">colle</span><span class="corr hidden" style="color: blue;">con le</span></span> sponde piatte, senza una 
+							 <br>sino al petto, col pelo irsuto. Quando risuona il campa-
+							 <br>naccio della mandra, nel gran silenzio, volan via le cutret-
+							 <br>tole, senza un grido, e il pastore <span class="choice dialettale" id="d1e2456"><span class="orig visible">istesso</span><span class="reg hidden" style="color: red;">stesso</span></span>, giallo di febbre,
+							 <br>e bianco di polvere anche lui, schiude un istante le pal-
+							 <br>pebre gonfie, levando il capo all’ombra dei giunchi secchi.
+						</p>
+                  <p id="par2_2_MAL">
+							 <br>È che la malaria v’entra nelle ossa col pane che man-
+							 <br>giate, e se aprite bocca per parlare, mentre camminate 
+							 <br>lungo le strade soffocanti di polvere e di sole, e vi sentite
+							 <br>mancar le ginocchia, o vi accasciate sul basto della mula 
+							 <br>che va all’ambio, <span class="choice correzione" id="d1e2478"><span class="sic visible">colla</span><span class="corr hidden" style="color: blue;">con la</span></span> testa bassa. Invano Lentini, e Fran-
+							 <br>cofonte, e Paternò cercano di arrampicarsi come pecore
+							 <br>sbrancate sulle prime colline che scappano dalla pianura,
+							 <br>e si circondano di aranceti, di vigne, di orti sempre verdi;
+							 <br>la malaria acchiappa gli abitanti per le vie spopolate, e li
+							 <br>inchioda dinanzi agli usci delle case scalcinate dal sole,
+							 <br>tremanti di febbre sotto il pastrano, e con tutte le coperte
+							 <br>del letto sulle spalle.
+						</p>
+                  <p id="par2_3_MAL">
+							 <br>Laggiù, nella pianura, le case son rare e di aspetto
+							 <br>malinconico, lungo le strade mangiate dal sole, fra due
+							 <br>mucchi di concime fumante, appoggiandosi alle tettoie
+							 <br>barcollanti, dove aspettano <span class="choice correzione" id="d1e2508"><span class="sic visible">coll’</span><span class="corr hidden" style="color: blue;">con l'</span></span>occhio spento, legati alla
+							 <br>mangiatoia vuota, i cavalli di ricambio. — O sulla sponda
+							 <br>del lago, <span class="choice correzione" id="d1e2518"><span class="sic visible">colla</span><span class="corr hidden" style="color: blue;">con la</span></span> frasca decrepita dell’osteria appesa all’uscio,
+							 <br>le grandi stanzacce vuote, e l’oste che sonnecchia accocco-
+							 <br>lato sulla soglia, <span class="choice correzione" id="d1e2527"><span class="sic visible">colla</span><span class="corr hidden" style="color: blue;">con la</span></span> testa stretta nel fazzoletto, spiando
+							 <br>ad ogni svegliarsi nella campagna deserta se arriva un pas-
+							 <br>seggiero assetato. — Oppure come cassette di legno bianco,
+							 <br>impennacchiate da quattro eucalipti magri e grigi, lungo
+							 <br>la ferrovia che taglia in due la pianura come un colpo
+							 <br>d’accetta, dove vola la macchina fischiando al pari di un vento
+							 <br>d’autunno, e la notte corruscano scintille infuocate. O in-
+							 <br>fine qua e là sul limite dei poderi segnato da un pila-
+							 <br>strino appena squadrato, coi tetti appuntellati dal di fuori,
+							 <br><span class="choice correzione" id="d1e2551"><span class="sic visible">colle</span><span class="corr hidden" style="color: blue;">con le</span></span> imposte sconquassate, dinanzi all’<span class="choice correzione" id="d1e2556"><span class="sic visible">aja</span><span class="corr hidden" style="color: blue;">aia</span></span> screpolata, al-
+							 <br>l’ombra delle alte biche di paglia dove dormono le galline
+							 <br><span class="choice correzione" id="d1e2565"><span class="sic visible">colla</span><span class="corr hidden" style="color: blue;">con la</span></span> testa sotto l’ala, e l’asino lascia cascare il capo, <span class="choice correzione" id="d1e2570"><span class="sic visible">colla</span><span class="corr hidden" style="color: blue;">con la</span></span>
+							 <br>bocca ancora piena di paglia, e il cane si rizza sospettoso,
+							 <br>e abbaia roco al sasso che si stacca dall’intonaco, alla lucer-
+							 <br>tola che striscia, alla foglia che si muove nella campagna
+							 <br>inerte.
+						</p>
+                  <p id="par2_4_MAL">
+							 <br>La sera, appena cade il sole, si affacciano sull’uscio uo-
+							 <br>mini arsi dal sole sotto il cappellaccio di paglia e le larghe
+							 <br>mutande di tela, sbadigliando e stirandosi le braccia; e
+							 <br>donne seminude <span class="choice correzione" id="d1e2594"><span class="sic visible">colle</span><span class="corr hidden" style="color: blue;">con le</span></span> spalle nere, allattando dei bambini
+							 <br>già pallidi e disfatti, che non si sa come si faranno grandi
+							 <br>e neri, e come ruzzeranno sull’erba quando tornerà l’ in-
+							 <br>verno, e l’aia diverrà verde un’altra volta, e il cielo azzurro,
+							 <br>e tutt’ intorno la campagna riderà al sole. E non si sa nep-
+							 <br>pure dove stia e perché ci stia tutta quella gente che la
+							 <br>domenica corre per la messa, nelle chiesuole solitarie, cir-
+							 <br>condate dalle siepi di <span class="choice correzione" id="d1e2615"><span class="sic visible">fichidindia</span><span class="corr hidden" style="color: blue;">fichi d'india</span></span>, a dieci miglia in giro, sin
+							 <br>dove si ode squillare la campanella fessa nella pianura che
+							 <br>non finisce mai.
+						</p>
+                  <p id="par2_5_MAL">
+							 <br><span class="choice correzione" id="d1e2627"><span class="sic visible">Gli</span><span class="corr hidden" style="color: blue;">Lì</span></span> è che dov’è la malaria è terra benedetta da Dio.
+							 <br>In giugno le spighe si coricano dal peso, e i solchi fumano
+							 <br>quasi avessero sangue nelle vene appena c’entra il vomero
+							 <br>in novembre. Allora bisogna pure che chi semina e chi
+							 <br>raccoglie caschi come una spiga matura, perchè il Signore
+						</p>
+               </div>
+               <div class="column column2">
+                  <p id="par2_6_MAL">
+							 <br>ha detto: <span class="dialoghi" id="d1e2646">« Il pane che si mangia bisogna sudarlo»</span>. Come
+							 <br>il sudore della febbre lascia <span class="choice correzione" id="d1e2651"><span class="sic visible">qualcheduno</span><span class="corr hidden" style="color: blue;">qualche d'uno</span></span> stecchito sul pa-
+							 <br>gliericcio di granturco non c’è più bisogno di solfato né
+							 <br>di decotto d’eucalipto; lo si carica sulla carretta del fieno,
+							 <br>o attraverso del basto dall’asino, o su di una scala, come
+							 <br>si può, con un sacco sulla faccia, e si va a deporlo alla
+							 <br>chiesuola solitaria, sotto i <span class="choice correzione" id="d1e2667"><span class="sic visible">fichidindia</span><span class="corr hidden" style="color: blue;">fichi d'india</span></span> spinosi di cui nes-
+							 <br>suno perciò mangia i frutti. Le donne piangono in crocchio,
+							 <br>e gli uomini stanno a guardare, fumando.
+						</p>
+                  <p id="par2_7_MAL">
+							 <br>Così s’erano portato il camparo di <span class="placeName" id="MA_VAL">Valsavoja</span>, che si chia-
+							 <br>mava Massaro Croce, ed erano trent’anni che inghiottiva
+							 <br>solfato e decotto d’eucalipto. In primavera stava meglio, ma
+							 <br>d’autunno, come ripassavano le <span class="choice correzione" id="d1e2691"><span class="sic visible">anitre</span><span class="corr hidden" style="color: blue;">anatre</span></span>, egli si metteva il faz-
+							 <br>zoletto in testa, e non si faceva vedere più sull’uscio che
+							 <br>ogni due giorni; tanto che si era ridotto pelle ed ossa, e
+							 <br>aveva una pancia grossa come un tamburo, che lo chiama-
+							 <br>vano <a class="addName" id="d1e2704">il Rospo</a> anche pel suo fare rozzo e selvatico, e perché 
+							 <br>gli erano diventati gli occhi smorti e a fior di testa. Egli
+							 <br>diceva sempre prima di morire: <span class="dialoghi" id="d1e2712">— Non temete che <span class="choice dialettale" id="d1e2714"><span class="orig visible">pei</span><span class="reg hidden" style="color: red;">per i</span></span> miei
+							 <br>figliuoli il padrone ci penserà! —</span> E con quegli occhiacci atto-
+							 <br>niti guardava in faccia ad uno ad uno coloro che gli sta-
+							 <br>vano attorno al letto l’ultima sera, e gli mettevano la candela
+							 <br>sotto il naso. E lo zio Menico, <a class="addName" id="d1e2729">il capraio</a>, il quale se ne inten-
+							 <br>deva, disse che doveva avere il fegato duro come un sasso, e
+							 <br>pesante un rotolo e mezzo. E qualcuno aggiungeva pure:
+						</p>
+                  <p id="par2_8_MAL">
+							 <br><span class="dialoghi" id="d1e2739">— Adesso so ne impipa! ché s’è ingrassato e fatto ricco
+							 <br>a spese del padrone, e i suoi figli non hanno bisogno di nes-
+							 <br>suno! Credete che l’abbia preso soltanto <span class="choice dialettale" id="d1e2745"><span class="orig visible">pei</span><span class="reg hidden" style="color: red;">per i</span></span> begli occhi del
+							 <br>padrone tutto quel solfato e tutta quella malaria per tren-
+							 <br>t’anni?</span>
+						</p>
+                  <p id="par2_9_MAL">
+							 <br>Compare Carmine, l’oste del lago, aveva persi allo
+							 <br>stesso modo i suoi figliuoli, tutt’e cinque, l’un dopo l’altro, tre
+							 <br>maschi e due femmine. Pazienza le femmine. Ma i maschi mo-
+							 <br>rivano appunto quando erano grandi, nell’età di guadagnarsi
+							 <br>il pane. Oramai egli lo sapeva; e come le febbri vincevano il
+							 <br>ragazzo dopo averlo travagliato due o tre anni, non spendeva
+							 <br>più un soldo, né per solfato né per decotti, prendeva del buon
+							 <br>vino, e si metteva ad <span class="choice correzione" id="d1e2774"><span class="sic visible">ammanire</span><span class="corr hidden" style="color: blue;">ammannire</span></span> tutti gli intingoli di pesce
+							 <br>che sapeva, onde stuzzicare l’appetito al malato. Andava ap-
+							 <br>posta <span class="choice correzione" id="d1e2784"><span class="sic visible">colla</span><span class="corr hidden" style="color: blue;">con la</span></span> barca a pescare la mattina, tornava carico di ce-
+							 <br>fali, di anguille grosse come il braccio, e poi diceva al
+							 <br>figliuolo, ritto dinanzi al letto e <span class="choice correzione" id="d1e2793"><span class="sic visible">colle</span><span class="corr hidden" style="color: blue;">con le</span></span> <span class="choice correzione" id="d1e2798"><span class="sic visible">lagrime</span><span class="corr hidden" style="color: blue;">lacrime</span></span> agli occhi:
+        					 <br><span class="dialoghi" id="d1e2805">— Tè! mangia! —</span> Il resto lo pigliava Nanni <a class="addName" id="d1e2808">il carrettiere</a> per
+							 <br>andare a venderlo in città. — <span class="dialoghi" id="d1e2813">Il lago vi dà e il lago vi pi-
+							 <br>glia! —</span> Gli diceva Nanni vedendo piangere di nascosto
+							 <br>compare Carmine. <span class="dialoghi" id="d1e2820">— Che volete farci, fratel mio? —</span> Il lago
+							 <br>gli aveva dato dei bei guadagni. E a Natale, quando le an-
+							 <br>guille si vendono bene, nella casa in riva al lago cenavano
+						</p>
+                  <p id="par2_10_MAL">
+							 <br>allegramente dinanzi al fuoco; maccheroni, salciccia e ogni
+							 <br>ben di Dio; mentre il vanto urlava di fuori come un lupo
+							 <br>che ha fame e freddo. In tal modo coloro che restavano si
+							 <br>consolavano dei morti. Ma a poco a poco andavano assotti-
+							 <br>gliandosi così che la madre divenne curva come un gancio
+							 <br>dai crepacuori, e il padre che era grosso stava sempre sul
+							 <br>l’uscio, onde non vedere quelle stanzaccie vuote dove prima
+							 <br>andavano e venivano tutti i ragazzi. L’ultimo rimasto non
+							 <br>voleva morire assolutamente, e piangeva e si disperava al-
+							 <br>lorché lo coglieva la febbre, e persino andò a buttarsi nel
+							 <br>lago dalla paura di morire. Ma il padre che sapeva nuotare
+							 <br>lo ripescò, e lo sgridava che con quel bagno freddo gli
+							 <br>sarebbe tornata la febbre più forte. <span class="dialoghi" id="d1e2858">— Ah!</span> singhiozzava il
+							 <br>giovanetto colle mani nei capelli. <span class="dialoghi" id="d1e2863">— Per me non c’è più spe-
+							 <br>ranza! Per me non c’ è più speranza! —</span> <span class="dialoghi" id="d1e2868">Tutto sua sorella
+							 <br>Agata che non voleva morire perchè era sposa! —</span> Osservava
+							 <br>compare Carmine di faccia a sua moglie, seduta accanto al
+							 <br>letto; e lei, che non piangeva più da un pezzo, confermava
+							 <br>col capo curva al pari di un gaucio.
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina8">Pagina8</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina8" src="./img/mal_pag3.png"><map id="Pagina8"><area shape="rect" coords="44,46,294,215" style="cursor: help;" title="par3_1_MAL"><area shape="rect" coords="46,216,293,383" style="cursor: help;" title="par3_2_MAL"><area shape="rect" coords="47,383,293,508" style="cursor: help;" title="par3_3_MAL"><area shape="rect" coords="49,508,292,697" style="cursor: help;" title="par3_4_MAL"><area shape="rect" coords="48,696,294,751" style="cursor: help;" title="par3_5_MAL"><area shape="rect" coords="299,48,545,195" style="cursor: help;" title="par3_6_MAL"><area shape="rect" coords="300,194,544,319" style="cursor: help;" title="par3_7_MAL"><area shape="rect" coords="299,319,542,402" style="cursor: help;" title="par3_8_MAL"><area shape="rect" coords="299,403,545,497" style="cursor: help;" title="par3_9_MAL"><area shape="rect" coords="299,498,544,548" style="cursor: help;" title="par3_10_MAL"><area shape="rect" coords="299,547,544,613" style="cursor: help;" title="par3_11_MAL"></map></div>
+            <div class="boxtext">
+               <div class="column column1">
+                  <p id="par3_1_MAL">
+							 <br>Lei, ridotta a quel modo, e <span class="unclear" title="illegible">dal marito</span> grasso e gros-
+							 <br>so, avevano il cuoio duro, e <span class="unclear" title="illegible">rimasero</span> soli a guardar la
+							 <br>casa. La malaria non ce l’ha contro di tutti. Alle volte
+							 <br>uno ci campa cent’anni, come Cirino <a class="addName" id="d1e2899">lo scimunito</a>, il quale
+							 <br>non aveva né re né regno, né arte né parte, né padre né
+							 <br>madre, né casa per dormire, né pane da mangiare, e tutti
+							 <br>lo conoscevano a quaranta miglia intorno, siccome andava
+							 <br>da una fattoria all’altra, aiutando a governare i buoi, a
+							 <br>trasportare il concime, a scorticare le bestie morte, a fare
+							 <br>gli uffici vili; e pigliava delle pedate o un tozzo di pane,
+							 <br>dormiva nei fossati, sul cigliono dei campi, a ridosso delle
+							 <br>con due lembi di mutande tenuti insieme da una funicella
+							 <br>sulle gambe magre e nere, e andava cantando a squarcia-
+							 <br>gola sotto il sole che gli martellava nella testa nuda, giallo
+						</p>
+                  <p id="par3_2_MAL">
+							 <br>come lo zafferano. Egli non prendeva più né solfato, né
+							 <br>medicine, né pigliava le febbri. Cento volte l’avevano rac-
+							 <br>colto disteso quasi fosse morto attraverso la strada; infine
+							 <br>la malaria l’aveva lasciato perchè non sapeva più che far-
+							 <br>sene di lui. Dopo che gli aveva mangiato il cervello, e la
+							 <br>polpa delle gambe, e gli era entrata tutta nella pancia
+							 <br>gonfia come un otre, l’aveva lasciato contento come una
+							 <br>pasqua, a cantare al sole meglio di un grillo. Di preferenza
+							 <br><a class="addName" id="d1e2943">lo scimunito</a> soleva stare davanti allo stallatico di <span class="placeName" id="MA_VAL">Valsavoja</span>,
+							 <br>perché ci passava della gente, ed egli correva loro dietro
+							 <br>per un miglio gridando, <span class="dialoghi" id="d1e2954">uuh! uuh!</span> finché gli buttavano
+							 <br>due centesimi. L’oste gli prendeva i centesimi e lo te-
+							 <br>neva a dormire sotto la tettoia, sullo strame dei cavalli, che
+							 <br>quando si tiravano dei calci, Cirino correva a svegliare il
+							 <br>padrone gridando <span class="dialoghi" id="d1e2966">uuh!</span> e la mattina li strigliava e li go-
+							 <br>vernava.
+						</p>
+                  <p id="par3_3_MAL">
+							 <br>Più tardi era stato attratto dalla ferrovia che costrussero
+							 <br>lì vicino. I vetturali e i viandanti erano diventati più rari
+							 <br>sulla strada, e <a class="addName" id="d1e2979">lo scimunito</a> non sapeva che pensare guar-
+							 <br>dando in aria delle ore le rondini che volavano, e batteva
+							 <br>le palpebre al sole per capacitarsene. La prima volta che
+							 <br>vide tutta quella gente insaccata nei carrozzoni che pas-
+							 <br>savano dalla stazione parve che indovinasse. E d’allora in
+							 <br>poi ogni giorno aspettava il treno senza sbagliare di un
+							 <br>minuto, quasi avesse l’orologio in testa, e mentre gli fug-
+							 <br>giva dinanzi gettandogli contro la faccia il fumo e lo stre-
+							 <br>pito, egli si dava a corrergli dietro, <span class="choice correzione" id="d1e3000"><span class="sic visible">colle</span><span class="corr hidden" style="color: blue;">con le</span></span> braccia in aria,
+							 <br>urlando in tuono di collera e di minaccia: <span class="dialoghi" id="d1e3007">uuh! uuh!....</span>
+						</p>
+                  <p id="par3_4_MAL">
+							 <br>L’oste anche lui, ogni volta che da lontano vedeva pas-
+							 <br>sare il treno sbuffante nella malaria, non diceva nulla, ma
+							 <br>gli sputava contro il fatto suo scrollando il capo, davanti
+							 <br>alla tettoia deserta e ai boccali vuoti. Prima gli affari an-
+							 <br>davano così bene che egli aveva prese quattro mogli, l’una
+							 <br>dopo l’altra, tanto che lo chiamavano « <a class="addName" id="d1e3026">ammazzamogli</a> »
+							 <br>e dicevano che ci aveva fatto il callo, e tirava a prendere
+							 <br>la quarta, se la figlia di massaro Turi Oricchiazza non gli
+							 <br>faceva rispondere: <span class="dialoghi" id="d1e3035">— Dio ne liberi! nemmeno se fosso
+							 <br>d’oro, quel cristiano! Ei si mangia il prossimo suo come
+							 <br>un coccodrillo! —</span> Ma non era vero che ci avesse fatto il
+							 <br>callo, perché quando gli era morta comare Santa, ed era
+							 <br>la terza, egli sino all’ora di <span class="choice correzione" id="d1e3047"><span class="sic visible">colezione</span><span class="corr hidden" style="color: blue;">colazione</span></span> non ci aveva messo
+							 <br>un boccone di pane in bocca, né un sorso d’acqua; e pian-
+							 <br>geva per davvero, dietro il banco dell’osteria. <span class="dialoghi" id="d1e3056">— Stavolta
+							 <br>voglio pigliarmi una che è avvezza alla malaria —</span> aveva
+							 <br>detto dopo quel fatto, <span class="dialoghi" id="d1e3064">— Non voglio più soffrirne di questi
+							 <br>dispiaceri.</span>
+						</p>
+                  <p id="par3_5_MAL">
+							 <br>Le mogli gliele ammazzava la malaria, ad una ad una,
+							 <br>ma lui lo lasciava tal quale, vecchio e grinzoso, che non
+							 <br>avreste creduto che quell’uomo lì ci avesse anche lui il suo
+							 <br>bravo omicidio sulle spalle, quantunque tirasse a prendere
+							 <br>la quarta moglie. Pure la moglie ogni volta la cercava gio-
+						</p>
+               </div>
+               <div class="column column2">
+                  <p id="par3_6_MAL">
+							 <br>vane e appetitosa, ché senza moglie l’osteria non può andare,
+							 <br>e per questo gli avventori s’erano diradati. Ora non restava
+							 <br>altri che compare Mominu, il cantoniere della ferrovia li
+							 <br>vicino, un uomo che non parlava mai e veniva a bere il
+							 <br>suo bicchiere fra un treno e l’altro, mettendosi a sedere
+							 <br>sulla panchetta accanto all’uscio, <span class="choice correzione" id="d1e3097"><span class="sic visible">colle</span><span class="corr hidden" style="color: blue;">con le</span></span> scarpe in mano, per
+							 <br>lasciare riposare i piedi. <span class="dialoghi" id="d1e3104">— Questi qui non li coglie la
+							 <br>malaria! —</span> pensava <a class="addName" id="d1e3109">Ammazzamogli</a> senza aprir bocca
+							 <br>nemmeno lui, ché se la malaria li avesse fatto cadere come
+							 <br>le mosche non ci sarebbe stato chi facesse andare quella
+							 <br>ferrovia là. Il pover uomo, dacché s’era levato dinanzi agli
+							 <br>occhi il solo uomo che gli avvelenava l’ esistenza, non ci
+							 <br>aveva più che due nemici al mondo: la ferrovia che gli
+							 <br>rubava gli avventori, e la malaria che gli portava via le
+						</p>
+                  <p id="par3_7_MAL">
+							 <br>mogli. Tutti gli altri, nella pianura, sin dove arrivavano gli 
+							 <br>occhi, provavano un momento di contentezza, anche se nel
+							 <br>lettuccio ci avevano qualcuno che se ne andava a poco a poco,
+							 <br>o se la febbre li abbatteva sull’uscio, col fazzoletto in testa e
+							 <br>il tabarro addosso. Si ricreavano guardando il seminato
+							 <br>che veniva prosperoso e verde come il velluto, o le biade
+							 <br>che ondeggiavano al par di un mare, e ascoltavano la can-
+							 <br>tilena lunga dei mietitori, distesi come una fila di soldati,
+							 <br>e in ogni viottolo si udiva la cornamusa, dietro la quale
+							 <br>arrivavano dalla <span class="placeName" id="CALA">Calabria</span> degli sciami di contadini per la
+							 <br>messe, polverosi, curvi sotto la bisaccia piena, gli uomini
+							 <br>avanti e le donne in coda, zoppicanti e guardando la strada
+						</p>
+                  <p id="par3_8_MAL">
+							 <br>che si allungava con la faccia arsa e stanca. E sull’orlo
+							 <br>di ogni fossato, dietro ogni macchia d’aloe, nell’ora in cui
+							 <br>cala la sera come un velo grigio, fischiava lo zufolo del
+							 <br>guardiano, in mezzo alte spighe mature che tacevano, im-
+							 <br>mobili al cascare del vento, invase anch’esse dal silenzio
+							 <br>della notte. <span class="dialoghi" id="d1e3171">— Ecco! —</span> pensava <a class="addName" id="d1e3174">Ammazzamogli</a>. <span class="dialoghi" id="d1e3177">—Tutta
+							 <br>quella gente là se fa tanto di non lasciarci la pelle e
+							 <br>di tornare a casa, ci torna con dei denari in tasca. —</span>
+						</p>
+                  <p id="par3_9_MAL">
+							 <br>Solo lui non aspettava né la raccolta, né altro, e non
+							 <br>aveva animo di cantare. La sera calava tanto triste, nello
+							 <br>stallazzo vuoto e nell’osteria buia. A quell’ora il treno
+							 <br>passava da lontano fischiando, e compare Mominu stava
+							 <br>accanto al suo casotto <span class="choice correzione" id="d1e3197"><span class="sic visible">colla</span><span class="corr hidden" style="color: blue;">con la</span></span> bandieruola in mano; ma fin
+							 <br>lassù, dopo che il treno era svanito nelle tenebre, si udiva
+							 <br>Cirino <a class="addName" id="d1e3206">lo scimunito</a> che gli correva dietro urlando, <span class="dialoghi" id="d1e3209">uuh !...</span>
+							 <br>E <a class="addName" id="d1e3215">Ammazzamogli</a> sulla porta dell’osteria buia e deserta
+							 <br>pensava che per quelli lì la malaria non ci era.
+						</p>
+                  <p id="par3_10_MAL">
+							 <br>Infine quando non potè pagar più l’affitto dell’osteria e
+							 <br>dello stallazzo, il padrone lo mandò via dopo 57 anni che
+							 <br>c’era stato, e <a class="addName" id="d1e3228">Ammazzamogli</a> si ridusse a cercare impiego
+							 <br>nella ferrovia anche lui, e a tenere in mano la bandieruola
+							 <br>allorché passava il treno.
+						</p>
+                  <p id="par3_11_MAL">
+							 <br>Allora stanco di correre tutto il giorno su e giù lungo
+							 <br>le rotaie, rifinito dagli anni e dai malanni, mentre vedeva
+							 <br>passare le belle signore che si affacciavano allo sportello
+							 <br><span class="choice correzione" id="d1e3245"><span class="sic visible">colle</span><span class="corr hidden" style="color: blue;">con le</span></span> teste e il cappellino avvolti nei veli, borbottava:
+							 <br><span class="dialoghi" id="d1e3252">— Ah! per questi qui non c’è proprio la malaria. —</span>
+							 <br><span class="persName" id="">G. Verga</span>
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina9-MalariaBibliografia">Pagina9-MalariaBibliografia</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina9-MalariaBibliografia" src="./img/mal_bib1.png"><map id="Pagina9-MalariaBibliografia"><area shape="rect" coords="32,630,275,645" style="cursor: help;" title="bib1_1MAL"><area shape="rect" coords="31,646,279,743" style="cursor: help;" title="bib1_MAL"><area shape="rect" coords="279,36,530,141" style="cursor: help;" title="bib2_MAL"><area shape="rect" coords="281,141,530,467" style="cursor: help;" title="bib3_MAL"><area shape="rect" coords="283,467,531,740" style="cursor: help;" title="bib4_MAL"></map></div>
+            <div class="boxtext">
+               <div class="column column1">
+                  <h2 id="bib1_1MAL">
+							 <br>BIBLIOGRAFIA.
+						</h2>
+                  <p id="bib1_MAL">
+							 <br><a class="bibl" id="d1e3274"><span class="persName" id="">A. Fogazzaro</span>, <span style="font-style: italic;">Malombra</span> — <span class="placeName" id="B_MIL">Milano</span>, lib. ed. G. Brigola, <a class="date" id="d1e3284">1881</a></a>.
+							 <br>Letto rapidamente, talvolta con vivissima curiosità, questo
+							 <br>grosso volume <a class="quote" id="d1e3291">— grosso e stampato a caratteri fitti fitti —</a>
+							 <br>si affaccia la domanda: <a class="quote" id="d1e3296">« È possibile?»</a> Non solo possibile,
+							 <br>ma vero. È un romanzo italiano, è un romanzo lungo, ep-
+							 <br>pure non annoia; si percorre tutto intero, senza interru-
+							 <br>zioni, senza salti. E badate che non segue nessuna moda;
+							 <br>non solletica i sensi, non s’accosta allo scandalo tanto da
+							 <br>rasentarlo; piuttosto che indurvi a pensare al <span class="persName" id="">Balzac</span> o
+						</p>
+               </div>
+               <div class="column column2">
+                  <p id="bib2_MAL">
+							 <br>allo <span class="persName" id="">Zola</span>, vi ricorda il <span class="persName" id="">Dickens</span>, ma nessuna figura o si-
+							 <br>tuazione del fecondo o geniale scrittore inglese in partico-
+							 <br>lare; piuttosto che cercare attrattive in un intreccio com-
+							 <br>plicato, si ferma a disegnar paesaggi, a riferire conversa-
+							 <br>zioni intime, a cesellare caratteri; tra i caratteri coglie i
+							 <br>secondari e gli umili assai meglio <span class="choice dialettale" id="d1e3334"><span class="orig visible">de’</span><span class="reg hidden" style="color: red;">dei</span></span> principali.
+							 <br>Il <span class="persName" id="">Fogazzaro</span> aveva tutte le buone intenzioni di scrivere
+							 <br>un libro illeggibile. Pare un bisticcio, ed è la pura verità,
+							 <br>essendosi egli messo al lavoro col capo pieno di preconcetti,
+							 <br>artistici e anti-artistici, di modelli, di tesi.
+						</p>
+                  <p id="bib3_MAL">
+							 <br>Il nodo del romanzo, infatti, vorrebbe arieggiare, nel
+							 <br>terribile, nel fantastico, ai racconti del <span class="persName" id="">Pöe</span>, dell’<span class="persName" id="">Hoffman</span>,
+							 <br>ma ne rimane di gran lunga lontano, perchè il terribile
+							 <br>e il fantastico vi sono toccati alla sfuggita, quasi con timi-
+							 <br>dezza. Marina, fanciulla capricciosa, indocile, obbligata dalla
+							 <br>perdita dei parenti e della fortuna a chiudersi nel solitario
+							 <br>castello del conte Cesare suo zio, tra luoghi selvaggi, po-
+							 <br>polati di spiriti dalla fantasia popolare, legge per caso la
+							 <br>storia d’una povera donna della sua famiglia, maniaca, la
+							 <br>quale si credeva chiusa e maltrattata dal marito per un
+							 <br>amore colpevole, e, aspirando a vendetta, la prevedeva si-
+							 <br>cura in una nuova vita, in cui, sotto altro nome, avrebbe
+							 <br>serbato la ricordanza della infelicissima esistenza che me-
+							 <br>nava mentre scriveva quelle pagine destinate a sè stessa.
+							 <br>Marina, a lungo andare, finisce che s’<span style="font-style: italic;">immedesima</span>, come
+							 <br>direbbe un filosofo, con la povera Cecilia; si figura una
+							 <br>missione vendicatrice, l’accetta con piena fede, crede Cor-
+							 <br>rado Siila, da lei amato a dispetto di prevenzioni e di antipa-
+							 <br>tie, sia l’amante di Cecilia, ritornato in terra a renderla felice,
+							 <br>fors’anche ad aiutarla a compiere i suoi biechi proponimenti.
+							 <br>Per vendetta, consente a sposare Nepo, parente del conte
+							 <br>Cesare d’Ormengo, promettendosi di <a class="quote" id="d1e3410">« calpestarlo »</a> dopo
+							 <br>le nozze; per vendetta si presenta una notte al conte, e gli
+							 <br>parla in guisa da spaventarlo, da fargli venire un'apoplessia
+							 <br>che lo uccide in pochi giorni. E quando vede che Corrado
+							 <br>non ricorda punto di essere stato altra volta Renato, e di
+							 <br>aver amato Cecilia, quando lo vede freddo, pronto ad allon-
+							 <br>tanarsi da lei, gli tira un colpo di pistola; poi va a get-
+							 <br>tarsi in una voragine, come si contava avesse fatto Cecilia.
+						</p>
+                  <p id="bib4_MAL">
+							 <br>Or se il <span class="persName" id="">Fogazzaro</span> ha immaginato un complesso di cir-
+							 <br>costanze adatte a produrre fremiti e ansietà, gli è mancata
+							 <br>la forza o il coraggio di valersene in modo da colpire la
+							 <br>nostra fantasia, da sollevarci nella regione del misterioso e
+							 <br>dello strano e trattencrvici esterrefatti. Poiché si può es-
+							 <br>sere sicuri della assoluta insussistenza di certi fenomeni, o
+							 <br>della loro indole affatto subbiettiva, e nondimeno esser tra-
+							 <br>scinati a dimenticare tale sicurezza, a prestar fede all’incre-
+							 <br>dibile. Anche la <span class="persName" id="">Radcliffe</span>, anche <span class="persName" id="">Paolo Féval</span>, riescono,
+							 <br>nostro malgrado, a darci la pelle d’oca, a sollevare irti i ca-
+							 <br>pelli sul nostro capo. Di ciò non è traccia in <a class="bibl" id="d1e3462"><span style="font-style: italic;">Malombra</span></a>.
+							 <br>L’apparizione di Marina al conte Cesare, il quale non era
+							 <br>un dappoco — tutt’altro — le parole roventi ch’ella dovè pro-
+							 <br>nunziare, la resistenza del vecchio gentiluomo al terrore
+							 <br>dal quale sentiva invadersi, e la vittoria del terrore, ecco
+							 <br>una scena altamente drammatica, dove il fantastico avrebbe
+							 <br>potuto produrre i suoi effètti più profondi: è certo avve-
+							 <br>nuta, l'<span class="persName" id="">A.</span> ce lo assicura, ce ne dà a vedere gli effetti tri-
+							 <br>stissimi; ma egli non l’ ha descritta. Pure, il romanzo, in
+							 <br>ciò che ha di essenziale, si avvolge intorno a detta scena;
+							 <br>i fatti che la precedono ne sono, nella mente dello scrit-
+							 <br>tore, gli antecedenti, la preparazione necessaria; i fatti che
+							 <br>la seguono, son determinati da essa.
+							 <br>Ma lasciamo stare il fantastico, dimentichiamo l’ appa-
+							 <br>rizione di Marina al conto, sforziamoci a persuaderci che
+							 <br>il <span class="persName" id="">Fogazzaro</span> abbia voluto semplicemente narrare la storia
+							 <br>della mania della fanciulla. In astratto, anche se leggete
+							 <br>non il libro, ma un semplice sunto, ammetterete la verosi­-
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina10">Pagina10</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina10" src="./img/mal_bib2.png"><map id="Pagina10"><area shape="rect" coords="37,46,285,361" style="cursor: help;" title="bib5_MAL"><area shape="rect" coords="37,360,282,445" style="cursor: help;" title="bib6_MAL"><area shape="rect" coords="37,447,283,751" style="cursor: help;" title="bib7_MAL"><area shape="rect" coords="287,46,534,246" style="cursor: help;" title="bib8_MAL"><area shape="rect" coords="289,247,534,668" style="cursor: help;" title="bib9_MAL"><area shape="rect" coords="291,666,539,751" style="cursor: help;" title="bib10_MAL"></map></div>
+            <div class="boxtext">
+               <div class="column column1">
+                  <p id="bib5_MAL">
+							 <br>miglianza del caso. Ma basta ciò in un romanzo? Sarebbe
+							 <br>lo stesso che dire: <a class="quote" id="d1e3517">« datemi la trama, indicatemi il sog-
+							 <br>getto, e risparmiatevi la pena di scrivere il libro. »</a> L’im-
+							 <br>pressione vivissima della lettura del manoscritto di Cecilia,
+							 <br>in una donna come Marina; la vita di lei nel castello; l’am-
+							 <br>biente da cui è circondata; in una parola, tutto quello che
+							 <br>ogni giorno, ad ogni ora, la costringe a ritornare con la
+		 					 <br>mente a Cecilia; il lento svolgersi della malattia morale,
+							 <br>il passaggio graduale e forse insensibile dall’impressione
+							 <br>prima all’idea fissa, le allucinazioni, la soddisfazione sel-
+							 <br>vaggia di aver compiuto la vendetta sul conte Cesare, il do-
+							 <br>lore acutissimo di non sentirsi amata freneticamente come ella
+							 <br>ama da quello ch’è al tempo stesso, per lei, Renato e Cor-
+							 <br>rado, la tempesta che dovè scatenarlesi nell’anima prima della
+							 <br>uccisione del giovane, la fermezza con cui si avvia al suicidio
+							 <br>— quale storia truce insieme e patetica, se un artista avesse
+							 <br>l’attitudine'a svolgerla, a colorirla tutta! Ma cercatela in
+							 <br><a class="bibl" id="d1e3554"><span style="font-style: italic;">Malombra</span></a>, e non vi troverete se non accenni e vi chiede-
+							 <br>rete se davvero francasse la spesa d’immaginare un perso-
+							 <br>naggio da tragedia, qual è Marina, per farne un fantoccio
+							 <br>dotato di parola, il quale, a tempo e a luogo, quando piace
+							 <br>all’autore di tirare il filo, chiacchieri, imprechi, vada in
+							 <br>barca sul lago, spari colpi di pistola. Nè vale opporre che
+							 <br>Marina è pazza; poiché pazzia non diremo più ragionante,
+							 <br>ma certo più calma e meno appariscente della sua, è diffi-
+							 <br>cile figurarsela. Pazza nel vero senso non è; l’idea fissa
+							 <br>non le impedisce punto di condursi da persona perfetta-
+							 <br>mente sana; anzi è questa un’antitesi naturalissima dalla
+							 <br>quale l’autore non ha tratto tutto il partito che avrebbe
+							 <br>potuto.
+						</p>
+                  <p id="bib6_MAL">
+							 <br>Ci si permetta di addurre almeno una prova a conferma
+							 <br>delle nostre opinioni. Marina, pur amando Corrado, ha
+							 <br>consentito a sposare Nepo. Ritiratasi nelle sue stanze (e
+							 <br>qui il <span class="persName" id="">Fogazzaro</span> s’avventura a una descrizione delle forme
+							 <br>della fanciulla, in cui le frasi <span style="font-style: italic;">accusano</span> il convenzio-
+							 <br>nalismo), abbandonatasi alle sue fantasie, giunge a doman-
+							 <br>darsi perchè non fugga per raggiungere Corrado, perchè
+							 <br><a class="quote" id="d1e3609">«questa commedia con Nepo Salvador. »</a>
+						</p>
+                  <p id="bib7_MAL">
+							 <br><a class="quote" id="d1e3614">« C’era bene il perchè, e Marina non poteva dimenticarlo
+							 <br>a lungo. Quelle ultime parole del manoscritto! — Lasciar
+							 <br>fare a Dio. Sieno figli, sieno nipoti, sieno parenti, la ven-
+							 <br>detta sarà buona su tutti. Qui, aspettarla qui. — E i fatti
+							 <br>non accennavano già confusamente da lontano com’ella potrebbe raggiungere insieme la Vendetta e l’amore ? Le
+							 <br>tornò la fede. »</a> Ecco il momento, per l’<span class="persName" id="">A.</span> di tirarsi da
+							 <br>parte lui, di lasciare i pensieri, i sentimenti diversi, contrad-
+							 <br>dittori di Marina liberi di manifestarsi nella loro spontaneità.
+							 <br>Invece, egli procede oltre a narrare come la fanciulla, mes-
+							 <br>sasi a contemplare <a class="quote" id="d1e3639">« lo stipo del segreto »</a> fu <a class="quote" id="d1e3641">« assalita,
+							 <br>pietrificata da una delle sue reminiscenze misteriose. Le
+							 <br>pareva esser venuta su quella soglia un’altra volta, anni
+							 <br>ed anni addietro, di notte, discinta, con i capelli sciolti;
+							 <br>aver visto a’ suoi piedi l’ombra oscillante del candeliere, il
+							 <br>lume intorno a sè per breve spazio di pareti e di pavimento,
+							 <br>e là davanti lo stipo nero, i caratteri arcani. »</a> Niente al-
+							 <br>tro; il capitolo si chiude là. Chi di voi s’è sentito rime-
+							 <br>scolare il sangue? <a class="quote" id="d1e3661"><span style="font-style: italic;">Le tornò la fede, fu assalita da una remini-
+							 <br>scenza, le pareva...</span></a> Generalità vuote e subito dopo una de-
+							 <br>scrizioncella importuna, la quale scaccia, se pur venivansi
+							 <br>producendo, l’aspettativa intensa, la sensazione glaciale
+							 <br>dell’ignoto, il presentimento vago d’una grande sciagura,
+							 <br>che dalla situazione rampollerebbero. Noteremo qui che l’<span class="persName" id="">A.</span>
+							 <br>si era anche proposto di attribuire alla fatalità una parte
+							 <br>importante nel suo racconto. Il sentimento della fatalità,
+							 <br>quando si sa ispirarlo, è aiuto efficace per gli scrittori che mi-
+							 <br>rano al grandioso, al terribile. In <a class="bibl" id="d1e3688"><span style="font-style: italic;">Malombra</span></a> però certe com-
+							 <br>binazioni o son volgari o troppo artificiose, perchè appa-
+						</p>
+               </div>
+               <div class="column column2">
+                  <p id="bib8_MAL">
+							 <br>riscano effetto d’una legge occulta ma inesorabile. È un
+							 <br>destino un po’ a uso Dumas: se D’Artagnan soccombesse
+							 <br>a uno <span class="choice dialettale" id="d1e3703"><span class="orig visible">de’</span><span class="reg hidden" style="color: red;">dei</span></span> tanti pericoli che gli si parano innanzi mentre
+							 <br>va in <span class="placeName" id="B_ING">Inghilterra</span>, i <a class="bibl" id="d1e3714"><span style="font-style: italic;">Tre Moschettieri</span></a> finirebbero <a class="foreign" id="d1e3718"><span style="font-style: italic;">ipso facto</span></a>.
+							 <br>Son casi; a voler prenderli e farli prendere per opera del
+							 <br>fato si rischia di scoprire la mano del romanziere che li
+							 <br>va apparecchiando. Ad ogni modo, non vi lasciano punto
+							 <br>l’impressione di ferrea necessità, alla quale volere o forza
+							 <br>umana non possa sottrarsi. Forse non è tutta colpa del <span class="persName" id="">Fo-
+							 <br>gazzaro</span>: ma come non ha riflettuto che nell’ambiente in-
+							 <br>tellettuale, in cui viviamo lui e noi, non c’è posto per il con-
+							 <br>cetto della predestinazione e simili? Ma ci credeva Marina.
+							 <br>Sì, e all’esaltata fantasia di lei dovevano veramente affac-
+							 <br>ciarsi come effetto del fato alcuni eventi; ina sarebbe stato
+							 <br>utile secondo noi contrapporre a quella illusione il concetto
+							 <br>scientifico della vita, e far intendere ai lettori che il roman-
+							 <br>ziere non è responsabile delle opinioni dei suoi personaggi.
+							 <br>Si poteva, senza turbare il racconto nè con professioni di
+							 <br>fede, nè con disquisizioni astratte.
+						</p>
+                  <p id="bib9_MAL">
+							 <br>Altro preconcetto. Il <span class="persName" id="">Fogazzaro</span> ha voluto introdurre
+							 <br>in <a class="bibl" id="d1e3766"><span style="font-style: italic;">Malombra</span></a> il problema religioso e discuterlo, obbligarci
+							 <br>a fermarvi su l’attenzione, a discuterlo anche noi. <span class="persName" id="d1e3773">Steinegge</span>,
+							 <br>un vecchio tedesco materialista, è convertito al cattolicismo
+							 <br>da sua figlia Edith, con l’aiuto d’un buon curato di cam-
+							 <br>pagna: torna a credere, e fino ad eseguire i precetti del
+							 <br>culto esterno. Fortunatamente, l’arte ha cacciato da banda
+							 <br>le preoccupazioni religiose e filosofiche dello scrittore.
+							 <br><span class="persName" id="d1e3788">Steinegge</span>, in fondo, non si converte perchè le ragioni del
+							 <br>curato lo persuadano, o perchè le sue stesse riflessioni lo in-
+							 <br>ducano a uscire dallo scetticismo, in cui è rimasto per tanto
+							 <br>tempo. No, ciò che il <span class="persName" id="">Fogazzaro</span> chiama conversione, è
+							 <br>semplice sovrabbondanza di affetto paterno. Quell’uomo
+							 <br>prega Dio, in buona fede, ma non sa figurarsi Dio se non
+							 <br>pensa alla figliuola, così affettuosa, così pura, così pronta
+							 <br>all’abnegazione, al sacrifizio. Il fenomeno è assai bene os-
+							 <br>servato, e assai bene dipinto, forse a dispetto dell’<span class="persName" id="">A.</span> e no-
+							 <br>nostante le dispute affatto inutili tra il curato e <span class="persName" id="d1e3817">Stei-
+							 <br>negge</span>. Ma il preconcetto ha prodotto risultati deplorevoli.
+							 <br>Il curato ha una fisonomia sua propria; però, in fondo, non
+							 <br>è un carattere, è una personificazione, di quelle ch’erano di
+							 <br>moda, non son molti anni, nei libri de’ manzoniani. <span class="persName" id="d1e3828">Steinegge</span>,
+							 <br>benché scettico, rozzo, era una gran brava persona, fior di ga-
+							 <br>lantuomo, pieno di aspirazioni nobili, di sentimenti forti e
+							 <br>delicati. Che ci ha guadagnato a ridiventar cattolico? Edith
+							 <br>è un miracolo; val quanto dire che non è una donna. S’in-
+							 <br>tende il suo affetto smisurato pel padre, s’intendono le sue
+							 <br>smanie per la salute eterna di lui; non s’intende perchè a
+							 <br>quell’affetto e a quelle smanie debba sacrificare l’amore che
+							 <br>sente per Siila, amore ricambiato. O davvero non potevano
+							 <br>star tutti e tre in una stessa casa? O altre donne, pure e
+							 <br>sante, non han saputo conciliare sulla terra, come nei romanzi
+							 <br>e nei drammi, la devozione filiale con la qualità di spose amo-
+							 <br>revoli? Carattere chiuso, mistico, Edith è un enigma; ed
+							 <br>è antipatica appunto perchè la sua condotta non si spiega.
+							 <br>Nulla, ripetiamo, tranne il suo misticismo, la obbliga a
+							 <br>comportarsi a quel modo, ed è un misticismo poco attivo, fin
+							 <br>troppo sereno, sicuro di sè tanto da parere egoismo. Almeno
+							 <br>le battaglie, che senza dubbio, secondo l’<span class="persName" id="">A.</span> si combattono
+							 <br>nel cuore di lei, ci fossero svelate!
+						</p>
+                  <p id="bib10_MAL">
+							 <br>Siamo stati severi, fin qui, perchè abbiam creduto do-
+							 <br>ver nostro sollevare la critica alle altezze che il <span class="persName" id="">Fogaz-
+							 <br>zaro</span> ha vagheggiate. Egli pensa; egli intende l’arte come
+							 <br>qualcosa di molto più serio che generalmente non si creda.
+							 <br>Ha sbagliato; ma vi son cadute, le quali annunziano trionfi
+							 <br>vicini. Invece è riuscito felicemente dove forse non ha messo
+							 <br>il maggiore studio, il più forte desiderio. Intorno al fatto
+							 <br>centrale, che abbiam indicato, si svolgono i mille incidenti
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+         <h2 id="Pagina11-Notizie">Pagina11-Notizie</h2>
+         <div class="container">
+            <div class="box"><img usemap="#Pagina11-Notizie" src="./img/not1.png"><map id="Pagina11-Notizie"><area shape="rect" coords="48,39,292,93" style="cursor: help;" title="bib11_MAL"><area shape="rect" coords="49,93,295,346" style="cursor: help;" title="bib12_MAL"><area shape="rect" coords="47,354,293,407" style="cursor: help;" title="bib13_MAL"><area shape="rect" coords="47,408,290,746" style="cursor: help;" title="bib14_MAL"><area shape="rect" coords="300,46,544,276" style="cursor: help;" title="bib15_MAL"><area shape="rect" coords="300,277,544,392" style="cursor: help;" title="bib16_MAL"><area shape="rect" coords="299,393,546,478" style="cursor: help;" title="bib17_MAL"><area shape="rect" coords="302,486,541,507" style="cursor: help;" title="not1_1MAL"><area shape="rect" coords="300,509,542,631" style="cursor: help;" title="not1_MAL"><area shape="rect" coords="298,634,543,695" style="cursor: help;" title="not2_MAL"><area shape="rect" coords="299,699,541,750" style="cursor: help;" title="not3_MAL"></map></div>
+            <div class="boxtext">
+               <div class="column column1">
+                  <div class="poem" lang="ro-IT">
+                     <div class="line"><span class="choice dialettale" id="d1e3902"><span class="orig visible">’Ntene</span><span class="reg hidden" style="color: red;">Non te ne</span></span> * darei neppure <span class="choice dialettale" id="d1e3910"><span class="orig visible">’na</span><span class="reg hidden" style="color: red;">una</span></span> mollica,</div>
+                     <div class="line">Se <span class="choice dialettale" id="d1e3917"><span class="orig visible">te</span><span class="reg hidden" style="color: red;">ti</span></span> vedessi morta <span class="choice dialettale" id="d1e3922"><span class="orig visible">pe’</span><span class="reg hidden" style="color: red;">per</span></span> la fame.</div>
+                     <div class="line">Son <span class="choice dialettale" id="d1e3929"><span class="orig visible">peccolina</span><span class="reg hidden" style="color: red;">piccolina</span></span> e vado <span class="choice dialettale" id="d1e3934"><span class="orig visible">pe’</span><span class="reg hidden" style="color: red;">per</span></span> la spica:</div>
+                     <div class="line">Tu che sei <span class="choice dialettale" id="d1e3941"><span class="orig visible">granne</span><span class="reg hidden" style="color: red;">grande</span></span> e stai <span class="choice dialettale" id="d1e3946"><span class="orig visible">sempr’a</span><span class="reg hidden" style="color: red;">sempre a</span></span> <span class="choice dialettale" id="d1e3951"><span class="orig visible">canta’</span><span class="reg hidden" style="color: red;">cantare</span></span>,</div>
+                     <div class="line">Canta cicala che <span class="choice dialettale" id="d1e3958"><span class="orig visible">pozzi</span><span class="reg hidden" style="color: red;">possa</span></span> ** <span class="choice dialettale" id="d1e3966"><span class="orig visible">crepa'</span><span class="reg hidden" style="color: red;">crepare</span></span>.</div>
+                  </div>
+                  <p id="bib12_MAL">
+							 <br>Il <span class="persName" id="">De Nino</span> tocca d’un fatto importante a pag. 134 del
+							 <br>suo libro: <a class="quote" id="d1e3980">« V’è dei pastori che scrivono e stampano i loro
+							 <br>versi. Ognuno di noi ricorda il <span style="font-style: italic;">Poeta pastore</span>, l’amico di <span class="persName" id="">Ga-
+							 <br>ribaldi</span>. La <span style="font-style: italic;">Siringa</span> pastorale del nostro Maccaroni ha fatto
+							 <br>maravigliare anche le persone serie. I vecchi ricordano an-
+							 <br>cora il pastore Filippo Mariani di Leonessa che dava mo-
+							 <br>deste accademie d'improvvisi; e, senza disprezzo, si leggono
+							 <br>i versi di Sante Nanni, soprannominato l’abate Runci di
+							 <br>Terzone; abate, per essere stato chierico prima di darsi
+							 <br>alla pastorizia. Il più famoso di tutti è stato però un An-
+							 <br>drea Pietrolucci di <span class="placeName" id="B_PDP">Piè del Poggio</span>, anche nel <span class="placeName" id="d1e4014">Leonessano</span>.
+							 <br>Un cantico intitolato : <a class="bibl" id="d1e4019"><span style="font-style: italic;">Incitamento alle laudi e benedizioni di
+							 <br>Dio — L’armentizio pastore all'anima contemplativa</span></a> meritò
+							 <br>di essere stampato in <span class="placeName" id="B_ROM">Roma</span> nel <a class="date" id="d1e4031">1850</a> pei tipi Chiassi. Ma
+							 <br>prima del cantico, aveva composto: <a class="bibl" id="d1e4036"><span style="font-style: italic;">Il giro del sole e degli
+							 <br>astri a fronte di <span class="persName" id="">Nicolò Copernico</span> che vuole giri la terra intorno
+							 <br>al sole, comprovato con l'autorità della Sacra Scrittura, come
+							 <br>ancora con l'esperienza e con le ragioni »</span></a></a>. L’<span class="persName" id="">A.</span> offre delle poe-
+							 <br>sie inedite del Pietrolucci, a <a class="quote" id="d1e4055">« chi vorrà scrivere della
+							 <br>poesia popolare negli Abruzzi »</a>. Chi meglio di lui, diligente e amoroso raccoglitore di proverbi, di novelline, di
+							 <br>tradizioni, di canti, (e senza dubbio, come appare negli
+							 <br><a class="bibl" id="d1e4065"><span style="font-style: italic;">Usi e Costumi</span></a>, dove aver già molto materiale pronto), po-
+							 <br>trebbe darci il libro che propone ad altri di fare?
+						</p>
+                  <p id="bib13_MAL">
+							 <br><a class="bibl" id="d1e4074"><span class="persName" id="">G. Frizzo</span>, <span style="font-style: italic;">L’Aritmetica per le scuole ginnasiali, tecniche e
+							 <br>normali.</span> Drucker e Tedeschi, <span class="placeName" id="B_VER">Verona</span>, <span class="placeName" id="B_PAD">Padova</span>, <a class="date" id="d1e4089">1881</a></a>
+							 <br>— <a class="bibl" id="d1e4094"><span style="font-style: italic;">La Geometria per le scuole tecniche esposta secondo i nuovi
+							 <br>programmi.</span> Seconda edizione. — Drucker e Tedeschi,
+							 <br><span class="placeName" id="B_VER">Verona</span>- <span class="placeName" id="B_PAD">Padova</span>, 1881.</a>
+						</p>
+                  <p id="bib14_MAL">
+							 <br>In questi due volumi splendidamente stampati il profes-
+							 <br>sore <span class="persName" id="">G. Frizzo</span> con alquanta prolissità, ma sempre con
+							 <br>chiarezza e spesso con molta semplicità e precisione, svolge
+							 <br>completamente la materia dei programmi di matematica
+							 <br>per le scuole tecniche, propone agli alunni utili esercizi e
+							 <br>fornisce loro nozioni preziose sulla storia delle matematiche
+							 <br>in alcune note a piè di pagina le quali rivelano nell’<span class="persName" id="">A.</span> una
+							 <br>erudizione al certo non comune fra gli insegnanti delle
+							 <br>scuole secondarie. Considerando però che il trattato di
+							 <br>aritmetica è proposto anche alle scuole ginnasiali ove (nelle
+							 <br>classi superiori) l’insegnamento deve essere dato con me-
+							 <br>todo rigorosamente scientifico, ci pare che l’ <span class="persName" id="">A.</span> potrebbe
+							 <br>migliorare in alcuni punti il suo libro, per esempio, espo-
+							 <br>nendo con maggior generalità la teoria da cui dipendono
+							 <br>i criteri di divisibilità, rendendo più evidente la pratica
+							 <br>semplicità della così detta riprova del nove coll’indicare
+							 <br>esplicitamente il modo brevissimo di calcolare i resti e so-
+							 <br>prattutto dimostrando con maggior rigore la regola per
+							 <br>l’estrazione della radice quadrata di un numero intero. In
+							 <br>fatti dal ragionamento che fa l’<span class="persName" id="">A.</span> nel <span class="dialoghi" id="d1e4166">§</span> 283 non si vede
+							 <br>che il numero delle decine della radice debba essere la
+							 <br>radice del maggior quadrato contenuto nelle centinaia del
+							 <br>numero dato, ma soltanto che esso è radice di un quadrato
+							 <br>non maggiore di questo numero di centinaia. Finalmente ci
+							 <br>sembra che la teoria dei numeri irrazionali, che l’<span class="persName" id="">A.</span> vuol
+							 <br>chiamare inesprimibili, poteva essere esposta con maggior
+							 <br>larghezza, ma non insistiamo su questo punto, perchè al-
+							 <br>cuni vogliono, e forse non a torto, riserbare alle classi
+							 <br>liceali l’insegnamento rigoroso di questa teoria che non è
+							 <br>certo una delle più facili a trattarsi in un corso elementare.
+							
+							
+                     <div class="foot" id="note1">	
+								 <br>* Non te ne 
+							</div>
+							
+                     <div class="foot" id="note2">
+								 <br>** Possa crepare
+							</div>
+						</p>
+               </div>
+               <div class="column column2">
+                  <p id="bib15_MAL">
+							 <br><span class="unclear" title="illegible">Nella geometria si fa molto uso della semirotazione</span>
+							 <br>delle figure per dimostrare i teoremi della planimetria,
+							 <br>della quale i concetti fondamentali sono esposti con esat-
+							 <br>tezza e con linguaggio molto accurato (notiamo in parti-
+							 <br>colare la sostituzione della parola <span style="font-style: italic;">tratto</span> all’espressione <span style="font-style: italic;">seg-
+							 <br>mento rettilineo</span>). L’ <span class="persName" id="">A.</span> si è dapprincipio molto giovato,
+							 <br>come egli stesso fa intendere, del trattato del <span class="persName" id="">Baltzer</span> (tra-
+							 <br>dotto dal Cremona) e dell’opuscolo di Iloüel (<a class="bibl" id="d1e4241"><span style="font-style: italic;">Essai critique
+							 <br>sur les principes fondamentaux de la Géométrie élémentaire</span></a>).
+							 <br>A questo riguardo però dobbiamo osservare che non è ac-
+							 <br>cettabile la definizione del piano come luogo geometrico
+							 <br>delle rette che passano per un punto dato e incontrano
+							 <br>una retta data, perchè questa definizione esclude dalla
+							 <br>superficie che si vuol definire una retta o più secondochè
+							 <br>si ammette o no il famoso postulato delle parallele. Ci
+							 <br>sorprende poi il vedere come l’<span class="persName" id="">A.</span> in una nota (a pag. 71)
+							 <br>accusi di troppa generalità i concetti di <span class="persName" id="">Bolyai</span> e di <span class="persName" id="">Lobat-
+							 <br>schewsky</span> sulla geometria. Persuasi che di essi non occorra
+							 <br>far menzione in un libro destinato alle scuole tecniche, ci
+							 <br>sembra però che, specialmente dopo i celebri lavori di
+							 <br><span class="persName" id="">Riemann</span>, di <span class="persName" id="">Beltrami</span> e di <span class="persName" id="">Helmholtz</span> (per tacer d’altri),
+							 <br>tali concetti meritino di essere molto apprezzati e studiati.
+						</p>
+                  <p id="bib16_MAL">
+							 <br>Noteremo ancora che, anche senza esporre con tutto il
+							 <br>rigore la sottile teoria della misura del cerchio e dei corpi
+							 <br>rotondi, si poteva, trattando questi argomenti, usare un
+							 <br>linguaggio alquanto più preciso, in modo almeno da non
+							 <br>far credere che il perimetro del poligono inscritto arrivi
+							 <br>al limite ad uguagliare la circonferenza (§ 95). Difettosa è
+							 <br>pure la dimostrazione del teorema fondamentale sulla retta
+							 <br>perpendicolare al piano ove (§ 105 osservazione) vien data
+							 <br>per evidente una cosa che non lo è affatto. Non vi era ra-
+							 <br>gione per sopprimere la semplice e facile dimostrazione di
+							 <br>autore anonimo che è riportata dal <span class="persName" id="">Baltzer</span>.
+						</p>
+                  <p id="bib17_MAL">
+							 <br>Presi nel loro insieme, i libri del <span class="persName" id="">sig. Frizzo</span>, ad onta
+							 <br>delle imperfezioni notate e di altre che vorremmo veder
+							 <br>corrette, ci sembrano molto preferibili a tanti altri desti-
+							 <br>nati all’insegnamento tecnico elementare. Ciò va detto in
+							 <br>ispecial modo per la geometria, poiché vi sono libri ove
+							 <br>col pretesto del metodo <span style="font-style: italic;">intuitivo</span> (eccellente quando sia ben
+							 <br>inteso) si fa a meno di qualunque dimostrazione razionale,
+							 <br>riducendo il tutto ad un puro giuochetto di cartoncini.
+						</p>
+                  <h2 id="not1_1MAL">
+							 <br>NOTIZIE.
+						</h2>
+                  <p id="not1_MAL">
+							 <br>— È terminata presso la libreria Plon una bella e completa edi-
+							 <br>zione dei <a class="bibl" id="d1e4360"><span style="font-style: italic;">Discours parlementaires ile Jules Paure</span> (<a class="foreign" id="d1e4364"> publiés par M<span class="gap" title="illegible, 2 chars">[...]</span> veuve
+							 <br><span class="persName" id="">Jules Favre</span> née Velten</a></a>). Sono quattro grossi volumi, di cui il primo
+							 <br>racchiudo, oltre una brove introduzione biografica scritta dalla signora
+							 <br><span class="persName" id="">Favre</span> o un’ opera giovanile del grande oratore intitolata <a class="bibl" id="d1e4380"><span style="font-style: italic;">Anathème</span></a>,
+							 <br>i discorsi pronunciati <a class="date" id="d1e4386">dal 1848 al 1851</a>; il secondo volumo contiene i
+							 <br>discorsi pronunciati <a class="date" id="d1e4391">dal 1860 al 1865</a>; il terzo i discorsi pronunciati
+							 <br><a class="date" id="d1e4396">dal 1865 al 1870 (3 settembre)</a>; il quarto i discorsi dal <a class="date" id="d1e4399">4 settembre
+							 <br>1870 al 1879</a>, le circolari o i dispacci di <span class="persName" id="">Jules Favre</span> quando fu mini-
+							 <br>stro degli affari ostori; e sotto la rubrica, scritti vari, degli articoli
+							 <br>pubblicati nel <span class="orgName" id="NJ">National</span> o nel <span class="orgName" id="DR">Droit</span> <a class="date" id="d1e4418">(1836-1838)</a> e diversi scritti sullo
+							 <br>questioui che preoccuparono 1’ opiuiono pubblica <a class="date" id="d1e4423">dal 1876 al 1879</a>.
+							 <br>(<a class="bibl" id="d1e4428"><a class="publisher" id="d1e4429">Revue critique</a></a>)
+						</p>
+                  <p id="not2_MAL">
+							 <br>— Si è pubblicato in <span class="placeName" id="B_ING">Inghilterra</span> una nuova edizione del Nuovo Te-
+							 <br>stamento, variamento giudicata, ma che si vendo molto rapidamente.
+							 <br>In <span class="placeName" id="B_AME">America</span> comparvero prontamente molto contraffazioni di tale edi-
+							 <br>zione. Un giornale di <span class="placeName" id="B_CHI">Chicago</span> poi si sarebbe fatto telegrafare il testo
+							 <br>della nuova edizione e l’avrebbe dato in appendice ai suoi lettoti.
+							 <br>(<a class="bibl" id="d1e4455"><a class="publisher" id="d1e4456">Revue politique et littéraire</a></a>)
+							 <br><span class="persName" id="">SIDNEY SONNINO</span>, Direttore Proprietario.
+							 <br><span class="persName" id="">PIETRO PAMPALONI</span>, Gerente responsabile.
+							 <br><span class="placeName" id="B_ROM">ROMA</span>. <a class="date" id="d1e4471">1881</a> — <span class="orgName" id="CSE">Tipografia Barbèra</span>.
+						</p>
+               </div>
+            </div>
+            <hr>
+         </div>
+      </div>
+      <div id="fenomeniSummary" style="margin:2em 10%; padding:1em; border:1px solid #ccc; border-radius:10px; background-color:#fff;">
+         <h2 style="margin-top:0; font-family:'Chivo Mono', monospace;">Fenomeni Rilevati</h2>
+         <p><strong>Persone:</strong><a href="https://it.wikipedia.org/wiki/Leopoldo_Franchetti">Leopoldo Franchetti</a>, <a href="https://it.wikipedia.org/wiki/Sidney_Sonnino">Sidney Sonnino</a>, <a href="https://github.com/angelodel80">Angelo Mario Del Grosso</a>, <a href="https://github.com/DPJade27">Giada De Paolis</a>, <a href="https://it.wikipedia.org/wiki/Renato_Fucini">Renato Fucini</a>, <a href="https://en.wikipedia.org/wiki/Johann_Georg_Rist">Johan Georg Rist</a>, <a href="https://it.wikipedia.org/wiki/Rahel_Varnhagen">Rahel Varnhagen</a>, <a href="https://de.wikipedia.org/wiki/Friedrich_Andreas_Perthes">Friedrich Andreas Perthes</a>, <a href="https://it.wikipedia.org/wiki/Helmuth_Karl_Bernhard_von_Moltke">Helmuth Karl Bernhard von Moltke</a>, <a href="https://en.wikipedia.org/wiki/Heinrich_Carl_von_Schimmelmann">Heinrich Carl von Schimmelmann</a>, <a href="https://it.wikipedia.org/wiki/Albrecht_von_Bernstorff">Albrecht von Bernstorff</a>, <a href="https://it.wikipedia.org/wiki/Alessandro_I_di_Russia">Alessandro I di Russia</a>, <a href="https://it.wikipedia.org/wiki/George_Canning">George Canning</a>, <a href="#d1e173">Davoust</a>, <a href="https://it.wikipedia.org/wiki/Edoardo_il_Principe_Nero">Edoardo il Principe Nero</a>, <a href="https://en.wikipedia.org/wiki/Ad%C3%A9la%C3%AFde-Louise_d%27Eckm%C3%BChl_de_Blocqueville">Adélaïde-Louise d'Eckmühl de Blocqueville</a>, <a href="https://en.wikipedia.org/wiki/Andrew_Tettenborn">Andrew Tettenborn</a>, <a href="https://it.wikipedia.org/wiki/Luigi_XVIII_di_Francia">Luigi XVIII di Francia</a>, <a href="https://it.wikipedia.org/wiki/Carlo_X_di_Francia">Carlo X di Francia</a>, <a href="https://it.wikipedia.org/wiki/Duchi_di_Berry">Duchi di Berry</a>, <a href="https://it.wikipedia.org/wiki/Pierre_Louis_Jean_Casimir_de_Blacas">Pierre Louis Jean Casimir de Blacas</a>, <a href="https://it.wikipedia.org/wiki/Napoleone_Bonaparte">Napoleone Bonaparte</a>, <a href="https://it.wikipedia.org/wiki/Giovanni_Verga">Giovanni Verga</a>, <a href="https://it.wikipedia.org/wiki/Antonio_Fogazzaro">Antonio Fogazzaro</a>, <a href="https://it.wikipedia.org/wiki/Honor%C3%A9_de_Balzac">Honoré de Balzac</a>, <a href="https://it.wikipedia.org/wiki/%C3%89mile_Zola">Émile Zola</a>, <a href="https://it.wikipedia.org/wiki/Charles_Dickens">Charles Dickens</a>, <a href="#d1e218">Pöe</a>, <a href="https://it.wikipedia.org/wiki/Ernst_Theodor_Amadeus_Hoffmann">Ernst Theodor Amadeus Hoffman</a>, <a href="https://it.wikipedia.org/wiki/Ann_Radcliffe">Ann Radcliffe</a>, <a href="https://it.wikipedia.org/wiki/Paul_F%C3%A9val_padre">Paul Féval</a>, <a href="https://it.wikipedia.org/wiki/Antonio_De_Nino">Antonio De Nino</a>, <a href="https://it.wikipedia.org/wiki/Giuseppe_Garibaldi">Giuseppe Garibaldi</a>, <a href="https://it.wikipedia.org/wiki/Niccol%C3%B2_Copernico">Niccolò Copernico</a>, <a href="#d1e240">G. Frizzo</a>, <a href="https://it.wikipedia.org/wiki/J%C3%A1nos_Bolyai">János Bolyai</a>, <a href="https://it.wikipedia.org/wiki/Nikolaj_Ivanovi%C4%8D_Loba%C4%8Devskij">Nikolaj Ivanovič Lobačevskij</a>, <a href="https://it.wikipedia.org/wiki/Bernhard_Riemann">Bernhard Riemann</a>, <a href="https://it.wikipedia.org/wiki/Eugenio_Beltrami">Eugenio Beltrami</a>, <a href="https://it.wikipedia.org/wiki/Hermann_von_Helmholtz">Hermann von Helmholtz</a>, <a href="https://it.wikipedia.org/wiki/Eduard_Baltzer">Eduard Baltzer</a>, <a href="https://it.wikipedia.org/wiki/Jules_Favre">Jules Favre</a>, <a href="https://it.wikipedia.org/wiki/Sidney_Sonnino">Sidney Sonnino</a>, <a href="#d1e268">Pietro Pampaloni</a>, <a href="#RF">R. Fucini</a>, <a href="#JGR">Johann Georg Rist</a>, <a href="#JGR">Giovanni Giorgio Rist</a>, <a href="#FAP">Friedrich Andreas Perthes</a>, <a href="#RV">Varnhagen</a>, <a href="#FAP">Perthes</a>, <a href="#JGR">Rist</a>, <a href="AF">A.</a>, <a href="#JGR">Rist</a>, <a href="#HVM">Mol- tke</a>, <a href="AF">A.</a>, <a href="#JGR">Rist</a>, <a href="HVS">conte Schimmelmann</a>, <a href="HVB">conte Bernstorff</a>, <a href="#JGR">Rist</a>, <a href="ADR">Alessandro I</a>, <a href="AF">A.</a>, <a href="#JGR">Rist</a>, <a href="GC">Canning</a>, <a href="#JGR">Rist</a>, <a href="#JGR">Rist</a>, <a href="#JGR">Rist</a>, <a href="#JGR">Rist</a>, <a href="#JGR">Rist</a>, <a href="#JGR">Rist</a>, <a href="#d1e2175">Davoust</a>, <a href="EPN">principe d’Eckmiibl</a>, <a href="ALB">M de Blocqueville</a>, <a href="#JGR">Rist</a>, <a href="AT">Tettenborn</a>, <a href="#JGR">Rist</a>, <a href="LRF">Luigi XVIII</a>, <a href="#CA">conte d’Artois</a>, <a href="DB">duca di Berry</a>, <a href="PLDB">sig. de Blacas</a>, <a href="NB">Napoleone</a>, <a href="AF">A.</a>, <a href="GV">G. Verga</a>, <a href="AF">A. Fogazzaro</a>, <a href="HDB">Balzac</a>, <a href="EMZ">Zola</a>, <a href="CD">Dickens</a>, <a href="AF">Fogazzaro</a>, <a href="P">Pöe</a>, <a href="ETH">Hoffman</a>, <a href="AF">Fogazzaro</a>, <a href="AR">Radcliffe</a>, <a href="PF">Paolo Féval</a>, <a href="AF">A.</a>, <a href="AF">Fogazzaro</a>, <a href="AF">Fogazzaro</a>, <a href="AF">A.</a>, <a href="AF">A.</a>, <a href="AF">Fo- gazzaro</a>, <a href="AF">Fogazzaro</a>, <a href="#d1e3773">Steinegge</a>, <a href="#d1e3788">Steinegge</a>, <a href="AF">Fogazzaro</a>, <a href="AF">A.</a>, <a href="#d1e3817">Stei- negge</a>, <a href="#d1e3828">Steinegge</a>, <a href="AF">A.</a>, <a href="AF">Fogaz- zaro</a>, <a href="ADN">De Nino</a>, <a href="GG">Ga- ribaldi</a>, <a href="NC">Nicolò Copernico</a>, <a href="AF">A.</a>, <a href="GF">G. Frizzo</a>, <a href="GF">G. Frizzo</a>, <a href="AF">A.</a>, <a href="AF">A.</a>, <a href="AF">A.</a>, <a href="AF">A.</a>, <a href="AF">A.</a>, <a href="EDB">Baltzer</a>, <a href="AF">A.</a>, <a href="JB">Bolyai</a>, <a href="NIL">Lobat- schewsky</a>, <a href="BR">Riemann</a>, <a href="EB">Beltrami</a>, <a href="HVH">Helmholtz</a>, <a href="EDB">Baltzer</a>, <a href="GF">sig. Frizzo</a>, <a href="JF">Jules Favre</a>, <a href="JF">Favre</a>, <a href="JF">Jules Favre</a>, <a href="SS">SIDNEY SONNINO</a>, <a href="PP">PIETRO PAMPALONI</a></p>
+         <p><strong>Date:</strong><a href="#d1e24">Aprile 2025</a>, <a href="#d1e45">2025</a>, <a href="#d1e73">1878</a>, <a href="#d1e1730">1880</a>, <a href="#d1e1784">dal 1816 al 1818</a>, <a href="#d1e1828">1775</a>, <a href="#d1e1883">fino al 1789</a>, <a href="#d1e1887">fino al 1850</a>, <a href="#d1e1991">dal 1805 al 1806</a>, <a href="#d1e2047">1806</a>, <a href="#d1e2121">1810</a>, <a href="#d1e2148">dal 1811 al 1813</a>, <a href="#d1e2237">del 1814 al 1815</a>, <a href="#d1e2287">1815</a>, <a href="#d1e3284">1881</a>, <a href="#d1e4031">1850</a>, <a href="#d1e4089">1881</a>, <a href="#d1e4386">dal 1848 al 1851</a>, <a href="#d1e4391">dal 1860 al 1865</a>, <a href="#d1e4396">dal 1865 al 1870 (3 settembre)</a>, <a href="#d1e4399">4 settembre 1870 al 1879</a>, <a href="#d1e4418">(1836-1838)</a>, <a href="#d1e4423">dal 1876 al 1879</a>, <a href="#d1e4471">1881</a></p>
+         <p><strong>Casa Editrice:</strong><a href="#d1e43">Università di Pisa</a>, <a href="#d1e72">Casa Editrice Barbèra</a>, <a href="#d1e4429">Revue critique</a>, <a href="#d1e4456">Revue politique et littéraire</a></p>
+         <p><strong>Organizzazioni:</strong><a href="https://it.wikipedia.org/wiki/Primo_Impero_francese">Primo Impero Francese</a>, <a href="https://it.wikipedia.org/wiki/Wolfenb%C3%BCttel_Ritter-Akademie#:~:text=La%20Wolfenb%C3%BCttel%20Ritter%2DAkademie%20(detta,Brunswick%2DWolfenb%C3%BCttel%2C%20in%20Germania.text=L'accademia%20venne%20fondata%20il,del%20ducato%20di%20Brunswick%2DWolfenb%C3%BCttel">Scuola di Ritter</a>, <a href="https://it.wikipedia.org/wiki/Prima_Restaurazione#:~:text=La%20Prima%20Restaurazione%20%C3%A8%20stato,cento%20giorni%20nel%20marzo%201815.">Prima Restaurazione</a>, <a href="https://en.wikipedia.org/wiki/National_Journal">National Journal</a>, <a href="https://en.wikipedia.org/wiki/Le_Droit">Le Droit</a>, <a href="https://it.wikipedia.org/wiki/Casa_Editrice_Barb%C3%A8ra">Casa Editrice Barbèra</a>, <a href="#PI">primo Impero</a>, <a href="#SR">scuola di Ritter e di Humboldt</a>, <a href="#PR">prima Re- staurazione</a>, <a href="#NJ">National</a>, <a href="#DR">Droit</a>, <a href="#CSE">Tipografia Barbèra</a></p>
+         <p><strong>Luoghi:</strong><a href="https://it.wikipedia.org/wiki/Maremma">Maremma</a>, <a href="https://it.wikipedia.org/wiki/Fiumalbo">Fiumalbo</a>, <a href="https://it.wikipedia.org/wiki/Pieve">Pieve</a>, <a href="https://it.wikipedia.org/wiki/Agnone_Bagni">Agnone</a>, <a href="https://it.wikipedia.org/wiki/Etna">Mongibello</a>, <a href="https://it.wikipedia.org/wiki/Lago_di_Lentini">Lago di Lentini</a>, <a href="https://it.wikipedia.org/wiki/Valsavoia">Valsavoia</a>, <a href="https://it.wikipedia.org/wiki/Francia">Francia</a>, <a href="https://it.wikipedia.org/wiki/Germania">Germania</a>, <a href="https://it.wikipedia.org/wiki/Holstein">Holstein</a>, <a href="https://it.wikipedia.org/wiki/Jena">Iena</a>, <a href="https://it.wikipedia.org/wiki/Kiel">Kiel</a>, <a href="https://it.wikipedia.org/wiki/Copenaghen">Copenhagen</a>, <a href="https://it.wikipedia.org/wiki/Danimarca">Danimarca</a>, <a href="https://it.wikipedia.org/wiki/San_Pietroburgo">Pietroburgo</a>, <a href="https://it.wikipedia.org/wiki/Mosca_(Russia)">Mosca</a>, <a href="https://it.wikipedia.org/wiki/Russia">Russia</a>, <a href="https://it.wikipedia.org/wiki/Mar_Baltico">Baltico</a>, <a href="https://it.wikipedia.org/wiki/Spagna">Spagna</a>, <a href="https://it.wikipedia.org/wiki/Parigi">Parigi</a>, <a href="https://it.wikipedia.org/wiki/Madrid">Madrid</a>, <a href="https://it.wikipedia.org/wiki/Occidente">Occidente</a>, <a href="https://it.wikipedia.org/wiki/Real_Sitio_de_San_Ildefonso">Ildefonso</a>, <a href="https://it.wikipedia.org/wiki/Aranjuez">Aranjuez</a>, <a href="https://it.wikipedia.org/wiki/Lisbona">Lisbona</a>, <a href="https://it.wikipedia.org/wiki/Londra">Londra</a>, <a href="https://it.wikipedia.org/wiki/Inghilterra">Inghilterra</a>, <a href="https://it.wikipedia.org/wiki/Amburgo">Hamburgo</a>, <a href="https://it.wikipedia.org/wiki/Isola_d%27Elba">Isola d'Elba</a>, <a href="https://it.wikipedia.org/wiki/Milano">Milano</a>, <a href="https://it.wikipedia.org/wiki/Piedelpoggio">Piè del Poggio</a>, <a href="https://it.wikipedia.org/wiki/Roma">Roma</a>, <a href="https://it.wikipedia.org/wiki/Verona">Verona</a>, <a href="https://it.wikipedia.org/wiki/Padova">Padova</a>, <a href="https://it.wikipedia.org/wiki/America">America</a>, <a href="https://it.wikipedia.org/wiki/Chicago">Chicago</a>, <a href="https://it.wikipedia.org/wiki/Calabria">Calabria</a>, <a href="#MAR">MAREMMA</a>, <a href="#M_FIU">Fiumalbo</a>, <a href="#MAR">Maremme</a>, <a href="#M_PIE">Pieve</a>, <a href="#MAR">Maremma</a>, <a href="#B_FRA">Francia</a>, <a href="#B_GER">Germania</a>, <a href="#B_HOL">Holstein</a>, <a href="#B_IEN">Iena</a>, <a href="#B_KIE">Kiel</a>, <a href="#B_COP">Copenhagen</a>, <a href="#B_DAN">Danimarca</a>, <a href="#B_GER">Germania.</a>, <a href="#B_PIE">Pietroburgo</a>, <a href="#B_MOS">Mosca</a>, <a href="#B_COP">Copenaghen</a>, <a href="#B_RUS">Russia</a>, <a href="#B_BAL">Baltico</a>, <a href="#B_SPA">Ispagna</a>, <a href="#B_RUS">Russia</a>, <a href="#B_PAR">Parigi,</a>, <a href="#B_MAD">Madrid</a>, <a href="#B_OCC">Occidente</a>, <a href="#B_MAD">Madrid</a>, <a href="#B_ILD">S. II- defonso</a>, <a href="#B_ARA">Aranjuez</a>, <a href="#B_SPA">Spagna</a>, <a href="#B_MAD">Madrid</a>, <a href="#B_LIS">Lisbona</a>, <a href="#B_PIE">Pietroburgo</a>, <a href="#B_COP">Copenaghen</a>, <a href="#B_LIS">Lisbona</a>, <a href="#B_LON">Londra</a>, <a href="#B_DAN">Danimarca</a>, <a href="#B_ING">Inghilterra</a>, <a href="#B_DAN">Danimarca</a>, <a href="#B_COP">Cope- naghen</a>, <a href="#B_LON">Londra</a>, <a href="#B_ING">Inghilterra,</a>, <a href="#B_HAM">Hamburgo</a>, <a href="#B_DAN">Dani- marca</a>, <a href="#B_HAM">Hambourg</a>, <a href="#B_HAM">Hambourg,</a>, <a href="#B_GER">Germania</a>, <a href="#B_DAN">Danimarca,</a>, <a href="#B_HAM">Amburgo</a>, <a href="#B_PAR">Parigi</a>, <a href="#B_FRA">Francia</a>, <a href="#B_ISO">isola d’Elba</a>, <a href="#MA_AGN">Agnone</a>, <a href="#MA_MON">Mongibello</a>, <a href="#MA_LAG">lago di Lentini</a>, <a href="#MA_VAL">Valsavoja</a>, <a href="#MA_VAL">Valsavoja</a>, <a href="#CALA">Calabria</a>, <a href="#B_MIL">Milano</a>, <a href="#B_ING">Inghilterra</a>, <a href="#B_PDP">Piè del Poggio</a>, <a href="#d1e4014">Leonessano</a>, <a href="#B_ROM">Roma</a>, <a href="#B_VER">Verona</a>, <a href="#B_PAD">Padova</a>, <a href="#B_VER">Verona</a>, <a href="#B_PAD">Padova</a>, <a href="#B_ING">Inghilterra</a>, <a href="#B_AME">America</a>, <a href="#B_CHI">Chicago</a>, <a href="#B_ROM">ROMA</a></p>
+         <p><strong>Parole Straniere:</strong><a href="#d1e948">angelus Domini</a>, <a href="#d1e1910">ad latus</a>, <a href="#d1e3718">ipso facto</a>, <a href="#d1e4364">publiés par M veuve Jules Favre née Velten</a></p>
+         <p><strong>Bibliografia:</strong><a href="#d1e1713">Johann Georg Rist's Lebenserinnerungen, herausgegeben von G. Poke. (Memorie di Giovanni
+               Giorgio Rist, edite da G. Poel). — 2 vol. Gotha, Friedrich Andreas Perthes, 1880</a>, <a href="#d1e1759">Le Memorie di Rist</a>, <a href="#d1e3274">A. Fogazzaro, Malombra — Milano, lib. ed. G. Brigola, 1881</a>, <a href="#d1e3462">Malombra</a>, <a href="#d1e3554">Malombra</a>, <a href="#d1e3688">Malombra</a>, <a href="#d1e3714">Tre Moschettieri</a>, <a href="#d1e3766">Malombra</a>, <a href="#d1e4019">Incitamento alle laudi e benedizioni di Dio — L’armentizio pastore all'anima contemplativa</a>, <a href="#d1e4036">Il giro del sole e degli astri a fronte di Nicolò Copernico che vuole giri la terra
+               intorno al sole, comprovato con l'autorità della Sacra Scrittura, come ancora con
+               l'esperienza e con le ragioni »</a>, <a href="#d1e4065">Usi e Costumi</a>, <a href="#d1e4074">G. Frizzo, L’Aritmetica per le scuole ginnasiali, tecniche e normali. Drucker e Tedeschi,
+               Verona, Padova, 1881</a>, <a href="#d1e4094">La Geometria per le scuole tecniche esposta secondo i nuovi programmi. Seconda edizione.
+               — Drucker e Tedeschi, Verona- Padova, 1881.</a>, <a href="#d1e4241">Essai critique sur les principes fondamentaux de la Géométrie élémentaire</a>, <a href="#d1e4360">Discours parlementaires ile Jules Paure ( publiés par M veuve Jules Favre née Velten</a>, <a href="#d1e4380">Anathème</a>, <a href="#d1e4428">Revue critique</a>, <a href="#d1e4455">Revue politique et littéraire</a></p>
+         <p><strong>Termini:</strong><a href="#d1e1754">"genere"</a>, <a href="#d1e4222">tratto</a>, <a href="#d1e4340">intuitivo</a></p>
+         <p><strong>Epithet:</strong><a href="#d1e2704">il Rospo</a>, <a href="#d1e2729">il capraio</a>, <a href="#d1e2808">il carrettiere</a>, <a href="#d1e2899">lo scimunito</a>, <a href="#d1e2943">lo scimunito</a>, <a href="#d1e2979">lo scimunito</a>, <a href="#d1e3026">ammazzamogli</a>, <a href="#d1e3109">Ammazzamogli</a>, <a href="#d1e3174">Ammazzamogli</a>, <a href="#d1e3206">lo scimunito</a>, <a href="#d1e3215">Ammazzamogli</a>, <a href="#d1e3228">Ammazzamogli</a></p>
+         <p><strong>Citazioni:</strong><a href="#d1e3291">— grosso e stampato a caratteri fitti fitti —</a>, <a href="#d1e3296">« È possibile?»</a>, <a href="#d1e3410">« calpestarlo »</a>, <a href="#d1e3517">« datemi la trama, indicatemi il sog- getto, e risparmiatevi la pena di scrivere il
+               libro. »</a>, <a href="#d1e3609">«questa commedia con Nepo Salvador. »</a>, <a href="#d1e3614">« C’era bene il perchè, e Marina non poteva dimenticarlo a lungo. Quelle ultime parole
+               del manoscritto! — Lasciar fare a Dio. Sieno figli, sieno nipoti, sieno parenti, la
+               ven- detta sarà buona su tutti. Qui, aspettarla qui. — E i fatti non accennavano già
+               confusamente da lontano com’ella potrebbe raggiungere insieme la Vendetta e l’amore
+               ? Le tornò la fede. »</a>, <a href="#d1e3639">« lo stipo del segreto »</a>, <a href="#d1e3641">« assalita, pietrificata da una delle sue reminiscenze misteriose. Le pareva esser
+               venuta su quella soglia un’altra volta, anni ed anni addietro, di notte, discinta,
+               con i capelli sciolti; aver visto a’ suoi piedi l’ombra oscillante del candeliere,
+               il lume intorno a sè per breve spazio di pareti e di pavimento, e là davanti lo stipo
+               nero, i caratteri arcani. »</a>, <a href="#d1e3661">Le tornò la fede, fu assalita da una remini- scenza, le pareva...</a>, <a href="#d1e3980">« V’è dei pastori che scrivono e stampano i loro versi. Ognuno di noi ricorda il Poeta
+               pastore, l’amico di Ga- ribaldi. La Siringa pastorale del nostro Maccaroni ha fatto
+               maravigliare anche le persone serie. I vecchi ricordano an- cora il pastore Filippo
+               Mariani di Leonessa che dava mo- deste accademie d'improvvisi; e, senza disprezzo,
+               si leggono i versi di Sante Nanni, soprannominato l’abate Runci di Terzone; abate,
+               per essere stato chierico prima di darsi alla pastorizia. Il più famoso di tutti è
+               stato però un An- drea Pietrolucci di Piè del Poggio, anche nel Leonessano. Un cantico
+               intitolato : Incitamento alle laudi e benedizioni di Dio — L’armentizio pastore all'anima
+               contemplativa meritò di essere stampato in Roma nel 1850 pei tipi Chiassi. Ma prima
+               del cantico, aveva composto: Il giro del sole e degli astri a fronte di Nicolò Copernico
+               che vuole giri la terra intorno al sole, comprovato con l'autorità della Sacra Scrittura,
+               come ancora con l'esperienza e con le ragioni »</a>, <a href="#d1e4055">« chi vorrà scrivere della poesia popolare negli Abruzzi »</a></p>
+      </div>
+      <div id="about">
+         <footer>
+            <h1>INFORMAZIONI RIGUARDO IL PROGETTO:</h1>
+            <div class="container">
+               <div class="box">
+                  <h2>Informazioni dell'Edizione:</h2>
+                  <div>
+                     <p><strong>Edizione: </strong>Edizione Digitale - 
+					<a class="date" id="d1e24">Aprile 2025</a>
+				</p>
+                     <div>
+                        <p><strong>Coordinato da: </strong>Angelo Mario Del Grosso</p>
+                     </div>
+                     <div>
+                        <p><strong>Codifica a cura di: </strong>Giada De Paolis</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="box"><img src="https://apre.it/wp-content/uploads/2021/01/logo_uni-pisa.png" alt="Logo Università di Pisa" style="width:300px;"></div>
+               <div class="box">
+                  <h2>Informazioni sulla Pubblicazione:</h2>
+                  <div>
+                     <p><strong>Pubblicato da: </strong>Università di Pisa</p>
+                     <p><strong>Luogo e data di Pubblicazione: </strong>Pisa, 2025</p>
+                     <p><strong>Disponibilità: </strong><p id="">Opera ad accesso libero</p>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <p style="text-align:center">Repository <a href="https://github.com/DPJade27/">GitHub</a></p>
+         </footer>
+      </div>
+   </body>
+   <div id="scrollTopBtn">▲ Torna su</div>
+</html>
