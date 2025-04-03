@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet
     version="2.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
-    <!-- conserva spazi bianchi -->
+    <!-- conserva spazi bianchi * tutti gli elementi-->
     <xsl:preserve-space elements="*"/>
 
-    <xsl:template match="/">
+    <xsl:template match="/"> <!-- template della radice: quando inizi la trasformazione, crea questo HTML completo partendo dalla radice del documento XML -->
         <html>
             <head>
                 <title>Progetto di Codifica di Testi</title>
@@ -20,7 +20,7 @@
             </head>
 
             <body>
-                <header>
+                <header> <!-- intestazione del sito -->
                     <div class="logo">
                         <a href="https://rassegnasettimanale.animi.it/" target="_blank">
                             <img src="logo.png" alt="La Rassegna Settimanale" />
@@ -34,7 +34,7 @@
                             <div class="dropdown">
                                 <button class="dropbtn">Pagine <i class="fa fa-caret-down"></i></button>
                                 <div class="dropdown-content">
-                                    <xsl:for-each select="//tei:surface">
+                                    <xsl:for-each select="//tei:surface"> <!-- menù a discesa generato dinamicamente, per ogni superficie genera un link che punta a #id corrispondente -->
                                         <a href="#{@xml:id}">
                                             <xsl:value-of select="@xml:id"/>
                                         </a>
@@ -47,7 +47,7 @@
                 </header>
                 
 
-                <div class="desc">
+                <div class="desc"> <!-- metadati dell'opera -->
                     <h2>Titolo dell’Opera:</h2>
                     <xsl:apply-templates select="//tei:titleStmt"/>
 
@@ -61,13 +61,16 @@
                     <xsl:apply-templates select="//tei:projectDesc"/>
                 </div>
 
-                <div id="fenomeni">
-                    <ul class='bottoni_fenomeni'>
+                <div id="fenomeni"> <!-- barra dei fenomeni -->
+                    <ul class='bottoni_fenomeni'> <!-- genera dinamicamente pulsanti --> 
+                        <!-- scorro tutti gli elementi --> 
                         <xsl:for-each select="//tei:persName | //tei:addName | //tei:placeName | //tei:date | //tei:orgName | //tei:quote | //tei:bibl | //tei:publisher | //tei:term | //tei:foreign">
+                            <!-- per ogni el trovato, viene determinato un nome di classe corrispondente -->
                             <xsl:variable name="className">
                                 <xsl:choose>
-                                    <xsl:when test="self::tei:persName">persone</xsl:when>
-                                    <xsl:when test="self::tei:addName">epithet</xsl:when>
+                                    <!-- la variabile $className prende il nome dell'elemento corrente -->
+                                    <xsl:when test="self::tei:persName">persone</xsl:when> <!-- self è il nodo corrente, stiamo cercando persName; va sull'el persName, esegue self::tei:persName, if true stampa persone; quando false, va in quello dopo -->
+                                    <xsl:when test="self::tei:addName">epithet</xsl:when> <!-- abbr: . -->
                                     <xsl:when test="self::tei:placeName">luoghi</xsl:when>
                                     <xsl:when test="self::tei:date">date</xsl:when>
                                     <xsl:when test="self::tei:orgName">organizzazioni</xsl:when>
@@ -79,10 +82,15 @@
                                 </xsl:choose>
                             </xsl:variable>
 
-                            <!-- check sulle categorie se sono state già create -->
-                            <xsl:if test="count(preceding::tei:*[name() = name(current())]) = 0">
-                                <button type="button" id="{$className}">
-                                    <xsl:value-of select="$className"/>
+                            <!-- check sulle categorie se sono state già create, verifica se l'el corrente è il primo del suo tipo incontrato, assicura non ci siano duplicati -->
+                            
+                            <!-- preceding::tei:* >> seleziona tutti gli el che si trovano prima del nodo corrente del doc
+                                 [name() = name(current())] >> filtra quelli che hanno lo stesso nome del nodo corrente
+                                 count(...) = 0 >> verifica se non c'è altro el con lo stesso nome prima
+                            -->
+                            <xsl:if test="count(preceding::tei:*[name() = name(current())]) = 0"> <!-- se questo è il primo nodo del suo tipo che incontro, allora crea il bottone -->
+                                <button type="button" id="{$className}"> <!-- generazione dei pulsanti, con un id corrispondente al nome della classe -->
+                                    <xsl:value-of select="$className"/> <!-- etichetta testuale uguale al valore di $className -->
                                 </button>
                             </xsl:if>
                         </xsl:for-each>
@@ -94,20 +102,28 @@
                     </ul>
                 </div>
 
-                <div class="text">
-                    <xsl:for-each select="//tei:surface">
-                        <h2 id="{@xml:id}">
+                <div class="text"> <!-- contenuto testuale -->
+                    <xsl:for-each select="//tei:surface"> <!-- ciclo su ogni surface (surface è il nodo corrente) -->
+                        <h2 id="{@xml:id}"> <!-- stampa il nome della pagina (titolo) e lo usa come id per i link interni -->
                             <xsl:value-of select="@xml:id"/>
                         </h2>
                         <div class="container">
                             <!-- lato sinistro -->
                             <div class="box">
-                                <!-- usemap fa riferimento a @xml:id -->
-                                <img usemap="#{@xml:id}" src="{tei:graphic/@url}"/>
+                                <!-- usemap fa riferimento a @xml:id - collega l'immagine a una <map> con aree cliccabili 
+                                    se sono su <surface xml:id="pag1">, il valore sarà pag1 >> HTML <img usemap="#pag1" ...
+                                    se ho <graphic url="images/pag1.jpg"/>, l'attr src sarà <img src="images/pag1.jpg"> 
+                                    quindi genero: <img usemap="#pag1" src="images/pag1.jpg"/>
+                                    il browser sa che a questa img è associata una mappa interattiva
+                                -->
+                                <img usemap="#{@xml:id}" src="{tei:graphic/@url}"/> <!--collega l'img alla mappa; prende il percorso dell'immagine; mostra l'img della pagina scansionata -->
 
-                                <!-- genero la map per la surface -->
+                                <!-- genero la map per la surface così diventano interattive -->
                                 <map id="{@xml:id}">
-                                    <!-- per ogni zone, produco <area> -->
+                                    <!-- per ogni zone, produco tag <area> 
+                                         rect = rettangolo
+                                         coords = coordinate
+                                         cursor help = mostra il cursore aiuto -->                                    
                                     <xsl:for-each select="tei:zone">
                                         <area shape="rect"
                                             coords="{@ulx},{@uly},{@lrx},{@lry}"
@@ -119,13 +135,13 @@
 
                             <!-- lato destro -->
                             <div class="boxtext">
-                                <xsl:variable name="currentSurfaceId" select="@xml:id"/>
+                                <xsl:variable name="currentSurfaceId" select="@xml:id"/> <!-- salvo id della surface -->
 
                                 <!-- Colonna 1 a sx: zones con ulx < 270 -->
                                 <div class="column column1">
-                                    <xsl:for-each select="tei:zone[number(@ulx) &lt; 270]">
-                                        <xsl:variable name="thisZoneID" select="@xml:id"/>
-                                        <xsl:apply-templates select="//tei:*[@facs = concat('#',$thisZoneID)]"/>
+                                    <xsl:for-each select="tei:zone[number(@ulx) &lt; 270]"> <!--seleziono solo le zone con ulx<270 -->
+                                        <xsl:variable name="thisZoneID" select="@xml:id"/> <!-- salvo id con variabile $thisZoneID -->
+                                        <xsl:apply-templates select="//tei:*[@facs = concat('#',$thisZoneID)]"/> <!-- cerco un el qualunque //tei:* che abbia @facs="#ID-della-zona" --> 
                                     </xsl:for-each>
                                 </div>
 
@@ -138,12 +154,15 @@
                                 </div>
 
                             </div>
-                            <hr/>
+                            <hr/> <!-- linea orizzontale per separare una pagina dall'altra -->
                         </div>
                     </xsl:for-each>
                 </div>
 
-                <!-- sommario dei fenomeni con link clickabili -->
+                <!-- sommario dei fenomeni con link clickabili 
+                    select="/" seleziona il nodo radice - l'applicazione del template inizia dall'intero doc 
+                    mode devono essere applicati solo i template definiti con il suo valore
+                    cerca i template che hanno mode="fenomeniSummary -->
                 <xsl:apply-templates select="/" mode="fenomeniSummary"/>
 
                 <div id="about">
@@ -190,9 +209,10 @@
                                          | //tei:publisher 
                                          | //tei:term 
                                          | //tei:foreign"
-                                 group-by="name()">
+                                 group-by="name()"> <!-- li raggruppa in base al loro nome di tag -->
 
                 <xsl:variable name="label">
+                    <!-- traduce ogni nome di elemento in una etichetta leggibile per l'utente -->
                     <xsl:choose>
                         <xsl:when test="current-grouping-key() = 'persName'">Persone</xsl:when>
                         <xsl:when test="current-grouping-key() = 'addName'">Epithet</xsl:when>
@@ -213,9 +233,9 @@
                     <!-- per ogni elemento in questo gruppo crea una link all'ID nel testo -->
                     <xsl:for-each select="current-group()">
 
-                        <a>
+                        <a> <!-- crea link -->
                             <xsl:attribute name="href">
-                                <!-- usa @ref se c'è, sennò fallback -->
+                                <!-- usa @ref se c'è, sennò genera un id e lo usa come ancora -->
                                 <xsl:choose>
                                     <xsl:when test="@ref != ''">
                                         <xsl:value-of select="@ref"/>
@@ -225,9 +245,9 @@
                                     </xsl:otherwise>
                                 </xsl:choose>
                             </xsl:attribute>
-                            <xsl:value-of select="normalize-space(.)"/>
+                            <xsl:value-of select="normalize-space(.)"/> <!-- toglie spazi iniziali e finali -->
                         </a>
-                        <xsl:if test="position() != last()">, </xsl:if>
+                        <xsl:if test="position() != last()">, </xsl:if> <!-- mette una virgola tra i nomi, ma non dopo l'ultimo -->
                     </xsl:for-each>
                 </p>
             </xsl:for-each-group>
@@ -237,38 +257,38 @@
 
 
     <xsl:template match="tei:head">
-        <xsl:element name="h2">
-            <xsl:attribute name="id">
-            <xsl:value-of select="substring-after(@facs, '#')"/>
+        <xsl:element name="h2"> <!-- dinamico -->
+            <xsl:attribute name="id"> <!-- crea un attributo id per il titolo -->
+                <xsl:value-of select="substring-after(@facs, '#')"/> <!-- rimuove # --> 
             </xsl:attribute>
-            <xsl:apply-templates select="node()"/>
+            <xsl:apply-templates select="node()"/> <!-- applica il template ai nodi figli dell'elemento <head>, cioè il testo -->
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="tei:lb">
-        <xsl:text> </xsl:text><br/>
+    <xsl:template match="tei:lb"> <!-- il template si attiva ogni volta che incontra un elemento <lb/> -->
+        <xsl:text> </xsl:text><br/> <!-- inserisce uno spazio bianco prima del tag <br/>, evita che le parole prima e dopo si incollino; <br/> inserisce un a capo in HTML -->
     </xsl:template>
 
-    <xsl:template match="tei:lg">
+    <xsl:template match="tei:lg"> <!-- quando trova un el lg, lo trasforma in un blocco HTML div con la classe "poem" -->
         <div class="poem" lang="{@xml:lang}">
-            <xsl:apply-templates/>
+            <xsl:apply-templates/> <!-- applica template a tutti i figli dell'el lg (quindi l) -->
         </div>
     </xsl:template>
 
     <xsl:template match="tei:l">
         <div class="line">
-            <xsl:apply-templates/>
+            <xsl:apply-templates/> <!-- i figli sono il testo e altri el interni -->
         </div>
     </xsl:template>
 
     <xsl:template match="tei:p">
-        <xsl:element name="p">
+        <xsl:element name="p"> <!-- crea dinamicamente un el HTML <p> -->
             <!--trasforma <p facs="#par1_2_TDM"> in <p id="par1_2_TDM"> in HTML -->
-            <xsl:attribute name="id">
-                <xsl:value-of select="substring-after(@facs, '#')" />
+            <xsl:attribute name="id"> <!-- aggiunge un attr id -->
+                <xsl:value-of select="substring-after(@facs, '#')" /> <!--- prende il valore dell'attributo facs, estra tutto ciò che viene dopo # -->
             </xsl:attribute>
             <xsl:apply-templates
-                select="node()" />
+                select="node()" /> <!-- elabora tutto ciò che sta dentro il p -->
         </xsl:element>
     </xsl:template>
 
@@ -276,12 +296,12 @@
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="tei:*">
+    <xsl:template match="tei:*"> <!-- qualsiasi elemento: applica template anche ai figli >> salta il tag attuale e passa ai suoi contenuti -->
         <xsl:apply-templates/>
     </xsl:template>
 
     <xsl:template match="text()">
-        <xsl:value-of select="." disable-output-escaping="yes"/>
+        <xsl:value-of select="." disable-output-escaping="yes"/> <!-- scrivi nel risultato il valore del nodo attuale / non trasforma i caratteri spieciali in entità HTML (&, <, >) --> 
     </xsl:template>
 
     <xsl:template match="tei:choice">
@@ -290,10 +310,10 @@
             <xsl:when test="tei:orig and tei:reg">
                 <span class="choice dialettale" id="{generate-id()}">
                     <span class="orig visible">
-                        <xsl:value-of select="tei:orig"/>
+                        <xsl:value-of select="tei:orig"/> <!-- la forma originale è visibile -->
                     </span>
                     <span class="reg hidden" style="color: red;">
-                        <xsl:value-of select="tei:reg"/>
+                        <xsl:value-of select="tei:reg"/> <!-- la forma regolare è nascosta -->
                     </span>
                 </span>
             </xsl:when>
@@ -319,7 +339,7 @@
     </xsl:template>
 
     <xsl:template match="tei:seg">
-        <span class="dialoghi" id="{generate-id()}">
+        <span class="dialoghi" id="{generate-id()}"> <!-- span: el HTML usato per racchiudere inline un frammento di testo -->
             <xsl:apply-templates/>
         </span>
     </xsl:template>
@@ -406,7 +426,7 @@
 
     <xsl:template match="tei:surface">
         <!-- trasforma <graphic> in <img> -->
-        <img usemap="#{current()/@xml:id}"/>
+        <img usemap="#{current()/@xml:id}"/> <!-- prende id del nodo corrente <surface> e genera <img usemap="#surface1"> -->
         <!-- crea <map> con stesso ID di surface -->
         <map id="{current()/@xml:id}">
             <xsl:apply-templates select="tei:zone"/>
@@ -421,18 +441,18 @@
     </xsl:template>
 
     <xsl:template match="tei:persName">
-      <span class="persName">
-        <xsl:attribute name="id">
+      <span class="persName"> <!-- crea un el HTML <span> con la classe persName -->
+        <xsl:attribute name="id"> <!-- aggiunge un attributo id al span, serve per i link interni -->
           <xsl:choose>
-            <xsl:when test="@ref != ''">
-              <xsl:value-of select="substring-after(@ref, '#')"/>
+            <xsl:when test="@ref != ''"> <!-- se il nome della persona ha attr @ref -->
+              <xsl:value-of select="substring-after(@ref, '#')"/> <!--- allora l'id del span sarà tutto quello dopo # -->
             </xsl:when>
             <xsl:otherwise>
-              <xsl:value-of select="generate-id()"/>
+              <xsl:value-of select="generate-id()"/> <!-- altrimenti lo genera -->
             </xsl:otherwise>
           </xsl:choose>
         </xsl:attribute>
-        <xsl:apply-templates/>
+        <xsl:apply-templates/> <!-- applica template ai figli, mostra il contenuto del nome all'interno dello span -->
       </span>
     </xsl:template>
 
